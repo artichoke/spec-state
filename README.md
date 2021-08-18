@@ -13,8 +13,8 @@ pass rate.
 ## Spec Harness
 
 Artichoke includes a custom harness for running the ruby/spec suite called the
-`spec-runner`. Every push to artichoke/artichoke@trunk triggers a run of the
-spec harness and pushes the results to this repository.
+`spec-runner`. Every push to [artichoke/artichoke@trunk][artichoke-trunk]
+triggers a run of the spec harness and pushes the results to this repository.
 
 Relevant source code for this pipeline:
 
@@ -23,3 +23,4 @@ Relevant source code for this pipeline:
 
 [artichoke ruby]: https://github.com/artichoke/artichoke
 [ruby/spec]: https://github.com/ruby/spec
+[artichoke-trunk]: https://github.com/artichoke/artichoke/commits/trunk
