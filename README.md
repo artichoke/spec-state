@@ -25,7 +25,7 @@ Relevant source code for this pipeline:
 - https://github.com/artichoke/artichoke/blob/trunk/.github/workflows/spec-state.yaml
 
 The first Artichoke commit recorded in this repository is
-[`artichoke/artichoke@566e775`][spec-state-first-commit]
+[`artichoke/artichoke@566e775`][spec-state-first-commit].
 
 [artichoke]: https://github.com/artichoke/artichoke
 [ruby/spec]: https://github.com/ruby/spec
