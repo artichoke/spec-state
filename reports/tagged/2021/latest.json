@@ -14656,7 +14656,7 @@
       "tag": "spec-runner-tagger:File#printf faulty key raises a KeyError",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf faulty key sets the Hash as the receiver of KeyError",
@@ -14674,97 +14674,97 @@
       "tag": "spec-runner-tagger:File#printf flags # applies to format o does nothing for negative argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to format o increases the precision until the first digit will be `0' if it is not formatted as complements",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats aAeEfgG changes format from dd.dddd to exponential form for gG",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats aAeEfgG forces a decimal point to be added, even if no digits follow",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats bBxX does nothing for zero argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats bBxX prefixes the result with 0x, 0X, 0b and 0B respectively for non-zero argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to gG does not remove trailing zeros",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ ignores '-' sign",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ raises ArgumentError exception when absolute and relative argument numbers are mixed",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ raises exception if argument number is bigger than actual arguments list",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ specifies the absolute argument number for this field",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * left-justifies the result if specified with $ argument is negative",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * left-justifies the result if width is negative",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * raises ArgumentError when is mixed with width",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * uses the previous argument as the field width",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * uses the specified argument as the width if * is followed by a number and $",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags + applies to numeric formats bBdiouxXaAeEfgG adds a leading plus sign to non-negative numbers",
@@ -14782,13 +14782,13 @@
       "tag": "spec-runner-tagger:File#printf flags - left-justifies the result of conversion if width is specified",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags 0 (zero) applies to numeric formats bBdiouxXaAeEfgG and width is specified pads with zeros, not spaces",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags 0 (zero) applies to numeric formats bBdiouxXaAeEfgG and width is specified uses radix-1 when displays negative argument as a two's complement",
@@ -14824,295 +14824,295 @@
       "tag": "spec-runner-tagger:File#printf float formats A converts floating point argument as [-]0xh.hhhhp[+-]dd and use uppercase X and P",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats A displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats A displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E converts argument into exponential notation [-]d.dddddde[+-]dd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E cuts excessive digits and keeps only 6 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E rounds the last significant digit to the closest one",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise converts a floating point number in dd.dddd form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise cuts excessive digits in fractional part and keeps only 4 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise cuts fraction part to have only 6 digits at all",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise rounds the last significant digit to the closest one in fractional part",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G the exponent is greater than or equal to the precision (6 by default) converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G the exponent is less than -4 converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats a converts floating point argument as [-]0xh.hhhhp[+-]dd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats a displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats a displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats converts argument into Float",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e converts argument into exponential notation [-]d.dddddde[+-]dd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e cuts excessive digits and keeps only 6 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e rounds the last significant digit to the closest one",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f converts floating point argument as [-]ddd.dddddd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f cuts excessive digits and keeps only 6 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f rounds the last significant digit to the closest one",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise converts a floating point number in dd.dddd form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise cuts excessive digits in fractional part and keeps only 4 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise cuts fraction part to have only 6 digits at all",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise rounds the last significant digit to the closest one in fractional part",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g the exponent is greater than or equal to the precision (6 by default) converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g the exponent is less than -4 converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats raises TypeError exception if cannot convert to Float",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats B collapse negative number representation if it equals 1",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats B converts argument as a binary number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats B displays negative number as a two's complement prefixed with '..1'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats X collapse negative number representation if it equals F",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats X converts argument as a hexadecimal number with uppercase letters",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats X displays negative number as a two's complement prefixed with '..f'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats b collapse negative number representation if it equals 1",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats b converts argument as a binary number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats b displays negative number as a two's complement prefixed with '..1'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats converts String argument with Kernel#Integer",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats converts argument into Integer with to_i if to_int isn't available",
@@ -15136,7 +15136,7 @@
       "tag": "spec-runner-tagger:File#printf integer formats d works well with large numbers",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats i converts argument as a decimal number",
@@ -15148,31 +15148,31 @@
       "tag": "spec-runner-tagger:File#printf integer formats i works well with large numbers",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats o collapse negative number representation if it equals 7",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats o converts argument as an octal number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats o displays negative number as a two's complement prefixed with '..7'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats raises TypeError exception if cannot convert to Integer",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats u converts argument as a decimal number",
@@ -15184,25 +15184,25 @@
       "tag": "spec-runner-tagger:File#printf integer formats u works well with large numbers",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x collapse negative number representation if it equals f",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x converts argument as a hexadecimal number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x displays negative number as a two's complement prefixed with '..f'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats % alone raises an ArgumentError",
@@ -15214,31 +15214,31 @@
       "tag": "spec-runner-tagger:File#printf other formats % is escaped by %",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c displays character if argument is a numeric code of character",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c displays character if argument is a single character string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c raises ArgumentError if argument is a string of several characters",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c raises ArgumentError if argument is an empty string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c supports Unicode characters",
@@ -15250,13 +15250,13 @@
       "tag": "spec-runner-tagger:File#printf other formats p displays argument.inspect value",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats s converts argument to string with to_s",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats s does not try to convert with to_str",
@@ -15268,103 +15268,103 @@
       "tag": "spec-runner-tagger:File#printf other formats s substitute argument passes as a string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision float types controls the number of decimal places displayed in fraction part",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision float types does not affect G format",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision integer types controls the number of decimal places displayed",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision string formats determines the maximum number of characters to be copied from the string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style allows to place name in any position",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style cannot be mixed with unnamed style",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style supports flags, width, precision and type",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style uses value passed in a hash argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style cannot be mixed with unnamed style",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style converts value to String with to_s",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style does not support type style",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style raises KeyError when there is no matching key",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style supports flags, width and precision",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style uses value passed in a hash argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf width is ignored if argument's actual length is greater",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf width specifies the minimum number of characters that will be written to the result",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#reopen calls #to_path to convert an Object",
@@ -38998,7 +38998,7 @@
       "tag": "spec-runner-tagger:String#% faulty key raises a KeyError",
       "group": "String",
       "spec": "String#%",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#% faulty key sets the Hash as the receiver of KeyError",
