@@ -1033,6 +1033,18 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Abbrev.abbrev returns a hash of all unambiguous abbreviations of the array of strings passed in",
+      "group": "Abbrev",
+      "spec": "Abbrev.abbrev",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Abbrev.abbrev returns an empty hash when called on an empty array",
+      "group": "Abbrev",
+      "spec": "Abbrev.abbrev",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:ArgumentError gives its own class name as message if it has no message",
       "group": "ArgumentError",
       "spec": "ArgumentError",
@@ -1282,6 +1294,18 @@
       "tag": "spec-runner-tagger:Array#<< returns self to allow chaining",
       "group": "Array",
       "spec": "Array#<<",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Array#abbrev returns a hash of all unambiguous abbreviations of the array of strings passed in",
+      "group": "Array",
+      "spec": "Array#abbrev",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Array#abbrev returns an empty hash when called on an empty array",
+      "group": "Array",
+      "spec": "Array#abbrev",
       "outcome": "pass"
     },
     {
@@ -3046,6 +3070,60 @@
       "tag": "spec-runner-tagger:Array[] is a synonym for .[]",
       "group": "Array[]",
       "spec": "Array[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#decode64 returns the Base64-decoded version of the given string",
+      "group": "Base64",
+      "spec": "Base64#decode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#encode64 returns the Base64-encoded version of the given string",
+      "group": "Base64",
+      "spec": "Base64#encode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#encode64 returns the Base64-encoded version of the given string",
+      "group": "Base64",
+      "spec": "Base64#encode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#urlsafe_decode64 does not require padding",
+      "group": "Base64",
+      "spec": "Base64#urlsafe_decode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#urlsafe_decode64 uses '-' instead of '+'",
+      "group": "Base64",
+      "spec": "Base64#urlsafe_decode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#urlsafe_decode64 uses '_' instead of '/'",
+      "group": "Base64",
+      "spec": "Base64#urlsafe_decode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#urlsafe_encode64 makes padding optional",
+      "group": "Base64",
+      "spec": "Base64#urlsafe_encode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#urlsafe_encode64 uses '-' instead of '+'",
+      "group": "Base64",
+      "spec": "Base64#urlsafe_encode64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Base64#urlsafe_encode64 uses '_' instead of '/'",
+      "group": "Base64",
+      "spec": "Base64#urlsafe_encode64",
       "outcome": "pass"
     },
     {
@@ -29449,6 +29527,12 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:MonitorMixin#mon_initialize can be called in initialize_copy to get a new Mutex and used with synchronize",
+      "group": "MonitorMixin",
+      "spec": "MonitorMixin#mon_initialize",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:NameError is a superclass of NoMethodError",
       "group": "NameError",
       "spec": "NameError",
@@ -33484,7 +33568,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -38014,6 +38098,90 @@
       "tag": "spec-runner-tagger:ScriptError is a superclass of SyntaxError",
       "group": "ScriptError",
       "spec": "ScriptError",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 generates a random base64 string out of 32 random bytes",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 generates a random base64 string out of specified number of random bytes",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 generates different base64 strings with subsequent invocations",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 raises ArgumentError on negative arguments",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 returns an empty string when argument is 0",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 treats nil argument as default one and generates a random base64 string",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.base64 tries to convert the passed argument to an Integer using #to_int",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.base64",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex generates a random hex string of length 32 if no argument is provided",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex generates a random hex string of length twice the specified argument",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex generates different hex strings with subsequent invocations",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex raises ArgumentError on negative arguments",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex returns an empty string when argument is 0",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex treats nil argument as default one and generates a random hex string of length 32",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:SecureRandom.hex tries to convert the passed argument to an Integer using #to_int",
+      "group": "SecureRandom",
+      "spec": "SecureRandom.hex",
       "outcome": "pass"
     },
     {
@@ -61927,6 +62095,906 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:StringScanner#<< concatenates the given argument to self and returns self",
+      "group": "StringScanner",
+      "spec": "StringScanner#<<",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#<< raises a TypeError if the given argument can't be converted to a String",
+      "group": "StringScanner",
+      "spec": "StringScanner#<<",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#<< when passed a Fixnum doesn't call to_int on the argument",
+      "group": "StringScanner",
+      "spec": "StringScanner#<<",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#<< when passed a Fixnum raises a TypeError",
+      "group": "StringScanner",
+      "spec": "StringScanner#<<",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] calls to_int on the given index",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] raises a IndexError when there's no named capture",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] raises a TypeError if the given index is nil",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] raises a TypeError when a Range is as argument",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] returns named capture",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] returns nil if index is outside of self",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] returns nil if there is no current match",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#[] returns the n-th subgroup in the most recent match",
+      "group": "StringScanner",
+      "spec": "StringScanner#[]",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#beginning_of_line? returns true if the scan pointer is at the beginning of the line, false otherwise",
+      "group": "StringScanner",
+      "spec": "StringScanner#beginning_of_line?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#beginning_of_line? returns true if the scan pointer is at the end of the line of an empty string.",
+      "group": "StringScanner",
+      "spec": "StringScanner#beginning_of_line?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#bol? returns true if the scan pointer is at the beginning of the line, false otherwise",
+      "group": "StringScanner",
+      "spec": "StringScanner#bol?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#bol? returns true if the scan pointer is at the end of the line of an empty string.",
+      "group": "StringScanner",
+      "spec": "StringScanner#bol?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#check returns the value that scan would return, without advancing the scan pointer",
+      "group": "StringScanner",
+      "spec": "StringScanner#check",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#check_until returns the same value of scan_until, but don't advances the scan pointer",
+      "group": "StringScanner",
+      "spec": "StringScanner#check_until",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#clear set the scan pointer to the end of the string and clear matching data.",
+      "group": "StringScanner",
+      "spec": "StringScanner#clear",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#clear warns in verbose mode that the method is obsolete",
+      "group": "StringScanner",
+      "spec": "StringScanner#clear",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#concat concatenates the given argument to self and returns self",
+      "group": "StringScanner",
+      "spec": "StringScanner#concat",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#concat raises a TypeError if the given argument can't be converted to a String",
+      "group": "StringScanner",
+      "spec": "StringScanner#concat",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#concat when passed a Fixnum doesn't call to_int on the argument",
+      "group": "StringScanner",
+      "spec": "StringScanner#concat",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#concat when passed a Fixnum raises a TypeError",
+      "group": "StringScanner",
+      "spec": "StringScanner#concat",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#dup copies previous match state",
+      "group": "StringScanner",
+      "spec": "StringScanner#dup",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#dup copies the passed StringSCanner's position to self",
+      "group": "StringScanner",
+      "spec": "StringScanner#dup",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#dup copies the passed StringScanner scan pointer to self",
+      "group": "StringScanner",
+      "spec": "StringScanner#dup",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#dup copies the passed StringScanner's content to self",
+      "group": "StringScanner",
+      "spec": "StringScanner#dup",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#empty? returns false if the scan pointer is not at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#empty?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#empty? returns true if the scan pointer is at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#empty?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#empty? warns in verbose mode that the method is obsolete",
+      "group": "StringScanner",
+      "spec": "StringScanner#empty?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#eos? returns false if the scan pointer is not at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#eos?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#eos? returns true if the scan pointer is at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#eos?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#exist? returns 0 if the pattern is empty",
+      "group": "StringScanner",
+      "spec": "StringScanner#exist?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#exist? returns nil if the pattern isn't found in the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#exist?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#exist? returns the index of the first occurrence of the given pattern",
+      "group": "StringScanner",
+      "spec": "StringScanner#exist?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#get_byte is not multi-byte character sensitive",
+      "group": "StringScanner",
+      "spec": "StringScanner#get_byte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#get_byte returns nil at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#get_byte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#get_byte scans one byte and returns it",
+      "group": "StringScanner",
+      "spec": "StringScanner#get_byte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getbyte is not multi-byte character sensitive",
+      "group": "StringScanner",
+      "spec": "StringScanner#getbyte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getbyte returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#getbyte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getbyte returns nil at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#getbyte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getbyte scans one byte and returns it",
+      "group": "StringScanner",
+      "spec": "StringScanner#getbyte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getbyte taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#getbyte",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getbyte warns in verbose mode that the method is obsolete",
+      "group": "StringScanner",
+      "spec": "StringScanner#getbyte",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getch is multi-byte character sensitive",
+      "group": "StringScanner",
+      "spec": "StringScanner#getch",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getch returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#getch",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getch returns nil at the end of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#getch",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getch scans one character and returns it",
+      "group": "StringScanner",
+      "spec": "StringScanner#getch",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#getch taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#getch",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#initialize converts the argument into a string using #to_str",
+      "group": "StringScanner",
+      "spec": "StringScanner#initialize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#initialize is a private method",
+      "group": "StringScanner",
+      "spec": "StringScanner#initialize",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#initialize returns an instance of StringScanner",
+      "group": "StringScanner",
+      "spec": "StringScanner#initialize",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#inspect returns a String object",
+      "group": "StringScanner",
+      "spec": "StringScanner#inspect",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#inspect returns a string that represents the StringScanner object",
+      "group": "StringScanner",
+      "spec": "StringScanner#inspect",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#match? effects pre_match",
+      "group": "StringScanner",
+      "spec": "StringScanner#match?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#match? returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#match?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#match? returns the length of the match and the scan pointer is not advanced",
+      "group": "StringScanner",
+      "spec": "StringScanner#match?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched returns the last matched string",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched? returns false if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched? returns true if the last match was successful",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched_size returns nil if there was no recent match",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched_size",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#matched_size returns the size of the most recent match",
+      "group": "StringScanner",
+      "spec": "StringScanner#matched_size",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peek raises a ArgumentError when the passed argument is negative",
+      "group": "StringScanner",
+      "spec": "StringScanner#peek",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peek raises a RangeError when the passed argument is a Bignum",
+      "group": "StringScanner",
+      "spec": "StringScanner#peek",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peek returns an empty string when the passed argument is zero",
+      "group": "StringScanner",
+      "spec": "StringScanner#peek",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peek returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#peek",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peek returns at most the specified number of bytes from the current position",
+      "group": "StringScanner",
+      "spec": "StringScanner#peek",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peek taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#peek",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep raises a ArgumentError when the passed argument is negative",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep raises a RangeError when the passed argument is a Bignum",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep returns an empty string when the passed argument is zero",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep returns at most the specified number of bytes from the current position",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#peep warns in verbose mode that the method is obsolete",
+      "group": "StringScanner",
+      "spec": "StringScanner#peep",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer returns 0 in the reset position",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer returns the length of the string in the terminate position",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer returns the position of the scan pointer",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer= modify the scan pointer",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer= positions from the end if the argument is negative",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer= raises a RangeError if position too far backward",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pointer= raises a RangeError when the passed argument is out of range",
+      "group": "StringScanner",
+      "spec": "StringScanner#pointer=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos returns 0 in the reset position",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos returns the length of the string in the terminate position",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos returns the position of the scan pointer",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos= modify the scan pointer",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos= positions from the end if the argument is negative",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos= raises a RangeError if position too far backward",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pos= raises a RangeError when the passed argument is out of range",
+      "group": "StringScanner",
+      "spec": "StringScanner#pos=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#post_match returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#post_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#post_match returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#post_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#post_match returns the post-match (in the regular expression sense) of the last scan",
+      "group": "StringScanner",
+      "spec": "StringScanner#post_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#post_match taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#post_match",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pre_match is more than just the data from the last match",
+      "group": "StringScanner",
+      "spec": "StringScanner#pre_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pre_match is not changed when the scanner's position changes",
+      "group": "StringScanner",
+      "spec": "StringScanner#pre_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pre_match returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#pre_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pre_match returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#pre_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pre_match returns the pre-match (in the regular expression sense) of the last scan",
+      "group": "StringScanner",
+      "spec": "StringScanner#pre_match",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#pre_match taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#pre_match",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#reset reset the scan pointer and clear matching data",
+      "group": "StringScanner",
+      "spec": "StringScanner#reset",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest returns an empty string in the terminate position",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest returns an instance of String when passed a String subclass",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest returns self in the reset position",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest returns the rest of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest taints the returned String if the input was tainted",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest? is the opposite of eos?",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest? returns false if there is no more data in the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest? returns true if there is more data in the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest_size is equivalent to rest.size",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest_size",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#rest_size returns the length of the rest of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#rest_size",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#restsize is equivalent to rest.size",
+      "group": "StringScanner",
+      "spec": "StringScanner#restsize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#restsize returns the length of the rest of the string",
+      "group": "StringScanner",
+      "spec": "StringScanner#restsize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#restsize warns in verbose mode that the method is obsolete",
+      "group": "StringScanner",
+      "spec": "StringScanner#restsize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan raises a TypeError if pattern isn't a Regexp",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan returns an empty string when the pattern matches empty",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan returns nil when there is no more to scan",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan returns the matched string",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan treats \\A as matching from the beginning of the current position",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan treats \\A as matching from the beginning of the current position when it's not the first character in the regexp",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan treats ^ as matching from the beginning of the current position",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan treats ^ as matching from the beginning of the current position when it's not the first character in the regexp",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_full returns the matched string if the third argument is true",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_full returns the matched string if the third argument is true and advances the scan pointer if the second argument is true",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_full returns the number of bytes advanced",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_full returns the number of bytes advanced and advances the scan pointer if the second argument is true",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_until can match anchors properly",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_until",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_until returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_until",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#scan_until returns the substring up to and including the end of the match",
+      "group": "StringScanner",
+      "spec": "StringScanner#scan_until",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#search_full returns the matched string if the third argument is true",
+      "group": "StringScanner",
+      "spec": "StringScanner#search_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#search_full returns the matched string if the third argument is true and advances the scan pointer if the second argument is true",
+      "group": "StringScanner",
+      "spec": "StringScanner#search_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#search_full returns the number of bytes advanced",
+      "group": "StringScanner",
+      "spec": "StringScanner#search_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#search_full returns the number of bytes advanced and advances the scan pointer if the second argument is true",
+      "group": "StringScanner",
+      "spec": "StringScanner#search_full",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#skip returns length of the match",
+      "group": "StringScanner",
+      "spec": "StringScanner#skip",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#skip returns nil if there's no match",
+      "group": "StringScanner",
+      "spec": "StringScanner#skip",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#skip_until returns nil if no match was found",
+      "group": "StringScanner",
+      "spec": "StringScanner#skip_until",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#skip_until returns the number of bytes advanced and advances the scan pointer until pattern is matched and consumed",
+      "group": "StringScanner",
+      "spec": "StringScanner#skip_until",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#string returns the identical object passed in",
+      "group": "StringScanner",
+      "spec": "StringScanner#string",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#string returns the string being scanned",
+      "group": "StringScanner",
+      "spec": "StringScanner#string",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#string= changes the string being scanned to the argument and resets the scanner",
+      "group": "StringScanner",
+      "spec": "StringScanner#string=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#string= converts the argument into a string using #to_str",
+      "group": "StringScanner",
+      "spec": "StringScanner#string=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#terminate set the scan pointer to the end of the string and clear matching data.",
+      "group": "StringScanner",
+      "spec": "StringScanner#terminate",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#unscan raises a ScanError when the previous match had failed",
+      "group": "StringScanner",
+      "spec": "StringScanner#unscan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#unscan remember only one previous position",
+      "group": "StringScanner",
+      "spec": "StringScanner#unscan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner#unscan set the scan pointer to the previous position",
+      "group": "StringScanner",
+      "spec": "StringScanner#unscan",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:StringScanner.must_C_version returns self",
+      "group": "StringScanner",
+      "spec": "StringScanner.must_C_version",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:Struct#dig calls #dig on any intermediate step with the rest of the sequence as arguments",
       "group": "Struct",
       "spec": "Struct#dig",
@@ -66775,6 +67843,948 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:URI#+ canonicalizes the URI's path, removing ../'s",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#+ conforms to the merge specifications from rfc 2396",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#+ doesn't canonicalize the path when adding to the empty string",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#+ raises a URI::BadURIError when adding two relative URIs",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#+ replaces the end of the path of the URI when added to a string that looks like a relative path",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#+ replaces the entire path of the URI when added to a string that begins with a /",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#+ replaces the entire url when added to a string that looks like a full url",
+      "group": "URI",
+      "spec": "URI#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== differentiates based on port number",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== ignores capitalization of host names",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== ignores capitalization of scheme",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== is case sensitive in all components of the URI but the host and scheme",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== returns false for when compared to non-uri objects",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== returns false if the normalized forms are different",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#== treats a blank path and a path of '/' as the same",
+      "group": "URI",
+      "spec": "URI#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#eql? returns false for when compared to non-uri objects",
+      "group": "URI",
+      "spec": "URI#eql?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#eql? returns false if the normalized forms are different",
+      "group": "URI",
+      "spec": "URI#eql?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#merge accepts URI objects as argument",
+      "group": "URI",
+      "spec": "URI#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#merge accepts a string-like argument",
+      "group": "URI",
+      "spec": "URI#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#merge returns the receiver and the argument, joined as per URI.join",
+      "group": "URI",
+      "spec": "URI#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#normalize adds a / onto the end of the URI if the path is blank",
+      "group": "URI",
+      "spec": "URI#normalize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#normalize downcases the host of the URI",
+      "group": "URI",
+      "spec": "URI#normalize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#route_from accepts a string-like argument",
+      "group": "URI",
+      "spec": "URI#route_from",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#route_from gives the minimal difference between the current URI and the target",
+      "group": "URI",
+      "spec": "URI#route_from",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#route_to accepts a string-like argument",
+      "group": "URI",
+      "spec": "URI#route_to",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#route_to gives the minimal difference between the current URI and the target",
+      "group": "URI",
+      "spec": "URI#route_to",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#select conforms to the MatzRuby tests",
+      "group": "URI",
+      "spec": "URI#select",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#select raises an ArgumentError if a component is requested that isn't valid under the given scheme",
+      "group": "URI",
+      "spec": "URI#select",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#select raises an ArgumentError if given strings rather than symbols",
+      "group": "URI",
+      "spec": "URI#select",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#select returns nil for any valid component that isn't set and doesn't have a default",
+      "group": "URI",
+      "spec": "URI#select",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI#select takes any number of component names as symbols, and returns an array of those components",
+      "group": "URI",
+      "spec": "URI#select",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.decode_www_form needs to be reviewed for spec completeness",
+      "group": "URI",
+      "spec": "URI.decode_www_form",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.decode_www_form_component needs to be reviewed for spec completeness",
+      "group": "URI",
+      "spec": "URI.decode_www_form_component",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.encode_www_form needs to be reviewed for spec completeness",
+      "group": "URI",
+      "spec": "URI.encode_www_form",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.encode_www_form_component needs to be reviewed for spec completeness",
+      "group": "URI",
+      "spec": "URI.encode_www_form_component",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract allows the user to specify a list of acceptable protocols of URIs to scan for",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract behaves according to its documentation",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract pulls a variety of protocol URIs from a string",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract pulls all URIs within a string in order into an array when a block is not given",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract treats contiguous URIs as a single URI",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract treats pretty much anything with a colon as a URI",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract wraps a URI string in an array",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.extract yields each URI in the given string in order to a block, if given, and returns nil",
+      "group": "URI",
+      "spec": "URI.extract",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join accepts URI objects",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join accepts string-like arguments with to_str",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join discards arguments given before an absolute uri",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join doesn't create redundant '/'s",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join raises an error if given no argument",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join resolves .. in paths",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.join returns a URI object of the concatenation of a protocol and domain, and a path",
+      "group": "URI",
+      "spec": "URI.join",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.regexp behaves according to the MatzRuby tests",
+      "group": "URI",
+      "spec": "URI.regexp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI.split needs to be reviewed for spec completeness",
+      "group": "URI",
+      "spec": "URI.split",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Escape#decode needs to be reviewed for spec completeness",
+      "group": "URI::Escape",
+      "spec": "URI::Escape#decode",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Escape#encode needs to be reviewed for spec completeness",
+      "group": "URI::Escape",
+      "spec": "URI::Escape#encode",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Escape#escape needs to be reviewed for spec completeness",
+      "group": "URI::Escape",
+      "spec": "URI::Escape#escape",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Escape#unescape needs to be reviewed for spec completeness",
+      "group": "URI::Escape",
+      "spec": "URI::Escape#unescape",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#merge needs to be reviewed for spec completeness",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#path unescapes the leading /",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#path",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#path= does not require a leading /",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#path=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#path= does not strip the leading /",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#path=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#set_typecode needs to be reviewed for spec completeness",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#set_typecode",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#to_s escapes the leading /",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#to_s",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#typecode needs to be reviewed for spec completeness",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#typecode",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP#typecode= needs to be reviewed for spec completeness",
+      "group": "URI::FTP",
+      "spec": "URI::FTP#typecode=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP.build needs to be reviewed for spec completeness",
+      "group": "URI::FTP",
+      "spec": "URI::FTP.build",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::FTP.new2 needs to be reviewed for spec completeness",
+      "group": "URI::FTP",
+      "spec": "URI::FTP.new2",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#+ needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#+",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#- needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#-",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#== needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#==",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#absolute needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#absolute",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#absolute? needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#absolute?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#coerce needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#coerce",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#component needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#component",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#component_ary needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#component_ary",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#default_port needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#default_port",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#eql? needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#eql?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#fragment needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#fragment",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#fragment= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#fragment=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#hash needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#hash",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#hierarchical? needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#hierarchical?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#host needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#host",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#host= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#host=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#inspect needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#inspect",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#merge needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#merge! needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#normalize needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#normalize",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#normalize! needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#normalize!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#opaque needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#opaque",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#opaque= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#opaque=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#password needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#password",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#password= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#password=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#path needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#path",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#path= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#path=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#port needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#port",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#port= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#port=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#query needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#query",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#query= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#query=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#registry needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#registry",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#registry= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#registry=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#relative? needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#relative?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#route_from needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#route_from",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#route_to needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#route_to",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#scheme needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#scheme",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#scheme= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#scheme=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#select needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#select",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_fragment needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_fragment",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_host needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_host",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_opaque needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_opaque",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_password needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_password",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_path needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_path",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_port needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_port",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_query needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_query",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_registry needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_registry",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_scheme needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_scheme",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_user needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_user",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#set_userinfo needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#set_userinfo",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#to_s needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#to_s",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#user needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#user",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#user= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#user=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#userinfo needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#userinfo",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic#userinfo= needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic#userinfo=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic.build needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic.build",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic.build2 needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic.build2",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic.component needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic.component",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic.default_port needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic.default_port",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Generic.use_registry needs to be reviewed for spec completeness",
+      "group": "URI::Generic",
+      "spec": "URI::Generic.use_registry",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::HTTP#request_uri needs to be reviewed for spec completeness",
+      "group": "URI::HTTP",
+      "spec": "URI::HTTP#request_uri",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::HTTP.build needs to be reviewed for spec completeness",
+      "group": "URI::HTTP",
+      "spec": "URI::HTTP.build",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::HTTP.request_uri returns '/' if the path of the URI is blank",
+      "group": "URI::HTTP",
+      "spec": "URI::HTTP.request_uri",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::HTTP.request_uri returns a string of the path + query",
+      "group": "URI::HTTP",
+      "spec": "URI::HTTP.request_uri",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#attributes needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#attributes",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#attributes= needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#attributes=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#dn needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#dn",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#dn= needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#dn=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#extensions needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#extensions",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#extensions= needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#extensions=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#filter needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#filter",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#filter= needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#filter=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#hierarchical? needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#hierarchical?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#scope needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#scope",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#scope= needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#scope=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#set_attributes needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#set_attributes",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#set_dn needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#set_dn",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#set_extensions needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#set_extensions",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#set_filter needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#set_filter",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP#set_scope needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP#set_scope",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::LDAP.build needs to be reviewed for spec completeness",
+      "group": "URI::LDAP",
+      "spec": "URI::LDAP.build",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#headers needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#headers",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#headers= needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#headers=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#set_headers needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#set_headers",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#set_to needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#set_to",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#to needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#to",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#to= needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#to=",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#to_mailtext needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#to_mailtext",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#to_rfc822text needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#to_rfc822text",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::MailTo#to_s needs to be reviewed for spec completeness",
+      "group": "URI::MailTo",
+      "spec": "URI::MailTo#to_s",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Mailto.build conforms to the MatzRuby tests",
+      "group": "URI::Mailto",
+      "spec": "URI::Mailto.build",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:URI::Util.make_components_hash needs to be reviewed for spec completeness",
+      "group": "URI::Util",
+      "spec": "URI::Util.make_components_hash",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:UnboundMethod#== returns false if UnboundMethods are different methods",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#==",
@@ -67349,6 +69359,30 @@
       "group": "rescuing",
       "spec": "rescuing",
       "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:the URI method converts its argument with to_str",
+      "group": "the",
+      "spec": "the",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:the URI method does not add a URI method to Object instances",
+      "group": "the",
+      "spec": "the",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:the URI method parses a given URI, returning a URI object",
+      "group": "the",
+      "spec": "the",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:the URI method returns the argument if it is a URI object",
+      "group": "the",
+      "spec": "the",
+      "outcome": "pass"
     }
   ]
 }
