@@ -33568,7 +33568,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
