@@ -1048,7 +1048,7 @@
       "tag": "spec-runner-tagger:ArgumentError gives its own class name as message if it has no message",
       "group": "ArgumentError",
       "spec": "ArgumentError",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ArgumentError is a subclass of StandardError",
@@ -4771,6 +4771,24 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Complex#<=> returns 0, 1, or -1 if self and argument do not have imaginary part",
+      "group": "Complex",
+      "spec": "Complex#<=>",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Complex#<=> returns nil if argument is not numeric",
+      "group": "Complex",
+      "spec": "Complex#<=>",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Complex#<=> returns nil if either self or argument has imaginary part",
+      "group": "Complex",
+      "spec": "Complex#<=>",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Complex#== with Complex returns true when self and other have numerical equality",
       "group": "Complex",
       "spec": "Complex#==",
@@ -6364,6 +6382,18 @@
       "tag": "spec-runner-tagger:ENV.member? returns true if ENV has the key",
       "group": "ENV",
       "spec": "ENV.member?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:ENV.merge! adds the parameter hash to ENV",
+      "group": "ENV",
+      "spec": "ENV.merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:ENV.merge! yields key, the old value and the new value when replacing entries",
+      "group": "ENV",
+      "spec": "ENV.merge!",
       "outcome": "pass"
     },
     {
@@ -9631,6 +9661,24 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Enumerable#filter_map returns an array with truthy results of passing each element to block",
+      "group": "Enumerable",
+      "spec": "Enumerable#filter_map",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#filter_map returns an empty array if there are no elements",
+      "group": "Enumerable",
+      "spec": "Enumerable#filter_map",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#filter_map returns an enumerator when no block given",
+      "group": "Enumerable",
+      "spec": "Enumerable#filter_map",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Enumerable#find Enumerable with no size when no block is given returned Enumerator size returns nil",
       "group": "Enumerable",
       "spec": "Enumerable#find",
@@ -11489,6 +11537,36 @@
       "group": "Enumerable",
       "spec": "Enumerable#take_while",
       "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#tally counts values as gathered array when yielded with multiple arguments",
+      "group": "Enumerable",
+      "spec": "Enumerable#tally",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#tally does not call given block",
+      "group": "Enumerable",
+      "spec": "Enumerable#tally",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#tally returns a hash with counts according to the value",
+      "group": "Enumerable",
+      "spec": "Enumerable#tally",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#tally returns a hash without default",
+      "group": "Enumerable",
+      "spec": "Enumerable#tally",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#tally returns an empty hash for empty enumerables",
+      "group": "Enumerable",
+      "spec": "Enumerable#tally",
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerable#to_a passes arguments to each",
@@ -14284,7 +14362,7 @@
       "tag": "spec-runner-tagger:Exception#message when #backtrace is redefined returns the Exception message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#set_backtrace accepts a String",
@@ -14752,49 +14830,49 @@
       "tag": "spec-runner-tagger:File#printf flags # applies to format o does nothing for negative argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to format o increases the precision until the first digit will be `0' if it is not formatted as complements",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats aAeEfgG changes format from dd.dddd to exponential form for gG",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats aAeEfgG forces a decimal point to be added, even if no digits follow",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats bBxX does nothing for zero argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to formats bBxX prefixes the result with 0x, 0X, 0b and 0B respectively for non-zero argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags # applies to gG does not remove trailing zeros",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ ignores '-' sign",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ raises ArgumentError exception when absolute and relative argument numbers are mixed",
@@ -14812,19 +14890,19 @@
       "tag": "spec-runner-tagger:File#printf flags (digit)$ specifies the absolute argument number for this field",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * left-justifies the result if specified with $ argument is negative",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * left-justifies the result if width is negative",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * raises ArgumentError when is mixed with width",
@@ -14836,13 +14914,13 @@
       "tag": "spec-runner-tagger:File#printf flags * uses the previous argument as the field width",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * uses the specified argument as the width if * is followed by a number and $",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags + applies to numeric formats bBdiouxXaAeEfgG adds a leading plus sign to non-negative numbers",
@@ -14860,13 +14938,13 @@
       "tag": "spec-runner-tagger:File#printf flags - left-justifies the result of conversion if width is specified",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags 0 (zero) applies to numeric formats bBdiouxXaAeEfgG and width is specified pads with zeros, not spaces",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags 0 (zero) applies to numeric formats bBdiouxXaAeEfgG and width is specified uses radix-1 when displays negative argument as a two's complement",
@@ -14902,229 +14980,229 @@
       "tag": "spec-runner-tagger:File#printf float formats A converts floating point argument as [-]0xh.hhhhp[+-]dd and use uppercase X and P",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats A displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats A displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E converts argument into exponential notation [-]d.dddddde[+-]dd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E cuts excessive digits and keeps only 6 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats E rounds the last significant digit to the closest one",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise converts a floating point number in dd.dddd form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise cuts excessive digits in fractional part and keeps only 4 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise cuts fraction part to have only 6 digits at all",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G otherwise rounds the last significant digit to the closest one in fractional part",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G the exponent is greater than or equal to the precision (6 by default) converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats G the exponent is less than -4 converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats a converts floating point argument as [-]0xh.hhhhp[+-]dd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats a displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats a displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats converts argument into Float",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e converts argument into exponential notation [-]d.dddddde[+-]dd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e cuts excessive digits and keeps only 6 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats e rounds the last significant digit to the closest one",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f converts floating point argument as [-]ddd.dddddd",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f cuts excessive digits and keeps only 6 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats f rounds the last significant digit to the closest one",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g displays Float::INFINITY as Inf",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g displays Float::NAN as NaN",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise converts a floating point number in dd.dddd form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise cuts excessive digits in fractional part and keeps only 4 ones",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise cuts fraction part to have only 6 digits at all",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g otherwise rounds the last significant digit to the closest one in fractional part",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g the exponent is greater than or equal to the precision (6 by default) converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats g the exponent is less than -4 converts a floating point number using exponential form",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf float formats raises TypeError exception if cannot convert to Float",
@@ -15136,61 +15214,61 @@
       "tag": "spec-runner-tagger:File#printf integer formats B collapse negative number representation if it equals 1",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats B converts argument as a binary number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats B displays negative number as a two's complement prefixed with '..1'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats X collapse negative number representation if it equals F",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats X converts argument as a hexadecimal number with uppercase letters",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats X displays negative number as a two's complement prefixed with '..f'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats b collapse negative number representation if it equals 1",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats b converts argument as a binary number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats b displays negative number as a two's complement prefixed with '..1'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats converts String argument with Kernel#Integer",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats converts argument into Integer with to_i if to_int isn't available",
@@ -15214,7 +15292,7 @@
       "tag": "spec-runner-tagger:File#printf integer formats d works well with large numbers",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats i converts argument as a decimal number",
@@ -15226,25 +15304,25 @@
       "tag": "spec-runner-tagger:File#printf integer formats i works well with large numbers",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats o collapse negative number representation if it equals 7",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats o converts argument as an octal number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats o displays negative number as a two's complement prefixed with '..7'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats raises TypeError exception if cannot convert to Integer",
@@ -15262,25 +15340,25 @@
       "tag": "spec-runner-tagger:File#printf integer formats u works well with large numbers",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x collapse negative number representation if it equals f",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x converts argument as a hexadecimal number",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x displays negative number as a two's complement prefixed with '..f'",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats % alone raises an ArgumentError",
@@ -15292,19 +15370,19 @@
       "tag": "spec-runner-tagger:File#printf other formats % is escaped by %",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c displays character if argument is a numeric code of character",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c displays character if argument is a single character string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c raises ArgumentError if argument is a string of several characters",
@@ -15328,13 +15406,13 @@
       "tag": "spec-runner-tagger:File#printf other formats p displays argument.inspect value",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats s converts argument to string with to_s",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats s does not try to convert with to_str",
@@ -15346,37 +15424,37 @@
       "tag": "spec-runner-tagger:File#printf other formats s substitute argument passes as a string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision float types controls the number of decimal places displayed in fraction part",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision float types does not affect G format",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision integer types controls the number of decimal places displayed",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf precision string formats determines the maximum number of characters to be copied from the string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style allows to place name in any position",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style cannot be mixed with unnamed style",
@@ -15388,13 +15466,13 @@
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style supports flags, width, precision and type",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style uses value passed in a hash argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style cannot be mixed with unnamed style",
@@ -15406,13 +15484,13 @@
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style converts value to String with to_s",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style does not support type style",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style raises KeyError when there is no matching key",
@@ -15424,25 +15502,25 @@
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style supports flags, width and precision",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style uses value passed in a hash argument",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf width is ignored if argument's actual length is greater",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#printf width specifies the minimum number of characters that will be written to the result",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File#reopen calls #to_path to convert an Object",
@@ -19597,6 +19675,18 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:FrozenError#receiver should return frozen object that modification was attempted on",
+      "group": "FrozenError",
+      "spec": "FrozenError#receiver",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:FrozenError.new should take optional receiver argument",
+      "group": "FrozenError",
+      "spec": "FrozenError.new",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:GC#garbage_collect always returns nil",
       "group": "GC",
       "spec": "GC#garbage_collect",
@@ -22192,7 +22282,7 @@
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #to_s when it is not a String",
@@ -22459,12 +22549,6 @@
       "outcome": "fail"
     },
     {
-      "tag": "spec-runner-tagger:Hash.[] ignores elements that are not arrays",
-      "group": "Hash",
-      "spec": "Hash.[]",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Hash.[] passed a single argument which responds to #to_hash coerces it and returns a copy",
       "group": "Hash",
       "spec": "Hash.[]",
@@ -22505,6 +22589,12 @@
       "group": "Hash",
       "spec": "Hash.[]",
       "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash.[] raises for elements that are not arrays",
+      "group": "Hash",
+      "spec": "Hash.[]",
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash.[] removes the default_proc",
@@ -27859,19 +27949,19 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Method#<< raises NoMethodError when called if passed not callable object",
+      "tag": "spec-runner-tagger:Method#<< does not try to coerce argument with #to_proc",
+      "group": "Method",
+      "spec": "Method#<<",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Method#<< raises TypeError if passed not callable object",
       "group": "Method",
       "spec": "Method#<<",
       "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#<< returns a Proc that is the composition of self and the passed Proc",
-      "group": "Method",
-      "spec": "Method#<<",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Method#<< when called does not try to coerce argument with #to_proc",
       "group": "Method",
       "spec": "Method#<<",
       "outcome": "fail"
@@ -28015,19 +28105,19 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Method#>> raises NoMethodError when called if passed not callable object",
+      "tag": "spec-runner-tagger:Method#>> does not try to coerce argument with #to_proc",
+      "group": "Method",
+      "spec": "Method#>>",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Method#>> raises TypeError if passed not callable object",
       "group": "Method",
       "spec": "Method#>>",
       "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#>> returns a Proc that is the composition of self and the passed Proc",
-      "group": "Method",
-      "spec": "Method#>>",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Method#>> when called does not try to coerce argument with #to_proc",
       "group": "Method",
       "spec": "Method#>>",
       "outcome": "fail"
@@ -28360,7 +28450,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
@@ -28378,7 +28468,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
@@ -28390,7 +28480,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#name for a Method generated by respond_to_missing? returns the name passed to respond_to_missing?",
@@ -28900,7 +28990,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing 'Method'",
@@ -28912,7 +29002,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is defined in",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
@@ -28936,7 +29026,7 @@
       "tag": "spec-runner-tagger:Method#unbind rebinding UnboundMethod to Method's obj produces exactly equivalent Methods",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing 'UnboundMethod'",
@@ -28948,7 +29038,7 @@
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is defined in",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is referenced from",
@@ -29020,7 +29110,7 @@
       "tag": "spec-runner-tagger:Module#name changes when the module is reachable through a constant path",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is nil for an anonymous module",
@@ -29050,7 +29140,7 @@
       "tag": "spec-runner-tagger:Module#name is not nil for a nested module created with the module keyword",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set after it is removed from a constant",
@@ -29116,7 +29206,7 @@
       "tag": "spec-runner-tagger:Module#name returns a mutable string that when mutated does not modify the original module name",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Module#prepended is a private method",
@@ -29245,6 +29335,18 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Module#refine for methods accessed indirectly is honored by Kernel#method",
+      "group": "Module",
+      "spec": "Module#refine",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Module#refine for methods accessed indirectly is honored by Kernel#method",
+      "group": "Module",
+      "spec": "Module#refine",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Module#refine for methods accessed indirectly is honored by Kernel#public_send",
       "group": "Module",
       "spec": "Module#refine",
@@ -29270,18 +29372,6 @@
     },
     {
       "tag": "spec-runner-tagger:Module#refine for methods accessed indirectly is honored by string interpolation",
-      "group": "Module",
-      "spec": "Module#refine",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Module#refine for methods accessed indirectly is not honored by Kernel#instance_method",
-      "group": "Module",
-      "spec": "Module#refine",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Module#refine for methods accessed indirectly is not honored by Kernel#method",
       "group": "Module",
       "spec": "Module#refine",
       "outcome": "fail"
@@ -31459,18 +31549,6 @@
       "outcome": "fail"
     },
     {
-      "tag": "spec-runner-tagger:Proc as an implicit block pass argument remains the same object if re-vivified by the target method",
-      "group": "Proc",
-      "spec": "Proc",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc as an implicit block pass argument remains the same object if reconstructed with Proc.new",
-      "group": "Proc",
-      "spec": "Proc",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Proc#<< accepts any callable object",
       "group": "Proc",
       "spec": "Proc#<<",
@@ -31501,19 +31579,19 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Proc#<< raises NoMethodError when called if passed not callable object",
+      "tag": "spec-runner-tagger:Proc#<< does not try to coerce argument with #to_proc",
+      "group": "Proc",
+      "spec": "Proc#<<",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Proc#<< raises TypeError if passed not callable object",
       "group": "Proc",
       "spec": "Proc#<<",
       "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#<< returns a Proc that is the composition of self and the passed Proc",
-      "group": "Proc",
-      "spec": "Proc#<<",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc#<< when called does not try to coerce argument with #to_proc",
       "group": "Proc",
       "spec": "Proc#<<",
       "outcome": "fail"
@@ -31651,19 +31729,19 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Proc#>> raises NoMethodError when called if passed not callable object",
+      "tag": "spec-runner-tagger:Proc#>> does not try to coerce argument with #to_proc",
+      "group": "Proc",
+      "spec": "Proc#>>",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Proc#>> raises TypeError if passed not callable object",
       "group": "Proc",
       "spec": "Proc#>>",
       "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#>> returns a Proc that is the composition of self and the passed Proc",
-      "group": "Proc",
-      "spec": "Proc#>>",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc#>> when called does not try to coerce argument with #to_proc",
       "group": "Proc",
       "spec": "Proc#>>",
       "outcome": "fail"
@@ -32941,18 +33019,6 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Proc.new with an associated block returns a new Proc instance from the block passed to the containing method",
-      "group": "Proc",
-      "spec": "Proc.new",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc.new with an associated block returns a new Proc instance from the block passed to the containing method",
-      "group": "Proc",
-      "spec": "Proc.new",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Proc.new with an associated block returns a proc that represents the block",
       "group": "Proc",
       "spec": "Proc.new",
@@ -32971,6 +33037,24 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Proc.new without a block can be create when called with no block",
+      "group": "Proc",
+      "spec": "Proc.new",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Proc.new without a block can be created if invoked from within a method with a block",
+      "group": "Proc",
+      "spec": "Proc.new",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Proc.new without a block can be created if invoked on a subclass from within a method with a block",
+      "group": "Proc",
+      "spec": "Proc.new",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Proc.new without a block raises an ArgumentError",
       "group": "Proc",
       "spec": "Proc.new",
@@ -32987,18 +33071,6 @@
       "group": "Proc",
       "spec": "Proc.new",
       "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc.new without a block uses the implicit block from an enclosing method",
-      "group": "Proc",
-      "spec": "Proc.new",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc.new without a block uses the implicit block from an enclosing method when called inside a block",
-      "group": "Proc",
-      "spec": "Proc.new",
-      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Queue#<< adds an element to the Queue",
@@ -33313,10 +33385,10 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:RUBY_REVISION is an Integer",
+      "tag": "spec-runner-tagger:RUBY_REVISION is a String",
       "group": "RUBY_REVISION",
       "spec": "RUBY_REVISION",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:RUBY_VERSION is a String",
@@ -35137,6 +35209,12 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Range.new beginless/endless range allows beginless left boundary",
+      "group": "Range",
+      "spec": "Range.new",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:Range.new beginless/endless range allows endless right boundary",
       "group": "Range",
       "spec": "Range.new",
@@ -35149,10 +35227,10 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Range.new beginless/endless range does not allow range without left boundary",
+      "tag": "spec-runner-tagger:Range.new beginless/endless range distinguishes ranges with included and excluded right boundary",
       "group": "Range",
       "spec": "Range.new",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Range.new constructs a range using the given start and end",
@@ -38926,49 +39004,49 @@
       "tag": "spec-runner-tagger:String#% allows a star to take an argument number to use as the width",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% allows more than one digit of position",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% allows negative width to imply '-' flag",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% allows positional arguments for width star and precision star arguments",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% allows reuse of the one argument multiple via absolute argument numbers",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% always allows unused arguments when positional argument style is used",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% always interprets an array argument as a list of argument parameters",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% always interprets an array subclass argument as a list of argument parameters",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% always taints the result when the format string is tainted",
@@ -38986,7 +39064,7 @@
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %E arguments, when the passed argument is hexadecimal string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %G arguments, when the passed argument does not respond to #to_ary",
@@ -38998,7 +39076,7 @@
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %G arguments, when the passed argument is hexadecimal string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %e arguments, when the passed argument does not respond to #to_ary",
@@ -39010,7 +39088,7 @@
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %e arguments, when the passed argument is hexadecimal string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %f arguments, when the passed argument does not respond to #to_ary",
@@ -39022,7 +39100,7 @@
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %f arguments, when the passed argument is hexadecimal string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %g arguments, when the passed argument does not respond to #to_ary",
@@ -39034,7 +39112,7 @@
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Float for %g arguments, when the passed argument is hexadecimal string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% behaves as if calling Kernel#Integer for %X argument, if it does not respond to #to_ary",
@@ -39100,7 +39178,7 @@
       "tag": "spec-runner-tagger:String#% calls inspect on arguments for %p format",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% calls to_int on width star and precision star tokens",
@@ -39112,7 +39190,7 @@
       "tag": "spec-runner-tagger:String#% calls to_s on non-String arguments for %s format",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% calls to_str on argument for %c formats",
@@ -39124,7 +39202,7 @@
       "tag": "spec-runner-tagger:String#% does not call #to_a to convert the argument",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% doesn't return subclass instances when called on a subclass",
@@ -39184,49 +39262,49 @@
       "tag": "spec-runner-tagger:String#% flags # applies to format o does nothing for negative argument",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags # applies to format o increases the precision until the first digit will be `0' if it is not formatted as complements",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags # applies to formats aAeEfgG changes format from dd.dddd to exponential form for gG",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags # applies to formats aAeEfgG forces a decimal point to be added, even if no digits follow",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags # applies to formats bBxX does nothing for zero argument",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags # applies to formats bBxX prefixes the result with 0x, 0X, 0b and 0B respectively for non-zero argument",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags # applies to gG does not remove trailing zeros",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags (digit)$ ignores '-' sign",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags (digit)$ raises ArgumentError exception when absolute and relative argument numbers are mixed",
@@ -39244,19 +39322,19 @@
       "tag": "spec-runner-tagger:String#% flags (digit)$ specifies the absolute argument number for this field",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags * left-justifies the result if specified with $ argument is negative",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags * left-justifies the result if width is negative",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags * raises ArgumentError when is mixed with width",
@@ -39268,13 +39346,13 @@
       "tag": "spec-runner-tagger:String#% flags * uses the previous argument as the field width",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags * uses the specified argument as the width if * is followed by a number and $",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags + applies to numeric formats bBdiouxXaAeEfgG adds a leading plus sign to non-negative numbers",
@@ -39292,13 +39370,13 @@
       "tag": "spec-runner-tagger:String#% flags - left-justifies the result of conversion if width is specified",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags 0 (zero) applies to numeric formats bBdiouxXaAeEfgG and width is specified pads with zeros, not spaces",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% flags 0 (zero) applies to numeric formats bBdiouxXaAeEfgG and width is specified uses radix-1 when displays negative argument as a two's complement",
@@ -39334,229 +39412,229 @@
       "tag": "spec-runner-tagger:String#% float formats A converts floating point argument as [-]0xh.hhhhp[+-]dd and use uppercase X and P",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats A displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats A displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats E converts argument into exponential notation [-]d.dddddde[+-]dd",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats E cuts excessive digits and keeps only 6 ones",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats E displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats E displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats E rounds the last significant digit to the closest one",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G otherwise converts a floating point number in dd.dddd form",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G otherwise cuts excessive digits in fractional part and keeps only 4 ones",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G otherwise cuts fraction part to have only 6 digits at all",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G otherwise rounds the last significant digit to the closest one in fractional part",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G the exponent is greater than or equal to the precision (6 by default) converts a floating point number using exponential form",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats G the exponent is less than -4 converts a floating point number using exponential form",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats a converts floating point argument as [-]0xh.hhhhp[+-]dd",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats a displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats a displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats converts argument into Float",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats e converts argument into exponential notation [-]d.dddddde[+-]dd",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats e cuts excessive digits and keeps only 6 ones",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats e displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats e displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats e rounds the last significant digit to the closest one",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats f converts floating point argument as [-]ddd.dddddd",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats f cuts excessive digits and keeps only 6 ones",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats f displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats f displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats f rounds the last significant digit to the closest one",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g displays Float::INFINITY as Inf",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g displays Float::NAN as NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g otherwise converts a floating point number in dd.dddd form",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g otherwise cuts excessive digits in fractional part and keeps only 4 ones",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g otherwise cuts fraction part to have only 6 digits at all",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g otherwise rounds the last significant digit to the closest one in fractional part",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g the exponent is greater than or equal to the precision (6 by default) converts a floating point number using exponential form",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats g the exponent is less than -4 converts a floating point number using exponential form",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% float formats raises TypeError exception if cannot convert to Float",
@@ -39568,19 +39646,19 @@
       "tag": "spec-runner-tagger:String#% formats %% into %",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% formats expressions mid string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% formats multiple expressions",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% formats negative values with a leading sign using %u",
@@ -39592,97 +39670,97 @@
       "tag": "spec-runner-tagger:String#% formats single % character before a NUL as literal %",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% formats single % character before a newline as literal %",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% formats zero without prefix using %#X",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% formats zero without prefix using %#x",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% ignores negative precision",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% ignores unused arguments when $DEBUG is false",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats B collapse negative number representation if it equals 1",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats B converts argument as a binary number",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats B displays negative number as a two's complement prefixed with '..1'",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats X collapse negative number representation if it equals F",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats X converts argument as a hexadecimal number with uppercase letters",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats X displays negative number as a two's complement prefixed with '..f'",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats b collapse negative number representation if it equals 1",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats b converts argument as a binary number",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats b displays negative number as a two's complement prefixed with '..1'",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats converts String argument with Kernel#Integer",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats converts argument into Integer with to_i if to_int isn't available",
@@ -39706,7 +39784,7 @@
       "tag": "spec-runner-tagger:String#% integer formats d works well with large numbers",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats i converts argument as a decimal number",
@@ -39718,25 +39796,25 @@
       "tag": "spec-runner-tagger:String#% integer formats i works well with large numbers",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats o collapse negative number representation if it equals 7",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats o converts argument as an octal number",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats o displays negative number as a two's complement prefixed with '..7'",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats raises TypeError exception if cannot convert to Integer",
@@ -39754,25 +39832,25 @@
       "tag": "spec-runner-tagger:String#% integer formats u works well with large numbers",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats x collapse negative number representation if it equals f",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats x converts argument as a hexadecimal number",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats x displays negative number as a two's complement prefixed with '..f'",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% other formats % alone raises an ArgumentError",
@@ -39784,19 +39862,19 @@
       "tag": "spec-runner-tagger:String#% other formats % is escaped by %",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% other formats c displays character if argument is a numeric code of character",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% other formats c displays character if argument is a single character string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% other formats c raises ArgumentError if argument is a string of several characters",
@@ -39820,13 +39898,13 @@
       "tag": "spec-runner-tagger:String#% other formats p displays argument.inspect value",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% other formats s converts argument to string with to_s",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% other formats s does not try to convert with to_str",
@@ -39838,7 +39916,7 @@
       "tag": "spec-runner-tagger:String#% other formats s substitute argument passes as a string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% output's encoding is the same as the format string if passed value is encoding-compatible",
@@ -39862,31 +39940,31 @@
       "tag": "spec-runner-tagger:String#% pads with spaces for %E with Inf, -Inf, and NaN",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% precision float types controls the number of decimal places displayed in fraction part",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% precision float types does not affect G format",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% precision integer types controls the number of decimal places displayed",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% precision string formats determines the maximum number of characters to be copied from the string",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% raises Encoding::CompatibilityError if both encodings are ASCII compatible and there ano not ASCII characters",
@@ -39952,7 +40030,7 @@
       "tag": "spec-runner-tagger:String#% raises an ArgumentError when there are less arguments than format specifiers",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% raises an error if NULL or \\n appear anywhere else in the format string",
@@ -39982,7 +40060,7 @@
       "tag": "spec-runner-tagger:String#% reference by name %<name>s style allows to place name in any position",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% reference by name %<name>s style cannot be mixed with unnamed style",
@@ -39994,13 +40072,13 @@
       "tag": "spec-runner-tagger:String#% reference by name %<name>s style supports flags, width, precision and type",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% reference by name %<name>s style uses value passed in a hash argument",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% reference by name %{name} style cannot be mixed with unnamed style",
@@ -40012,13 +40090,13 @@
       "tag": "spec-runner-tagger:String#% reference by name %{name} style converts value to String with to_s",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% reference by name %{name} style does not support type style",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% reference by name %{name} style raises KeyError when there is no matching key",
@@ -40030,31 +40108,31 @@
       "tag": "spec-runner-tagger:String#% reference by name %{name} style supports flags, width and precision",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% reference by name %{name} style uses value passed in a hash argument",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% replaces trailing absolute argument specifier without type with percent sign",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% respects a space padding request not as part of the width",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% respects positional arguments and precision tokens given for one format specifier",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% returns a String in the argument's encoding if format encoding is more restrictive",
@@ -40096,43 +40174,43 @@
       "tag": "spec-runner-tagger:String#% supports float formats using %E",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports float formats using %E, but Inf, -Inf, and NaN are not floats",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports float formats using %G",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports float formats using %e",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports float formats using %e, but Inf, -Inf, and NaN are not floats",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports float formats using %f",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports float formats using %g",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports hex formats using %X for negative numbers",
@@ -40162,19 +40240,19 @@
       "tag": "spec-runner-tagger:String#% supports inspect formats using %p",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports integer formats using %d",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports integer formats using %i",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports negative bignums with %u or %d",
@@ -40222,19 +40300,19 @@
       "tag": "spec-runner-tagger:String#% supports single character strings as argument for %c",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports string formats using %s",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% supports unsigned formats using %u",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% taints result for %p when argument.inspect is tainted",
@@ -40300,13 +40378,13 @@
       "tag": "spec-runner-tagger:String#% when format string contains %<> formats uses the named argument for the format's value",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% when format string contains %{} sections replaces %{} sections with values from passed-in hash",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% when format string contains %{} sections should raise ArgumentError if no hash given",
@@ -40336,13 +40414,13 @@
       "tag": "spec-runner-tagger:String#% width is ignored if argument's actual length is greater",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% width specifies the minimum number of characters that will be written to the result",
       "group": "String",
       "spec": "String#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#% wraps the object in an Array if #to_ary returns nil",
@@ -40390,19 +40468,19 @@
       "tag": "spec-runner-tagger:String#* returns subclass instances",
       "group": "String",
       "spec": "String#*",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#* tries to convert the given argument to an integer using to_int",
       "group": "String",
       "spec": "String#*",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#+ converts any non-String argument with #to_str",
       "group": "String",
       "spec": "String#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#+ doesn't return subclass instances",
@@ -40564,19 +40642,19 @@
       "tag": "spec-runner-tagger:String#<< converts the given argument to a String using to_str",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#<< raises a TypeError if the given argument can't be converted to a String",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< returns a String when given a subclass instance",
@@ -40690,7 +40768,7 @@
       "tag": "spec-runner-tagger:String#<< with Integer doesn't call to_int on its argument",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< with Integer raises RangeError if the argument is an invalid codepoint for self's encoding",
@@ -40702,13 +40780,13 @@
       "tag": "spec-runner-tagger:String#<< with Integer raises RangeError if the argument is negative",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#<< with Integer raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#<< with Integer returns a BINARY string if self is US-ASCII and the argument is between 128-255 (inclusive)",
@@ -40876,7 +40954,7 @@
       "tag": "spec-runner-tagger:String#== returns obj == self if obj responds to to_str",
       "group": "String",
       "spec": "String#==",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#== returns true if self <=> string returns 0",
@@ -40930,7 +41008,7 @@
       "tag": "spec-runner-tagger:String#=== returns obj == self if obj responds to to_str",
       "group": "String",
       "spec": "String#===",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#=== returns true if self <=> string returns 0",
@@ -41020,7 +41098,7 @@
       "tag": "spec-runner-tagger:String#[] with Range handles repeated application",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Range returns an empty string if range.begin is inside self and > real end",
@@ -41032,13 +41110,13 @@
       "tag": "spec-runner-tagger:String#[] with Range returns nil if the beginning of the range falls outside of self",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Range returns subclass instances",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Range returns the substring given by the offsets of the range",
@@ -41074,7 +41152,7 @@
       "tag": "spec-runner-tagger:String#[] with Regexp returns subclass instances",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp returns the matching portion of self",
@@ -41122,7 +41200,7 @@
       "tag": "spec-runner-tagger:String#[] with Regexp, group returns subclass instances",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp, group returns the capture for the given name",
@@ -41194,7 +41272,7 @@
       "tag": "spec-runner-tagger:String#[] with Regexp, index returns subclass instances",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp, index returns the capture for the given index",
@@ -41224,7 +41302,7 @@
       "tag": "spec-runner-tagger:String#[] with String returns a subclass instance when given a subclass instance",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with String returns nil if there is no match",
@@ -41308,7 +41386,7 @@
       "tag": "spec-runner-tagger:String#[] with index, length returns subclass instances",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with index, length returns the substring starting at the given index with the given length",
@@ -41320,7 +41398,7 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index allows assignment to the zero'th element of an empty String",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index calls #to_int to convert the index",
@@ -41350,13 +41428,13 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises IndexError if the string index doesn't match a position in the string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises a TypeError if #to_int does not return an Fixnum",
@@ -41368,13 +41446,13 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises a TypeError if other_str can't be converted to a String",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises a TypeError if passed a Fixnum replacement",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises an Encoding::CompatibilityError if the replacement encoding is incompatible",
@@ -41392,37 +41470,37 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises an IndexError if the index is greater than character size",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index raises an IndexError without changing self if idx is outside of self",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index replaces a character with a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index replaces a multibyte character with a character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index replaces a multibyte character with a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index replaces the char at idx with other_str",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index taints self if other_str is tainted",
@@ -41434,7 +41512,7 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count appends other_str to the end of the string if idx == the length of the string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count calls #to_int to convert the index and count objects",
@@ -41452,25 +41530,25 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count counts negative idx values from end of the string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count deletes a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count deletes characters if other_str is an empty string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count deletes characters up to the maximum length of the existing string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count encodes the String in an encoding compatible with the replacement",
@@ -41482,13 +41560,13 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count inserts a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count overwrites and deletes characters if count is more than the length of other_str",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count raises a TypeError if #to_int for count does not return an Integer",
@@ -41506,7 +41584,7 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count raises a TypeError if other_str is a type other than String",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count raises a TypeError of #to_str does not return a String",
@@ -41524,43 +41602,43 @@
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count raises an IndexError if count < 0",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count raises an IndexError if the character index is out of range of a multibyte String",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count raises an IndexError if |idx| is greater than the length of the string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count replaces characters with a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count replaces multibyte characters with characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count replaces multibyte characters with multibyte characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count starts at idx and overwrites count characters before inserting the rest of other_str",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with Fixnum index, count taints self if other_str is tainted",
@@ -41584,49 +41662,49 @@
       "tag": "spec-runner-tagger:String#[]= with String index raises an IndexError if the search String is not found",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with String index replaces characters with a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with String index replaces characters with no characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with String index replaces fewer characters with more characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with String index replaces more characters with fewer characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with String index replaces multibyte characters with characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with String index replaces multibyte characters with multibyte characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index deletes a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index encodes the String in an encoding compatible with the replacement",
@@ -41638,7 +41716,7 @@
       "tag": "spec-runner-tagger:String#[]= with a Range index inserts a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index raises a RangeError if negative Range begin is out of range",
@@ -41662,85 +41740,85 @@
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces a partial string",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces characters with a multibyte character",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces multibyte characters by negative indexes",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces multibyte characters with characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces multibyte characters with multibyte characters",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces the contents with a longer String",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index replaces the contents with a shorter String",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index treats a negative out-of-range Range end with a negative Range begin as a zero count",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index treats a negative out-of-range Range end with a positive Range begin as a zero count",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index uses the Range end as an index rather than a count",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index with an empty replacement does not replace a character with a zero exclude-end range",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index with an empty replacement does not replace a character with a zero-index, zero exclude-end range",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index with an empty replacement replaces a character with a zero non-exclude-end range",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Range index with an empty replacement replaces a character with zero-index, zero non-exclude-end range",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Regexp index calls #to_str to convert the replacement",
@@ -41794,7 +41872,7 @@
       "tag": "spec-runner-tagger:String#[]= with a Regexp index replaces the matched text with the rhs",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Regexp index with 3 arguments allows the specified capture to be negative and count from the end",
@@ -41812,25 +41890,25 @@
       "tag": "spec-runner-tagger:String#[]= with a Regexp index with 3 arguments checks the match index before calling #to_str to convert the replacement",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Regexp index with 3 arguments raises IndexError if the specified capture isn't available",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Regexp index with 3 arguments raises a TypeError if #to_int does not return a Fixnum",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Regexp index with 3 arguments uses the 2nd of 3 arguments as which capture should be replaced",
       "group": "String",
       "spec": "String#[]=",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[]= with a Regexp index with 3 arguments when the optional capture does not match raises an IndexError before setting the replacement",
@@ -41860,7 +41938,7 @@
       "tag": "spec-runner-tagger:String#ascii_only? returns false when concatenating an ASCII and non-ASCII String",
       "group": "String",
       "spec": "String#ascii_only?",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#ascii_only? returns false when interpolating non ascii strings",
@@ -42022,7 +42100,7 @@
       "tag": "spec-runner-tagger:String#byteslice calls to_int on the given index",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice needs to reviewed for spec completeness",
@@ -42046,19 +42124,19 @@
       "tag": "spec-runner-tagger:String#byteslice raises a TypeError if the given index can't be converted to an Integer",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice raises a TypeError if the given index is nil",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice returns nil if index is outside of self",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice returns the character code of the character at the given index",
@@ -42088,7 +42166,7 @@
       "tag": "spec-runner-tagger:String#byteslice with Range returns an empty string if range.begin is inside self and > real end",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with Range returns nil if the beginning of the range falls outside of self",
@@ -42112,7 +42190,7 @@
       "tag": "spec-runner-tagger:String#byteslice with Range works with Range subclasses",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length always taints resulting strings when self is tainted",
@@ -42124,13 +42202,13 @@
       "tag": "spec-runner-tagger:String#byteslice with index, length calls to_int on the given index and the given length",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length handles repeated application",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length raises a RangeError if the index or length is too big",
@@ -42142,13 +42220,13 @@
       "tag": "spec-runner-tagger:String#byteslice with index, length raises a TypeError when idx or length can't be converted to an integer",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length raises a TypeError when the given index or the given length is nil",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length returns a string with the same encoding",
@@ -42160,13 +42238,13 @@
       "tag": "spec-runner-tagger:String#byteslice with index, length returns nil if the length is negative",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length returns nil if the offset falls outside of self",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length returns subclass instances",
@@ -42178,7 +42256,7 @@
       "tag": "spec-runner-tagger:String#byteslice with index, length returns the substring starting at the given index with the given length",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#capitalize ASCII-only case mapping does not capitalize non-ASCII characters",
@@ -42250,7 +42328,7 @@
       "tag": "spec-runner-tagger:String#capitalize full Unicode case mapping works for all of Unicode with no option",
       "group": "String",
       "spec": "String#capitalize",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#capitalize returns a copy of self with the first character converted to uppercase and the remainder to lowercase",
@@ -42262,7 +42340,7 @@
       "tag": "spec-runner-tagger:String#capitalize returns subclass instances when called on a subclass",
       "group": "String",
       "spec": "String#capitalize",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#capitalize taints resulting string when self is tainted",
@@ -42292,7 +42370,7 @@
       "tag": "spec-runner-tagger:String#capitalize! full Unicode case mapping modifies self in place for all of Unicode with no option",
       "group": "String",
       "spec": "String#capitalize!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#capitalize! full Unicode case mapping only capitalizes the first resulting character when upcasing a character produces a multi-character sequence",
@@ -42352,13 +42430,13 @@
       "tag": "spec-runner-tagger:String#capitalize! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#capitalize!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#capitalize! returns nil when no changes are made",
       "group": "String",
       "spec": "String#capitalize!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#casecmp independent of case for non-ASCII characters does not case fold",
@@ -42454,7 +42532,7 @@
       "tag": "spec-runner-tagger:String#casecmp independent of case tries to convert other to string using to_str",
       "group": "String",
       "spec": "String#casecmp",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#casecmp independent of case when comparing a subclass instance returns -1 when less than other",
@@ -42526,7 +42604,7 @@
       "tag": "spec-runner-tagger:String#casecmp? independent of case returns true when equal to other",
       "group": "String",
       "spec": "String#casecmp?",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#casecmp? independent of case tries to convert other to string using to_str",
@@ -42544,19 +42622,19 @@
       "tag": "spec-runner-tagger:String#casecmp? independent of case when comparing a subclass instance returns true when equal to other",
       "group": "String",
       "spec": "String#casecmp?",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#center with length, padding calls #to_int to convert length to an integer",
       "group": "String",
       "spec": "String#center",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#center with length, padding calls #to_str to convert padstr to a String",
       "group": "String",
       "spec": "String#center",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#center with length, padding pads with whitespace if no padstr is given",
@@ -42568,19 +42646,19 @@
       "tag": "spec-runner-tagger:String#center with length, padding raises a TypeError when length can't be converted to an integer",
       "group": "String",
       "spec": "String#center",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#center with length, padding raises a TypeError when padstr can't be converted to a string",
       "group": "String",
       "spec": "String#center",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#center with length, padding raises an ArgumentError if padstr is empty",
       "group": "String",
       "spec": "String#center",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#center with length, padding returns a new string of specified length with self centered and padded with padstr",
@@ -42628,7 +42706,7 @@
       "tag": "spec-runner-tagger:String#center with length, padding with width, pattern returns a String in the compatible encoding",
       "group": "String",
       "spec": "String#center",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chars is unicode aware",
@@ -42640,7 +42718,7 @@
       "tag": "spec-runner-tagger:String#chars passes each char in self to the given block",
       "group": "String",
       "spec": "String#chars",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chars returns a different character if the String is transcoded",
@@ -42664,7 +42742,7 @@
       "tag": "spec-runner-tagger:String#chars returns self",
       "group": "String",
       "spec": "String#chars",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chars taints resulting strings when self is tainted",
@@ -42682,7 +42760,7 @@
       "tag": "spec-runner-tagger:String#chars works if the String's contents is invalid for its encoding",
       "group": "String",
       "spec": "String#chars",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chars works with multibyte characters",
@@ -42760,13 +42838,13 @@
       "tag": "spec-runner-tagger:String#chomp when passed '\\n' removes one trailing carriage return",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed '\\n' removes one trailing carriage return, newline pair",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed '\\n' removes one trailing newline",
@@ -42826,13 +42904,13 @@
       "tag": "spec-runner-tagger:String#chomp when passed an Object calls #to_str to convert to a String",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed an Object raises a TypeError if #to_str does not return a String",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed nil does not modify the String",
@@ -42904,7 +42982,7 @@
       "tag": "spec-runner-tagger:String#chomp when passed no argument returns subclass instances when called on a subclass",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed no argument taints the result if self is tainted",
@@ -42916,7 +42994,7 @@
       "tag": "spec-runner-tagger:String#chomp! raises a FrozenError on a frozen instance when it is modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! raises a FrozenError on a frozen instance when it would not be modified",
@@ -42946,13 +43024,13 @@
       "tag": "spec-runner-tagger:String#chomp! returns nil when the String is not modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '' does not remove a final carriage return",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '' removes a final carriage return, newline",
@@ -42982,7 +43060,7 @@
       "tag": "spec-runner-tagger:String#chomp! when passed '' returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '' taints the result if self is tainted",
@@ -42994,13 +43072,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' removes one trailing carriage return",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' removes one trailing carriage return, newline pair",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' removes one trailing newline",
@@ -43012,7 +43090,7 @@
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' taints the result if self is tainted",
@@ -43036,13 +43114,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed a String returns nil if the argument does not match the trailing characters",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed a String returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed a String taints the result if self is tainted",
@@ -43054,13 +43132,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed an Object calls #to_str to convert to a String",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed an Object raises a TypeError if #to_str does not return a String",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed nil returns nil",
@@ -43108,13 +43186,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed no argument returns nil if self is not modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed no argument returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed no argument returns subclass instances when called on a subclass",
@@ -43198,7 +43276,7 @@
       "tag": "spec-runner-tagger:String#chop returns subclass instances when called on a subclass",
       "group": "String",
       "spec": "String#chop",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chop taints result when self is tainted",
@@ -43222,13 +43300,13 @@
       "tag": "spec-runner-tagger:String#chop! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#chop!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chop! raises a FrozenError on a frozen instance that would not be modified",
       "group": "String",
       "spec": "String#chop!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#chop! removes a multi-byte character",
@@ -43318,7 +43396,7 @@
       "tag": "spec-runner-tagger:String#chr returns an empty String if self is an empty String",
       "group": "String",
       "spec": "String#chr",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chr returns the character at the start of the String",
@@ -43348,13 +43426,13 @@
       "tag": "spec-runner-tagger:String#clear raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#clear",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#clear returns self after emptying it",
       "group": "String",
       "spec": "String#clear",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#clear sets self equal to the empty String",
@@ -43420,19 +43498,19 @@
       "tag": "spec-runner-tagger:String#codepoints raises an ArgumentError if self's encoding is invalid and a block is given",
       "group": "String",
       "spec": "String#codepoints",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#codepoints raises an ArgumentError when no block is given if self has an invalid encoding",
       "group": "String",
       "spec": "String#codepoints",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#codepoints raises an ArgumentError when self has an invalid encoding and a method is called on the returned Enumerator",
       "group": "String",
       "spec": "String#codepoints",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#codepoints returns an Array when no block is given",
@@ -43486,7 +43564,7 @@
       "tag": "spec-runner-tagger:String#concat concatenates the given argument to self and returns self",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat concatenates the initial value when given arguments contain 2 self",
@@ -43504,7 +43582,7 @@
       "tag": "spec-runner-tagger:String#concat raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat raises a TypeError if the given argument can't be converted to a String",
@@ -43516,13 +43594,13 @@
       "tag": "spec-runner-tagger:String#concat returns a String when given a subclass instance",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat returns an instance of same class when called on a subclass",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat returns self when given no arguments",
@@ -43558,13 +43636,13 @@
       "tag": "spec-runner-tagger:String#concat when self and the argument are in different ASCII-compatible encodings uses self's encoding if both are ASCII-only",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat when self and the argument are in different ASCII-compatible encodings uses self's encoding if the argument is ASCII-only",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat when self and the argument are in different ASCII-compatible encodings uses the argument's encoding if self is ASCII-only",
@@ -43600,7 +43678,7 @@
       "tag": "spec-runner-tagger:String#concat when self is in an ASCII-incompatible encoding incompatible with the argument's encoding uses the argument's encoding if self is empty",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding raises Encoding::CompatibilityError if neither are empty",
@@ -43612,13 +43690,13 @@
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding uses self's encoding if both are empty",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding uses self's encoding if the argument is empty",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding uses the argument's encoding if self is empty",
@@ -43648,13 +43726,13 @@
       "tag": "spec-runner-tagger:String#concat with Integer raises RangeError if the argument is negative",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat with Integer raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#concat with Integer returns a BINARY string if self is US-ASCII and the argument is between 128-255 (inclusive)",
@@ -43696,13 +43774,13 @@
       "tag": "spec-runner-tagger:String#count raises an ArgumentError when given no arguments",
       "group": "String",
       "spec": "String#count",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#count raises if the given sequences are invalid",
       "group": "String",
       "spec": "String#count",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#count returns the number of occurrences of a multi-byte character",
@@ -43864,7 +43942,7 @@
       "tag": "spec-runner-tagger:String#delete_prefix returns a subclass instance when called on a subclass instance",
       "group": "String",
       "spec": "String#delete_prefix",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#delete_prefix taints resulting strings when other is tainted",
@@ -43894,7 +43972,7 @@
       "tag": "spec-runner-tagger:String#delete_prefix! removes the found prefix",
       "group": "String",
       "spec": "String#delete_prefix!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_prefix! returns nil if no change is made",
@@ -43918,7 +43996,7 @@
       "tag": "spec-runner-tagger:String#delete_suffix returns a copy of the string, when the suffix isn't found",
       "group": "String",
       "spec": "String#delete_suffix",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix returns a copy of the string, with the given suffix removed",
@@ -43930,7 +44008,7 @@
       "tag": "spec-runner-tagger:String#delete_suffix returns a subclass instance when called on a subclass instance",
       "group": "String",
       "spec": "String#delete_suffix",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix taints resulting strings when other is tainted",
@@ -44026,13 +44104,13 @@
       "tag": "spec-runner-tagger:String#downcase full Unicode case mapping updates string metadata",
       "group": "String",
       "spec": "String#downcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#downcase full Unicode case mapping works for all of Unicode with no option",
       "group": "String",
       "spec": "String#downcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#downcase returns a copy of self with all uppercase letters downcased",
@@ -44044,7 +44122,7 @@
       "tag": "spec-runner-tagger:String#downcase returns a subclass instance for subclasses",
       "group": "String",
       "spec": "String#downcase",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#downcase taints result when self is tainted",
@@ -44110,13 +44188,13 @@
       "tag": "spec-runner-tagger:String#downcase! full Unicode case mapping modifies self in place for all of Unicode with no option",
       "group": "String",
       "spec": "String#downcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#downcase! full Unicode case mapping updates string metadata",
       "group": "String",
       "spec": "String#downcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#downcase! modifies self in place",
@@ -44128,13 +44206,13 @@
       "tag": "spec-runner-tagger:String#downcase! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#downcase!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#downcase! returns nil if no modifications were made",
       "group": "String",
       "spec": "String#downcase!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#downcase! sets the result String encoding to the source String encoding",
@@ -44320,13 +44398,13 @@
       "tag": "spec-runner-tagger:String#each_char is unicode aware",
       "group": "String",
       "spec": "String#each_char",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_char passes each char in self to the given block",
       "group": "String",
       "spec": "String#each_char",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_char returns a different character if the String is transcoded",
@@ -44344,7 +44422,7 @@
       "tag": "spec-runner-tagger:String#each_char returns self",
       "group": "String",
       "spec": "String#each_char",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_char taints resulting strings when self is tainted",
@@ -44368,43 +44446,43 @@
       "tag": "spec-runner-tagger:String#each_char when no block is given returns an enumerator",
       "group": "String",
       "spec": "String#each_char",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_char works if the String's contents is invalid for its encoding",
       "group": "String",
       "spec": "String#each_char",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_char works with multibyte characters",
       "group": "String",
       "spec": "String#each_char",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint is synonymous with #bytes for Strings which are single-byte optimizable",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint raises an ArgumentError if self's encoding is invalid and a block is given",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint raises an ArgumentError when self has an invalid encoding and a method is called on the returned Enumerator",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint returns self",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint round-trips to the original String using Integer#chr",
@@ -44434,37 +44512,37 @@
       "tag": "spec-runner-tagger:String#each_codepoint when no block is given returns an Enumerator even when self has an invalid encoding",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint works for multibyte characters",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint yields codepoints as Fixnums",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint yields each codepoint to the block if one is given",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint yields one codepoint for each character",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_codepoint yields the codepoints corresponding to the character's position in the String's encoding",
       "group": "String",
       "spec": "String#each_codepoint",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#each_grapheme_cluster is unicode aware",
@@ -45580,7 +45658,7 @@
       "tag": "spec-runner-tagger:String#getbyte raises a TypeError unless its argument can be coerced into an Integer",
       "group": "String",
       "spec": "String#getbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#getbyte raises an ArgumentError unless given one argument",
@@ -46144,7 +46222,7 @@
       "tag": "spec-runner-tagger:String#gsub! with pattern and block returns nil if no modifications were made",
       "group": "String",
       "spec": "String#gsub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#gsub! with pattern and block taints self if block's result is tainted",
@@ -46186,7 +46264,7 @@
       "tag": "spec-runner-tagger:String#gsub! with pattern and replacement returns nil if no modifications were made",
       "group": "String",
       "spec": "String#gsub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#gsub! with pattern and replacement taints self if replacement is tainted",
@@ -46288,19 +46366,19 @@
       "tag": "spec-runner-tagger:String#include? with String tries to convert other to string using to_str",
       "group": "String",
       "spec": "String#include?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#index calls #to_int to convert the second argument",
       "group": "String",
       "spec": "String#index",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#index calls #to_str to convert the first argument",
       "group": "String",
       "spec": "String#index",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#index raises a TypeError if passed a Fixnum",
@@ -46444,13 +46522,13 @@
       "tag": "spec-runner-tagger:String#index with String returns the character index after offset",
       "group": "String",
       "spec": "String#index",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#index with String returns the character index of a multibyte character",
       "group": "String",
       "spec": "String#index",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#index with String returns the index of the first occurrence of the given substring",
@@ -46498,13 +46576,13 @@
       "tag": "spec-runner-tagger:String#initialize with an argument raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#initialize",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#initialize with an argument raises a FrozenError on a frozen instance when self-replacing",
       "group": "String",
       "spec": "String#initialize",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#initialize with an argument raises a TypeError if other can't be converted to string",
@@ -46540,7 +46618,7 @@
       "tag": "spec-runner-tagger:String#initialize with an argument tries to convert other to string using to_str",
       "group": "String",
       "spec": "String#initialize",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#initialize with an argument untrusts self if other is untrusted",
@@ -46558,7 +46636,7 @@
       "tag": "spec-runner-tagger:String#initialize with no arguments does not raise an exception when frozen",
       "group": "String",
       "spec": "String#initialize",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other converts index to an integer using to_int",
@@ -46576,37 +46654,37 @@
       "tag": "spec-runner-tagger:String#insert with index, other inserts a character into a multibyte encoded string",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other inserts after the given character on an negative count",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other inserts other before the character at the given index",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other modifies self in place",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other raises a TypeError if other can't be converted to string",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other raises an Encoding::CompatibilityError if the encodings are incompatible",
@@ -46618,13 +46696,13 @@
       "tag": "spec-runner-tagger:String#insert with index, other raises an IndexError if the index is beyond string",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other returns a String in the compatible encoding",
       "group": "String",
       "spec": "String#insert",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#insert with index, other taints self if string to insert is tainted",
@@ -46654,7 +46732,7 @@
       "tag": "spec-runner-tagger:String#inspect returns a string with \\#<char> when # is followed by $, @, {",
       "group": "String",
       "spec": "String#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#inspect returns a string with a NUL character replaced by \\x notation",
@@ -46672,7 +46750,7 @@
       "tag": "spec-runner-tagger:String#inspect returns a string with non-printing characters replaced by \\x notation",
       "group": "String",
       "spec": "String#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#inspect returns a string with numeric characters unescaped",
@@ -47008,13 +47086,13 @@
       "tag": "spec-runner-tagger:String#lstrip does not strip leading \\0",
       "group": "String",
       "spec": "String#lstrip",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#lstrip returns a copy of self with leading whitespace removed",
       "group": "String",
       "spec": "String#lstrip",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#lstrip taints the result when self is tainted",
@@ -47032,7 +47110,7 @@
       "tag": "spec-runner-tagger:String#lstrip! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#lstrip!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#lstrip! raises a FrozenError on a frozen instance that would not be modified",
@@ -47410,19 +47488,19 @@
       "tag": "spec-runner-tagger:String#prepend prepends the given argument to self and returns self",
       "group": "String",
       "spec": "String#prepend",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#prepend prepends the initial value when given arguments contain 2 self",
       "group": "String",
       "spec": "String#prepend",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#prepend raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#prepend",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#prepend raises a TypeError if the given argument can't be converted to a String",
@@ -47434,7 +47512,7 @@
       "tag": "spec-runner-tagger:String#prepend returns self when given no arguments",
       "group": "String",
       "spec": "String#prepend",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#prepend taints self if other is tainted",
@@ -47446,13 +47524,13 @@
       "tag": "spec-runner-tagger:String#prepend takes multiple arguments",
       "group": "String",
       "spec": "String#prepend",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#prepend works when given a subclass instance",
       "group": "String",
       "spec": "String#prepend",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#replace carries over the encoding invalidity",
@@ -47476,13 +47554,13 @@
       "tag": "spec-runner-tagger:String#replace raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#replace",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#replace raises a FrozenError on a frozen instance when self-replacing",
       "group": "String",
       "spec": "String#replace",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#replace raises a TypeError if other can't be converted to string",
@@ -47518,7 +47596,7 @@
       "tag": "spec-runner-tagger:String#replace tries to convert other to string using to_str",
       "group": "String",
       "spec": "String#replace",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#replace untrusts self if other is untrusted",
@@ -47536,7 +47614,7 @@
       "tag": "spec-runner-tagger:String#reverse reverses a string with multi byte characters",
       "group": "String",
       "spec": "String#reverse",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#reverse taints the result if self is tainted",
@@ -47548,7 +47626,7 @@
       "tag": "spec-runner-tagger:String#reverse! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#reverse!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#reverse! raises a FrozenError on a frozen instance that would not be modified",
@@ -47560,7 +47638,7 @@
       "tag": "spec-runner-tagger:String#reverse! reverses a string with multi byte characters",
       "group": "String",
       "spec": "String#reverse!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#reverse! reverses self in place and always returns self",
@@ -47578,7 +47656,7 @@
       "tag": "spec-runner-tagger:String#rindex with Regexp raises a TypeError when given offset is nil",
       "group": "String",
       "spec": "String#rindex",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#rindex with Regexp raises an Encoding::CompatibilityError if the encodings are incompatible",
@@ -47674,7 +47752,7 @@
       "tag": "spec-runner-tagger:String#rindex with String returns nil if the substring isn't found",
       "group": "String",
       "spec": "String#rindex",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#rindex with String returns the index of the last occurrence of the given substring",
@@ -47692,7 +47770,7 @@
       "tag": "spec-runner-tagger:String#rindex with String starts the search at the given offset",
       "group": "String",
       "spec": "String#rindex",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#rindex with String tries to convert start_offset to an integer via to_int",
@@ -47716,7 +47794,7 @@
       "tag": "spec-runner-tagger:String#rindex with object tries to convert obj to a string via to_str",
       "group": "String",
       "spec": "String#rindex",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rjust with length, padding pads with whitespace if no padstr is given",
@@ -47842,13 +47920,13 @@
       "tag": "spec-runner-tagger:String#rstrip returns a copy of self with all trailing whitespace and NULL bytes removed",
       "group": "String",
       "spec": "String#rstrip",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip returns a copy of self with trailing whitespace removed",
       "group": "String",
       "spec": "String#rstrip",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip taints the result when self is tainted",
@@ -47860,19 +47938,19 @@
       "tag": "spec-runner-tagger:String#rstrip! modifies self in place and returns self",
       "group": "String",
       "spec": "String#rstrip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip! modifies self removing trailing NULL bytes and whitespace",
       "group": "String",
       "spec": "String#rstrip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#rstrip!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip! raises a FrozenError on a frozen instance that would not be modified",
@@ -48130,13 +48208,13 @@
       "tag": "spec-runner-tagger:String#setbyte calls to_int to convert the value",
       "group": "String",
       "spec": "String#setbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#setbyte can invalidate a String's encoding",
       "group": "String",
       "spec": "String#setbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#setbyte changes the byte at the given index to the new byte",
@@ -48160,7 +48238,7 @@
       "tag": "spec-runner-tagger:String#setbyte raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#setbyte",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#setbyte raises a TypeError unless the second argument is an Integer",
@@ -48172,7 +48250,7 @@
       "tag": "spec-runner-tagger:String#setbyte raises an IndexError if the index is greater than the String bytesize",
       "group": "String",
       "spec": "String#setbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#setbyte raises an IndexError if the negative index is greater magnitude than the String bytesize",
@@ -48190,7 +48268,7 @@
       "tag": "spec-runner-tagger:String#setbyte returns an Integer",
       "group": "String",
       "spec": "String#setbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#setbyte sets a byte at an index greater than String size",
@@ -48268,7 +48346,7 @@
       "tag": "spec-runner-tagger:String#slice with Range handles repeated application",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Range returns an empty string if range.begin is inside self and > real end",
@@ -48280,13 +48358,13 @@
       "tag": "spec-runner-tagger:String#slice with Range returns nil if the beginning of the range falls outside of self",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Range returns subclass instances",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Range returns the substring given by the offsets of the range",
@@ -48322,7 +48400,7 @@
       "tag": "spec-runner-tagger:String#slice with Regexp returns subclass instances",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp returns the matching portion of self",
@@ -48370,7 +48448,7 @@
       "tag": "spec-runner-tagger:String#slice with Regexp, group returns subclass instances",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp, group returns the capture for the given name",
@@ -48442,7 +48520,7 @@
       "tag": "spec-runner-tagger:String#slice with Regexp, index returns subclass instances",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp, index returns the capture for the given index",
@@ -48472,7 +48550,7 @@
       "tag": "spec-runner-tagger:String#slice with String returns a subclass instance when given a subclass instance",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with String returns nil if there is no match",
@@ -48556,7 +48634,7 @@
       "tag": "spec-runner-tagger:String#slice with index, length returns subclass instances",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with index, length returns the substring starting at the given index with the given length",
@@ -48880,13 +48958,13 @@
       "tag": "spec-runner-tagger:String#split with Regexp divides self on regexp matches",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp does not call constructor on created subclass instances",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp does not include non-matching captures in the result array",
@@ -48904,7 +48982,7 @@
       "tag": "spec-runner-tagger:String#split with Regexp doesn't suppress or limit fields when limit is negative",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp doesn't taints the resulting strings if the Regexp is tainted",
@@ -48916,7 +48994,7 @@
       "tag": "spec-runner-tagger:String#split with Regexp for a String subclass yields instances of the same subclass",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp includes all captures in the result array",
@@ -48928,13 +49006,13 @@
       "tag": "spec-runner-tagger:String#split with Regexp respects the encoding of the regexp when splitting between characters",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp respects unicode when splitting between characters",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp retains the encoding of the source string",
@@ -48958,19 +49036,19 @@
       "tag": "spec-runner-tagger:String#split with Regexp returns an array with one entry if limit is 1: the original string",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp returns at most limit fields when limit > 1",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp returns subclass instances based on self",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with Regexp returns the original string if no matches are found",
@@ -49030,13 +49108,13 @@
       "tag": "spec-runner-tagger:String#split with String defaults to $; when string isn't given or nil",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with String does not call constructor on created subclass instances",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with String doesn't set $~",
@@ -49066,7 +49144,7 @@
       "tag": "spec-runner-tagger:String#split with String returns an array with one entry if limit is 1: the original string",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with String returns at most limit fields when limit > 1",
@@ -49078,7 +49156,7 @@
       "tag": "spec-runner-tagger:String#split with String returns subclass instances based on self",
       "group": "String",
       "spec": "String#split",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#split with String returns the original string if no matches are found",
@@ -49120,7 +49198,7 @@
       "tag": "spec-runner-tagger:String#split with String tries converting its pattern argument to a string via to_str",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with String tries converting limit to an integer via to_int",
@@ -49162,7 +49240,7 @@
       "tag": "spec-runner-tagger:String#squeeze returns new string where runs of the same character are replaced by a single character when no args are given",
       "group": "String",
       "spec": "String#squeeze",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#squeeze returns subclass instances when called on a subclass",
@@ -49192,7 +49270,7 @@
       "tag": "spec-runner-tagger:String#squeeze! modifies self in place and returns self",
       "group": "String",
       "spec": "String#squeeze!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#squeeze! raises a FrozenError when self is frozen",
@@ -49306,7 +49384,7 @@
       "tag": "spec-runner-tagger:String#strip! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#strip!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#strip! raises a FrozenError on a frozen instance that would not be modified",
@@ -49702,7 +49780,7 @@
       "tag": "spec-runner-tagger:String#sub! with pattern and block modifies self in place and returns self",
       "group": "String",
       "spec": "String#sub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#sub! with pattern and block raises a FrozenError when self is frozen",
@@ -49744,7 +49822,7 @@
       "tag": "spec-runner-tagger:String#sub! with pattern, replacement modifies self in place and returns self",
       "group": "String",
       "spec": "String#sub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#sub! with pattern, replacement raises a FrozenError when self is frozen",
@@ -50158,67 +50236,67 @@
       "tag": "spec-runner-tagger:String#to_f allows for underscores, even in the decimal side",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f allows for varying case",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f allows for varying signs",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f returns 0 for strings with any non-digit in them",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f returns 0 for strings with leading underscores",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f returns 0.0 if the conversion fails",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f takes an optional sign",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f treats leading characters of self as a floating point number",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_f treats special float value strings as characters",
       "group": "String",
       "spec": "String#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i accepts '+' at the beginning of a String",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 10 via 0d when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 10 with no base specifier when base = 0",
@@ -50230,25 +50308,25 @@
       "tag": "spec-runner-tagger:String#to_i auto-detects base 16 via 0x when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 2 via 0b when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 8 via 0o when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 8 via leading 0 when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i doesn't handle foreign base specifiers when base is > 0",
@@ -50260,7 +50338,7 @@
       "tag": "spec-runner-tagger:String#to_i ignores leading whitespaces",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i ignores subsequent invalid characters",
@@ -50272,7 +50350,7 @@
       "tag": "spec-runner-tagger:String#to_i ignores underscores in between the digits",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i interprets leading characters as a number in the given base",
@@ -50290,7 +50368,7 @@
       "tag": "spec-runner-tagger:String#to_i requires that the sign if any appears before the base specifier",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i returns 0 for strings with leading underscores",
@@ -50308,7 +50386,7 @@
       "tag": "spec-runner-tagger:String#to_i returns a Fixnum for long strings with leading spaces",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#to_i returns a Fixnum for long strings with trailing spaces",
@@ -50326,7 +50404,7 @@
       "tag": "spec-runner-tagger:String#to_i tries to convert the base to an integer using to_int",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i with bases parses a String in base 10",
@@ -50632,13 +50710,13 @@
       "tag": "spec-runner-tagger:String#to_str returns a new instance of String when called on a subclass",
       "group": "String",
       "spec": "String#to_str",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_str returns self when self.class == String",
       "group": "String",
       "spec": "String#to_str",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_str taints the result when self is tainted",
@@ -61732,13 +61810,13 @@
       "tag": "spec-runner-tagger:String#upcase full Unicode case mapping updates string metadata",
       "group": "String",
       "spec": "String#upcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#upcase full Unicode case mapping works for all of Unicode with no option",
       "group": "String",
       "spec": "String#upcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#upcase returns a copy of self with all lowercase letters upcased",
@@ -61750,7 +61828,7 @@
       "tag": "spec-runner-tagger:String#upcase returns a subclass instance for subclasses",
       "group": "String",
       "spec": "String#upcase",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#upcase taints result when self is tainted",
@@ -61774,13 +61852,13 @@
       "tag": "spec-runner-tagger:String#upcase! full Unicode case mapping modifies self in place for all of Unicode with no option",
       "group": "String",
       "spec": "String#upcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#upcase! full Unicode case mapping updates string metadata for self",
       "group": "String",
       "spec": "String#upcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#upcase! modifies self in place",
@@ -61834,13 +61912,13 @@
       "tag": "spec-runner-tagger:String#upcase! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#upcase!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#upcase! returns nil if no modifications were made",
       "group": "String",
       "spec": "String#upcase!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#upto calls the block once even when start equals stop",
@@ -61936,13 +62014,13 @@
       "tag": "spec-runner-tagger:String#valid_encoding? returns false if a valid String had an invalid character appended to it",
       "group": "String",
       "spec": "String#valid_encoding?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#valid_encoding? returns false if self contains a character invalid in the associated encoding",
       "group": "String",
       "spec": "String#valid_encoding?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#valid_encoding? returns false if self is valid in one encoding, but invalid in the one it's tagged with",
@@ -61960,7 +62038,7 @@
       "tag": "spec-runner-tagger:String#valid_encoding? returns true if an invalid string is appended another invalid one but both make a valid string",
       "group": "String",
       "spec": "String#valid_encoding?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#valid_encoding? returns true if self is valid in the current encoding and other encodings",
@@ -61984,7 +62062,7 @@
       "tag": "spec-runner-tagger:String.allocate returns a fully-formed String",
       "group": "String",
       "spec": "String.allocate",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String.allocate returns an instance of String",
@@ -63166,13 +63244,13 @@
       "tag": "spec-runner-tagger:Symbol#[] with a Range slice that is out of bounds returns nil if the first range value starts from the end and is out of bounds and the last value starts from the end and is less than the length",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Range slice that is out of bounds returns nil if the first range value starts from the end and is within bounds and the last value starts from the end and is greater than the length",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Range slice that is within bounds returns a slice if both range values begin at the start and are within bounds",
@@ -63472,7 +63550,7 @@
       "tag": "spec-runner-tagger:Symbol#capitalize capitalizes the first character if it is Unicode",
       "group": "Symbol",
       "spec": "Symbol#capitalize",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#capitalize converts subsequent uppercase ASCII characters to their lowercase equivalents",
@@ -63616,7 +63694,7 @@
       "tag": "spec-runner-tagger:Symbol#downcase uncapitalizes all Unicode characters",
       "group": "Symbol",
       "spec": "Symbol#downcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#dup returns self",
@@ -63814,13 +63892,13 @@
       "tag": "spec-runner-tagger:Symbol#slice with a Range slice that is out of bounds returns nil if the first range value starts from the end and is out of bounds and the last value starts from the end and is less than the length",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Range slice that is out of bounds returns nil if the first range value starts from the end and is within bounds and the last value starts from the end and is greater than the length",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Range slice that is within bounds returns a slice if both range values begin at the start and are within bounds",
@@ -64222,7 +64300,7 @@
       "tag": "spec-runner-tagger:Symbol#upcase capitalizes all Unicode characters",
       "group": "Symbol",
       "spec": "Symbol#upcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#upcase converts lowercase ASCII characters to their uppercase equivalents",
@@ -64777,6 +64855,48 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Time#ceil ceils to 0 decimal places with an explicit argument",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#ceil ceils to 2 decimal places with an explicit argument",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#ceil ceils to 4 decimal places with an explicit argument",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#ceil ceils to 7 decimal places with an explicit argument",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#ceil copies own timezone to the returning value",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#ceil defaults to ceiling to 0 places",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#ceil returns an instance of Time, even if #ceil is called on a subclass",
+      "group": "Time",
+      "spec": "Time#ceil",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Time#ctime returns a canonical string representation of time",
       "group": "Time",
       "spec": "Time#ctime",
@@ -64876,6 +64996,36 @@
       "tag": "spec-runner-tagger:Time#eql? returns true if self and other have the same whole number of seconds",
       "group": "Time",
       "spec": "Time#eql?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#floor copies own timezone to the returning value",
+      "group": "Time",
+      "spec": "Time#floor",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#floor defaults to flooring to 0 places",
+      "group": "Time",
+      "spec": "Time#floor",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#floor floors to 0 decimal places with an explicit argument",
+      "group": "Time",
+      "spec": "Time#floor",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#floor floors to 7 decimal places with an explicit argument",
+      "group": "Time",
+      "spec": "Time#floor",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#floor returns an instance of Time, even if #floor is called on a subclass",
+      "group": "Time",
+      "spec": "Time#floor",
       "outcome": "fail"
     },
     {
@@ -69052,13 +69202,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
@@ -69184,13 +69334,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
