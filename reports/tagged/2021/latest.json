@@ -1048,7 +1048,7 @@
       "tag": "spec-runner-tagger:ArgumentError gives its own class name as message if it has no message",
       "group": "ArgumentError",
       "spec": "ArgumentError",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:ArgumentError is a subclass of StandardError",
@@ -14470,7 +14470,7 @@
       "tag": "spec-runner-tagger:Exception.new returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception.new returns the exception when it has a custom constructor",
@@ -29008,13 +29008,13 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the method name",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String for methods defined with attr_accessor",
@@ -29056,7 +29056,7 @@
       "tag": "spec-runner-tagger:Method#unbind returns an UnboundMethod",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#define_singleton_method defines the given method as an class method with the given name in self",
@@ -29176,7 +29176,7 @@
       "tag": "spec-runner-tagger:Module#name is set when the anonymous outer module name is set",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set with a conditional assignment to a constant",
@@ -33436,7 +33436,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
