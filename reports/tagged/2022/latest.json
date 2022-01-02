@@ -28468,13 +28468,13 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -28990,7 +28990,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing 'Method'",
@@ -29008,13 +29008,13 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the method name",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String for methods defined with attr_accessor",
@@ -29110,7 +29110,7 @@
       "tag": "spec-runner-tagger:Module#name changes when the module is reachable through a constant path",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is nil for an anonymous module",
@@ -29140,7 +29140,7 @@
       "tag": "spec-runner-tagger:Module#name is not nil for a nested module created with the module keyword",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set after it is removed from a constant",
@@ -33436,7 +33436,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -33640,7 +33640,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -69340,7 +69340,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
