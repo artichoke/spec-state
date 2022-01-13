@@ -1048,7 +1048,7 @@
       "tag": "spec-runner-tagger:ArgumentError gives its own class name as message if it has no message",
       "group": "ArgumentError",
       "spec": "ArgumentError",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ArgumentError is a subclass of StandardError",
@@ -14812,7 +14812,7 @@
       "tag": "spec-runner-tagger:File#printf faulty key raises a KeyError",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf faulty key sets the Hash as the receiver of KeyError",
@@ -14878,13 +14878,13 @@
       "tag": "spec-runner-tagger:File#printf flags (digit)$ raises ArgumentError exception when absolute and relative argument numbers are mixed",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ raises exception if argument number is bigger than actual arguments list",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags (digit)$ specifies the absolute argument number for this field",
@@ -14908,7 +14908,7 @@
       "tag": "spec-runner-tagger:File#printf flags * raises ArgumentError when is mixed with width",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf flags * uses the previous argument as the field width",
@@ -15208,7 +15208,7 @@
       "tag": "spec-runner-tagger:File#printf float formats raises TypeError exception if cannot convert to Float",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats B collapse negative number representation if it equals 1",
@@ -15328,7 +15328,7 @@
       "tag": "spec-runner-tagger:File#printf integer formats raises TypeError exception if cannot convert to Integer",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats u converts argument as a decimal number",
@@ -15388,13 +15388,13 @@
       "tag": "spec-runner-tagger:File#printf other formats c raises ArgumentError if argument is a string of several characters",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c raises ArgumentError if argument is an empty string",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf other formats c supports Unicode characters",
@@ -15460,7 +15460,7 @@
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style cannot be mixed with unnamed style",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %<name>s style supports flags, width, precision and type",
@@ -15478,7 +15478,7 @@
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style cannot be mixed with unnamed style",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style converts value to String with to_s",
@@ -15496,7 +15496,7 @@
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style raises KeyError when there is no matching key",
       "group": "File",
       "spec": "File#printf",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:File#printf reference by name %{name} style supports flags, width and precision",
@@ -22282,7 +22282,7 @@
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #to_s when it is not a String",
@@ -28456,19 +28456,19 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
@@ -29020,7 +29020,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String for methods defined with attr_accessor",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind rebinding UnboundMethod to Method's obj produces exactly equivalent Methods",
@@ -33436,7 +33436,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -39244,7 +39244,7 @@
       "tag": "spec-runner-tagger:String#% faulty key raises a KeyError",
       "group": "String",
       "spec": "String#%",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#% faulty key sets the Hash as the receiver of KeyError",
@@ -69208,7 +69208,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
