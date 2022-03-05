@@ -35,6 +35,7 @@
   "scripts": {
     "fmt": "npx prettier --write \"**/*\"",
     "lint": "npx eslint . --ext .js,.jsx,.mjs,.ts,.tsx",
-    "lint:fix": "npx eslint . --ext .js,.jsx,.mjs,.ts,.tsx --fix"
+    "lint:fix": "npx eslint . --ext .js,.jsx,.mjs,.ts,.tsx --fix",
+    "release:markdown_link_check": "find . -name '*.md' -and -not -path '*/node_modules/*' | sort | xargs -n1 npx markdown-link-check --config .github/markdown-link-check.json"
   }
 }
