@@ -1,0 +1,41 @@
+---
+name: CI
+"on":
+  push:
+    branches:
+      - trunk
+  pull_request:
+    branches:
+      - trunk
+  schedule:
+    - cron: "0 0 * * TUE"
+jobs:
+  js:
+    name: Lint JavaScript
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install toolchain
+        run: npm ci
+
+      - name: Lint with eslint
+        run: npm run lint
+
+  text:
+    name: Lint and format text
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Lint and check formatting with prettier
+        run: npx prettier --check '**/*'
+
+      - name: Lint YAML sources with yamllint
+        run: |
+          yamllint --version
+          echo "Linting YAML sources with yamllint ..."
+          yamllint --strict --format github .
+          echo "OK"
