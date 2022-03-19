@@ -22282,7 +22282,7 @@
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #to_s when it is not a String",
@@ -29008,7 +29008,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the method name",
@@ -29038,7 +29038,7 @@
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is defined in",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is referenced from",
@@ -69208,7 +69208,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
@@ -69334,7 +69334,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
