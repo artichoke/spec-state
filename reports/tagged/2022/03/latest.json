@@ -29026,7 +29026,7 @@
       "tag": "spec-runner-tagger:Method#unbind rebinding UnboundMethod to Method's obj produces exactly equivalent Methods",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing 'UnboundMethod'",
@@ -29176,7 +29176,7 @@
       "tag": "spec-runner-tagger:Module#name is set when the anonymous outer module name is set",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set with a conditional assignment to a constant",
@@ -69208,7 +69208,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
