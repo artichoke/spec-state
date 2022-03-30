@@ -28450,13 +28450,13 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
@@ -28474,7 +28474,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -28990,7 +28990,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing 'Method'",
@@ -29026,7 +29026,7 @@
       "tag": "spec-runner-tagger:Method#unbind rebinding UnboundMethod to Method's obj produces exactly equivalent Methods",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing 'UnboundMethod'",
@@ -33436,7 +33436,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -69202,13 +69202,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
