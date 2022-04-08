@@ -4306,7 +4306,7 @@
       "tag": "spec-runner-tagger:Class.inherited is invoked only once per subclass",
       "group": "Class",
       "spec": "Class.inherited",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Class.inherited is invoked with the child Class when self is subclassed",
@@ -14350,7 +14350,7 @@
       "tag": "spec-runner-tagger:Exception#message returns the class name if there is no message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#message returns the message passed to #initialize",
@@ -14434,7 +14434,7 @@
       "tag": "spec-runner-tagger:Exception#to_s returns the self's name if no message is set",
       "group": "Exception",
       "spec": "Exception#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception creates a new instance of Exception",
@@ -14446,7 +14446,7 @@
       "tag": "spec-runner-tagger:Exception.exception returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.exception",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception returns the exception when it has a custom constructor",
@@ -28456,7 +28456,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
@@ -28474,7 +28474,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -29008,13 +29008,13 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the method name",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String for methods defined with attr_accessor",
@@ -29026,13 +29026,13 @@
       "tag": "spec-runner-tagger:Method#unbind rebinding UnboundMethod to Method's obj produces exactly equivalent Methods",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing 'UnboundMethod'",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is defined in",
