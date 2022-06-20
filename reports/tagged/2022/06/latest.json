@@ -3772,37 +3772,37 @@
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is called when a method is defined in the singleton class",
       "group": "BasicObject",
       "spec": "BasicObject#singleton_method_added",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is called when a method is defined with alias_method in the singleton class",
       "group": "BasicObject",
       "spec": "BasicObject#singleton_method_added",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is called when a method is defined with syntax alias in the singleton class",
       "group": "BasicObject",
       "spec": "BasicObject#singleton_method_added",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is called when a singleton method is defined on a module",
       "group": "BasicObject",
       "spec": "BasicObject#singleton_method_added",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is called when a singleton method is defined on an object",
       "group": "BasicObject",
       "spec": "BasicObject#singleton_method_added",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is called when define_method is used in the singleton class",
       "group": "BasicObject",
       "spec": "BasicObject#singleton_method_added",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:BasicObject#singleton_method_added is not called for instance methods",
@@ -4207,30 +4207,6 @@
       "outcome": "fail"
     },
     {
-      "tag": "spec-runner-tagger:Class#new invokes #initialize on the new instance with the given args",
-      "group": "Class",
-      "spec": "Class#new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class#new passes the block to #initialize",
-      "group": "Class",
-      "spec": "Class#new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class#new returns a new instance of self",
-      "group": "Class",
-      "spec": "Class#new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class#new uses the internal allocator and does not call #allocate",
-      "group": "Class",
-      "spec": "Class#new",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Class#superclass for a singleton class of a class returns the singleton class of its superclass",
       "group": "Class",
       "spec": "Class#superclass",
@@ -4318,72 +4294,6 @@
       "tag": "spec-runner-tagger:Class.inherited will be invoked by child class regardless of visibility",
       "group": "Class",
       "spec": "Class.inherited",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new creates a class that can be given a name by assigning it to a constant",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new creates a class without a name",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new creates a new anonymous class",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new raises a TypeError if passed a metaclass",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new raises a TypeError when given a non-Class",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new sets the new class' superclass to Object when no class given",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new sets the new class' superclass to the given class",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new with a block given creates a subclass of the given superclass",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new with a block given runs the inherited hook after yielding the block",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new with a block given uses the given block as the class' body",
-      "group": "Class",
-      "spec": "Class.new",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Class.new with a block given yields the new class as self in the block",
-      "group": "Class",
-      "spec": "Class.new",
       "outcome": "pass"
     },
     {
@@ -10720,7 +10630,7 @@
       "tag": "spec-runner-tagger:Enumerable#minmax_by returns the object for whom the value returned by block is the largest",
       "group": "Enumerable",
       "spec": "Enumerable#minmax_by",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerable#minmax_by returns the object that appears first in #each in case of a tie",
@@ -10732,7 +10642,7 @@
       "tag": "spec-runner-tagger:Enumerable#minmax_by uses min/max.<=>(current) to determine order",
       "group": "Enumerable",
       "spec": "Enumerable#minmax_by",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerable#none? always returns true on empty enumeration",
@@ -14224,7 +14134,7 @@
       "tag": "spec-runner-tagger:Exception#dup does copy the message",
       "group": "Exception",
       "spec": "Exception#dup",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#dup does not copy constants defined in the singleton class",
@@ -14362,7 +14272,7 @@
       "tag": "spec-runner-tagger:Exception#message when #backtrace is redefined returns the Exception message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#set_backtrace accepts a String",
@@ -14446,7 +14356,7 @@
       "tag": "spec-runner-tagger:Exception.exception returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.exception",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception returns the exception when it has a custom constructor",
@@ -14470,7 +14380,7 @@
       "tag": "spec-runner-tagger:Exception.new returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.new",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception.new returns the exception when it has a custom constructor",
@@ -14488,7 +14398,7 @@
       "tag": "spec-runner-tagger:FalseClass .allocate raises a TypeError",
       "group": "FalseClass",
       "spec": "FalseClass",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:FalseClass .new is undefined",
@@ -18292,7 +18202,7 @@
       "tag": "spec-runner-tagger:Float#% raises a ZeroDivisionError if other is zero",
       "group": "Float",
       "spec": "Float#%",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#% returns -0.0 when called on -0.0 with a non zero modulus",
@@ -18610,7 +18520,7 @@
       "tag": "spec-runner-tagger:Float#abs returns 0.0 if -0.0",
       "group": "Float",
       "spec": "Float#abs",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#abs returns Infinity if -Infinity",
@@ -18736,7 +18646,7 @@
       "tag": "spec-runner-tagger:Float#ceil returns the smallest number greater than or equal to self with an optionally given precision",
       "group": "Float",
       "spec": "Float#ceil",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#coerce returns [other, self] both as Floats",
@@ -18784,7 +18694,7 @@
       "tag": "spec-runner-tagger:Float#divmod raises a ZeroDivisionError if other is zero",
       "group": "Float",
       "spec": "Float#divmod",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#divmod returns an [quotient, modulus] from dividing self by other",
@@ -18940,7 +18850,7 @@
       "tag": "spec-runner-tagger:Float#floor returns the largest number less than or equal to self with an optionally given precision",
       "group": "Float",
       "spec": "Float#floor",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#hash is provided",
@@ -19258,7 +19168,7 @@
       "tag": "spec-runner-tagger:Float#quo performs floating-point division between self and a Fixnum",
       "group": "Float",
       "spec": "Float#quo",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Float#quo performs floating-point division between self and a Float",
@@ -19402,7 +19312,7 @@
       "tag": "spec-runner-tagger:Float#round returns big values rounded to nearest",
       "group": "Float",
       "spec": "Float#round",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Float#round returns different rounded values depending on the half option",
@@ -19438,7 +19348,7 @@
       "tag": "spec-runner-tagger:Float#round returns the nearest Integer for Float near the limit",
       "group": "Float",
       "spec": "Float#round",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Float#round returns zero when passed a negative argument with magnitude greater than magnitude of the whole number portion of the Float",
@@ -19522,7 +19432,7 @@
       "tag": "spec-runner-tagger:Float#to_s matches random examples in human ranges",
       "group": "Float",
       "spec": "Float#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#to_s matches random values from divisions",
@@ -19540,7 +19450,7 @@
       "tag": "spec-runner-tagger:Float#to_s outputs the minimal, unique form to represent the value",
       "group": "Float",
       "spec": "Float#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#to_s returns '-Infinity' for negative infinity",
@@ -19660,7 +19570,7 @@
       "tag": "spec-runner-tagger:Float#truncate returns self truncated to an optionally given precision",
       "group": "Float",
       "spec": "Float#truncate",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Float#zero? returns true if self is 0.0",
@@ -21382,7 +21292,7 @@
       "tag": "spec-runner-tagger:Hash#inspect does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#inspect does not call #to_str on the object returned from #to_s when it is not a String",
@@ -21970,7 +21880,7 @@
       "tag": "spec-runner-tagger:Hash#shift returns (computed) default for empty hashes",
       "group": "Hash",
       "spec": "Hash#shift",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#shift returns nil from an empty hash",
@@ -22810,7 +22720,7 @@
       "tag": "spec-runner-tagger:Integer#% fixnum raises a ZeroDivisionError when the given argument is 0 and a Float",
       "group": "Integer",
       "spec": "Integer#%",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Integer#% fixnum returns the modulus obtained from dividing self by the given argument",
@@ -22954,7 +22864,7 @@
       "tag": "spec-runner-tagger:Integer#** fixnum can raise -1 to a bignum safely",
       "group": "Integer",
       "spec": "Integer#**",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Integer#** fixnum can raise 1 to a bignum safely",
@@ -23008,7 +22918,7 @@
       "tag": "spec-runner-tagger:Integer#** fixnum returns Float::INFINITY when the number is too big",
       "group": "Integer",
       "spec": "Integer#**",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#** fixnum returns Rational when power is Rational",
@@ -24496,7 +24406,7 @@
       "tag": "spec-runner-tagger:Integer#div fixnum means (x / y).floor",
       "group": "Integer",
       "spec": "Integer#div",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#div fixnum raises a TypeError when given a non-numeric argument",
@@ -24526,7 +24436,7 @@
       "tag": "spec-runner-tagger:Integer#div fixnum rounds towards -inf",
       "group": "Integer",
       "spec": "Integer#div",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#divmod bignum raises a FloatDomainError if other is NaN",
@@ -24598,7 +24508,7 @@
       "tag": "spec-runner-tagger:Integer#divmod fixnum raises a ZeroDivisionError when the given argument is 0 and a Float",
       "group": "Integer",
       "spec": "Integer#divmod",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Integer#divmod fixnum returns an Array containing quotient and modulus obtained from dividing self by the given argument",
@@ -25129,12 +25039,6 @@
       "outcome": "fail"
     },
     {
-      "tag": "spec-runner-tagger:Integer#numerator returns self",
-      "group": "Integer",
-      "spec": "Integer#numerator",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Integer#odd? bignum returns false if self is even and negative",
       "group": "Integer",
       "spec": "Integer#odd?",
@@ -25315,36 +25219,6 @@
       "outcome": "fail"
     },
     {
-      "tag": "spec-runner-tagger:Integer#rationalize ignores a single argument",
-      "group": "Integer",
-      "spec": "Integer#rationalize",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Integer#rationalize raises ArgumentError when passed more than one argument",
-      "group": "Integer",
-      "spec": "Integer#rationalize",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Integer#rationalize returns a Rational object",
-      "group": "Integer",
-      "spec": "Integer#rationalize",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Integer#rationalize uses 1 as the denominator",
-      "group": "Integer",
-      "spec": "Integer#rationalize",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Integer#rationalize uses self as the numerator",
-      "group": "Integer",
-      "spec": "Integer#rationalize",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Integer#remainder bignum does raises ZeroDivisionError if other is zero and a Float",
       "group": "Integer",
       "spec": "Integer#remainder",
@@ -25474,7 +25348,7 @@
       "tag": "spec-runner-tagger:Integer#round returns self if not passed a precision",
       "group": "Integer",
       "spec": "Integer#round",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#round returns self if passed a precision of zero",
@@ -25588,7 +25462,7 @@
       "tag": "spec-runner-tagger:Integer#to_f bignum converts number close to Float::MAX without exceeding MAX or producing NaN",
       "group": "Integer",
       "spec": "Integer#to_f",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#to_f bignum returns self converted to a Float",
@@ -28456,7 +28330,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
@@ -29002,7 +28876,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is defined in",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
@@ -29032,7 +28906,7 @@
       "tag": "spec-runner-tagger:Method#unbind returns a String containing 'UnboundMethod'",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is defined in",
@@ -29104,7 +28978,7 @@
       "tag": "spec-runner-tagger:Module#initialize_copy should retain singleton methods when duped",
       "group": "Module",
       "spec": "Module#initialize_copy",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Module#name changes when the module is reachable through a constant path",
@@ -29134,19 +29008,19 @@
       "tag": "spec-runner-tagger:Module#name is not modified when assigning to a new constant after it has been accessed",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is not nil for a nested module created with the module keyword",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set after it is removed from a constant",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set after it is removed from a constant under an anonymous module",
@@ -29158,31 +29032,31 @@
       "tag": "spec-runner-tagger:Module#name is set when a nested module is opened with the module keyword",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set when assigning to a constant",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set when opened with the module keyword",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set when the anonymous outer module name is set",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set with a conditional assignment to a constant",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set with a conditional assignment to a nested constant",
@@ -29206,7 +29080,7 @@
       "tag": "spec-runner-tagger:Module#name returns a mutable string that when mutated does not modify the original module name",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#prepended is a private method",
@@ -29734,7 +29608,7 @@
       "tag": "spec-runner-tagger:NilClass .allocate raises a TypeError",
       "group": "NilClass",
       "spec": "NilClass",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:NilClass .new is undefined",
@@ -30340,18 +30214,6 @@
       "tag": "spec-runner-tagger:Numeric#nonzero? returns self if self#zero? is false",
       "group": "Numeric",
       "spec": "Numeric#nonzero?",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Numeric#numerator converts self to a Rational object then returns its numerator",
-      "group": "Numeric",
-      "spec": "Numeric#numerator",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Numeric#numerator works with Numeric subclasses",
-      "group": "Numeric",
-      "spec": "Numeric#numerator",
       "outcome": "fail"
     },
     {
@@ -33436,7 +33298,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -43996,7 +43858,7 @@
       "tag": "spec-runner-tagger:String#delete_suffix returns a copy of the string, when the suffix isn't found",
       "group": "String",
       "spec": "String#delete_suffix",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix returns a copy of the string, with the given suffix removed",
@@ -51328,13 +51190,13 @@
       "tag": "spec-runner-tagger:String#unpack with directive 'w' ignores NULL bytes between directives",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with directive 'w' ignores spaces between directives",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with directive 'w' ignores whitespace in the format string",
@@ -51370,7 +51232,7 @@
       "tag": "spec-runner-tagger:String#unpack with format '%' raises an Argument Error",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format '@' calls #to_str to coerce the directives string",
@@ -51382,7 +51244,7 @@
       "tag": "spec-runner-tagger:String#unpack with format '@' has no effect when passed the '*' modifier",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format '@' ignores whitespace in the format string",
@@ -51400,13 +51262,13 @@
       "tag": "spec-runner-tagger:String#unpack with format '@' moves the read index to the byte specified by the count",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format '@' positions the read index one beyond the last readable byte in the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format '@' raises a TypeError when passed an Integer",
@@ -51424,7 +51286,7 @@
       "tag": "spec-runner-tagger:String#unpack with format '@' raises an ArgumentError if the count exceeds the size of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format '@' raises an ArgumentError when the format modifier is '!'",
@@ -54724,7 +54586,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'M' appends empty string to the array for directives exceeding the input size",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' calls #to_str to coerce the directives string",
@@ -54736,73 +54598,73 @@
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes a space at the end of the pre-encoded string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes a tab character at the end of the pre-encoded string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes an embedded newline",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes an embedded space character",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes an embedded tab character",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes an empty string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes pre-encoded byte values 0..31 except tab and newline",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes pre-encoded byte values 127..255",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes pre-encoded byte values 33..60",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes pre-encoded byte values 62..126",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes the '=' character",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' decodes the complete string ignoring newlines when given a single directive",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' does not taint returned arrays if given a tainted format string",
@@ -54838,13 +54700,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'M' does not taint returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' does not taint returned strings if given an untainted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' does not untrust returned arrays if given a untrusted format string",
@@ -54880,19 +54742,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'M' does not untrust returned strings if given an trusted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' does not untrust returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' ignores the count or '*' modifier and decodes the entire string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'M' ignores whitespace in the format string",
@@ -55078,13 +54940,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'P' does not taint returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'P' does not taint returned strings if given an untainted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'P' does not untrust returned arrays if given a untrusted format string",
@@ -55120,19 +54982,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'P' does not untrust returned strings if given an trusted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'P' does not untrust returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'P' ignores whitespace in the format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'P' raises a TypeError when passed an Integer",
@@ -56494,13 +56356,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'X' implicitly has a count of one when count is not specified",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'X' moves the read index back by the number of bytes specified by count",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'X' moves the read index back by the remaining bytes when passed the '*' modifier",
@@ -56524,7 +56386,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'X' raises an ArgumentError if the count exceeds the bytes from current index to the start of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'X' raises an ArgumentError when passed the '*' modifier if the remaining bytes exceed the bytes from the index to the start of the String",
@@ -60322,13 +60184,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'p' does not taint returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'p' does not taint returned strings if given an untainted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'p' does not untrust returned arrays if given a untrusted format string",
@@ -60364,19 +60226,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'p' does not untrust returned strings if given an trusted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'p' does not untrust returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'p' ignores whitespace in the format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'p' raises a TypeError when passed an Integer",
@@ -61708,7 +61570,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'x' moves the read index to the end of the string when passed the '*' modifier",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'x' positions the read index one beyond the last readable byte in the String",
@@ -63244,13 +63106,13 @@
       "tag": "spec-runner-tagger:Symbol#[] with a Range slice that is out of bounds returns nil if the first range value starts from the end and is out of bounds and the last value starts from the end and is less than the length",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Range slice that is out of bounds returns nil if the first range value starts from the end and is within bounds and the last value starts from the end and is greater than the length",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Range slice that is within bounds returns a slice if both range values begin at the start and are within bounds",
@@ -63892,13 +63754,13 @@
       "tag": "spec-runner-tagger:Symbol#slice with a Range slice that is out of bounds returns nil if the first range value starts from the end and is out of bounds and the last value starts from the end and is less than the length",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Range slice that is out of bounds returns nil if the first range value starts from the end and is within bounds and the last value starts from the end and is greater than the length",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Range slice that is within bounds returns a slice if both range values begin at the start and are within bounds",
@@ -69202,7 +69064,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
