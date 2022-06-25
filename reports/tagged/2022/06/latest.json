@@ -14260,7 +14260,7 @@
       "tag": "spec-runner-tagger:Exception#message returns the class name if there is no message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception#message returns the message passed to #initialize",
@@ -14380,7 +14380,7 @@
       "tag": "spec-runner-tagger:Exception.new returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.new",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception.new returns the exception when it has a custom constructor",
@@ -21292,7 +21292,7 @@
       "tag": "spec-runner-tagger:Hash#inspect does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#inspect does not call #to_str on the object returned from #to_s when it is not a String",
@@ -22192,7 +22192,7 @@
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #to_s when it is not a String",
@@ -28324,7 +28324,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
@@ -28348,7 +28348,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -28882,7 +28882,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the method name",
@@ -28906,7 +28906,7 @@
       "tag": "spec-runner-tagger:Method#unbind returns a String containing 'UnboundMethod'",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#unbind returns a String containing the Module the method is defined in",
@@ -28930,7 +28930,7 @@
       "tag": "spec-runner-tagger:Method#unbind returns an UnboundMethod",
       "group": "Method",
       "spec": "Method#unbind",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Module#define_singleton_method defines the given method as an class method with the given name in self",
@@ -28984,7 +28984,7 @@
       "tag": "spec-runner-tagger:Module#name changes when the module is reachable through a constant path",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Module#name is nil for an anonymous module",
@@ -29014,7 +29014,7 @@
       "tag": "spec-runner-tagger:Module#name is not nil for a nested module created with the module keyword",
       "group": "Module",
       "spec": "Module#name",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Module#name is set after it is removed from a constant",
@@ -33370,7 +33370,7 @@
       "tag": "spec-runner-tagger:Random.bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.bytes returns a binary String",
@@ -33502,7 +33502,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -42292,7 +42292,7 @@
       "tag": "spec-runner-tagger:String#capitalize! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#capitalize!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#capitalize! returns nil when no changes are made",
@@ -42784,13 +42784,13 @@
       "tag": "spec-runner-tagger:String#chomp when passed nil returns a copy of the String",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed nil returns an empty String when self is empty",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed nil taints the result if self is tainted",
@@ -42844,7 +42844,7 @@
       "tag": "spec-runner-tagger:String#chomp when passed no argument returns subclass instances when called on a subclass",
       "group": "String",
       "spec": "String#chomp",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp when passed no argument taints the result if self is tainted",
@@ -42856,13 +42856,13 @@
       "tag": "spec-runner-tagger:String#chomp! raises a FrozenError on a frozen instance when it is modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! raises a FrozenError on a frozen instance when it would not be modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! removes the final carriage return, newline from a multibyte String",
@@ -42886,13 +42886,13 @@
       "tag": "spec-runner-tagger:String#chomp! returns nil when the String is not modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '' does not remove a final carriage return",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '' removes a final carriage return, newline",
@@ -42922,7 +42922,7 @@
       "tag": "spec-runner-tagger:String#chomp! when passed '' returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '' taints the result if self is tainted",
@@ -42952,7 +42952,7 @@
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed '\\n' taints the result if self is tainted",
@@ -42976,13 +42976,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed a String returns nil if the argument does not match the trailing characters",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed a String returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed a String taints the result if self is tainted",
@@ -43006,13 +43006,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed nil returns nil",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed nil returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed no argument modifies self",
@@ -43048,13 +43048,13 @@
       "tag": "spec-runner-tagger:String#chomp! when passed no argument returns nil if self is not modified",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed no argument returns nil when self is empty",
       "group": "String",
       "spec": "String#chomp!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chomp! when passed no argument returns subclass instances when called on a subclass",
@@ -43138,7 +43138,7 @@
       "tag": "spec-runner-tagger:String#chop returns subclass instances when called on a subclass",
       "group": "String",
       "spec": "String#chop",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chop taints result when self is tainted",
@@ -43162,13 +43162,13 @@
       "tag": "spec-runner-tagger:String#chop! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#chop!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chop! raises a FrozenError on a frozen instance that would not be modified",
       "group": "String",
       "spec": "String#chop!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#chop! removes a multi-byte character",
@@ -43288,7 +43288,7 @@
       "tag": "spec-runner-tagger:String#clear raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#clear",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#clear returns self after emptying it",
@@ -43768,7 +43768,7 @@
       "tag": "spec-runner-tagger:String#delete! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#delete!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete! returns nil if no modifications were made",
@@ -43780,7 +43780,7 @@
       "tag": "spec-runner-tagger:String#delete_prefix calls to_str on its argument",
       "group": "String",
       "spec": "String#delete_prefix",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_prefix doesn't set $~",
@@ -43804,7 +43804,7 @@
       "tag": "spec-runner-tagger:String#delete_prefix returns a subclass instance when called on a subclass instance",
       "group": "String",
       "spec": "String#delete_prefix",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_prefix taints resulting strings when other is tainted",
@@ -43816,7 +43816,7 @@
       "tag": "spec-runner-tagger:String#delete_prefix! calls to_str on its argument",
       "group": "String",
       "spec": "String#delete_prefix!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_prefix! doesn't set $~",
@@ -43828,7 +43828,7 @@
       "tag": "spec-runner-tagger:String#delete_prefix! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#delete_prefix!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_prefix! removes the found prefix",
@@ -43846,7 +43846,7 @@
       "tag": "spec-runner-tagger:String#delete_suffix calls to_str on its argument",
       "group": "String",
       "spec": "String#delete_suffix",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix doesn't set $~",
@@ -43864,13 +43864,13 @@
       "tag": "spec-runner-tagger:String#delete_suffix returns a copy of the string, with the given suffix removed",
       "group": "String",
       "spec": "String#delete_suffix",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix returns a subclass instance when called on a subclass instance",
       "group": "String",
       "spec": "String#delete_suffix",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix taints resulting strings when other is tainted",
@@ -43882,7 +43882,7 @@
       "tag": "spec-runner-tagger:String#delete_suffix! calls to_str on its argument",
       "group": "String",
       "spec": "String#delete_suffix!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix! doesn't set $~",
@@ -43894,13 +43894,13 @@
       "tag": "spec-runner-tagger:String#delete_suffix! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#delete_suffix!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix! removes the found prefix",
       "group": "String",
       "spec": "String#delete_suffix!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#delete_suffix! returns nil if no change is made",
@@ -45316,13 +45316,13 @@
       "tag": "spec-runner-tagger:String#end_with? converts its argument using :to_str",
       "group": "String",
       "spec": "String#end_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#end_with? ignores arguments not convertible to string",
       "group": "String",
       "spec": "String#end_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#end_with? raises an Encoding::CompatibilityError if the encodings are incompatible",
@@ -45340,7 +45340,7 @@
       "tag": "spec-runner-tagger:String#end_with? returns true if the search string is empty",
       "group": "String",
       "spec": "String#end_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#end_with? returns true only if any ending match",
@@ -46060,7 +46060,7 @@
       "tag": "spec-runner-tagger:String#gsub! with pattern and block raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#gsub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#gsub! with pattern and block raises an ArgumentError if encoding is not valid",
@@ -46120,7 +46120,7 @@
       "tag": "spec-runner-tagger:String#gsub! with pattern and replacement raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#gsub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#gsub! with pattern and replacement returns nil if no modifications were made",
@@ -46732,7 +46732,7 @@
       "tag": "spec-runner-tagger:String#length returns the length of a string in different encodings",
       "group": "String",
       "spec": "String#length",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#length returns the length of self",
@@ -46972,13 +46972,13 @@
       "tag": "spec-runner-tagger:String#lstrip! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#lstrip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#lstrip! raises a FrozenError on a frozen instance that would not be modified",
       "group": "String",
       "spec": "String#lstrip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#lstrip! returns nil if no modifications were made",
@@ -47158,7 +47158,7 @@
       "tag": "spec-runner-tagger:String#next! raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#next!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#oct accepts a single underscore separating digits",
@@ -47488,13 +47488,13 @@
       "tag": "spec-runner-tagger:String#reverse! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#reverse!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#reverse! raises a FrozenError on a frozen instance that would not be modified",
       "group": "String",
       "spec": "String#reverse!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#reverse! reverses a string with multi byte characters",
@@ -47812,13 +47812,13 @@
       "tag": "spec-runner-tagger:String#rstrip! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#rstrip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip! raises a FrozenError on a frozen instance that would not be modified",
       "group": "String",
       "spec": "String#rstrip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#rstrip! returns nil if no modifications were made",
@@ -48100,7 +48100,7 @@
       "tag": "spec-runner-tagger:String#setbyte raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#setbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#setbyte raises a TypeError unless the second argument is an Integer",
@@ -48142,7 +48142,7 @@
       "tag": "spec-runner-tagger:String#size returns the length of a string in different encodings",
       "group": "String",
       "spec": "String#size",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#size returns the length of self",
@@ -49138,7 +49138,7 @@
       "tag": "spec-runner-tagger:String#squeeze! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#squeeze!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#squeeze! raises an ArgumentError when the parameter is out of sequence",
@@ -49156,13 +49156,13 @@
       "tag": "spec-runner-tagger:String#start_with? converts its argument using :to_str",
       "group": "String",
       "spec": "String#start_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#start_with? ignores arguments not convertible to string",
       "group": "String",
       "spec": "String#start_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#start_with? returns true if the search string is empty",
@@ -49186,19 +49186,19 @@
       "tag": "spec-runner-tagger:String#start_with? sets Regexp.last_match if it returns true",
       "group": "String",
       "spec": "String#start_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#start_with? supports regexps",
       "group": "String",
       "spec": "String#start_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#start_with? supports regexps with ^ and $ modifiers",
       "group": "String",
       "spec": "String#start_with?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#start_with? uses only the needed arguments",
@@ -49246,13 +49246,13 @@
       "tag": "spec-runner-tagger:String#strip! raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#strip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#strip! raises a FrozenError on a frozen instance that would not be modified",
       "group": "String",
       "spec": "String#strip!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#strip! returns nil if no modifications where made",
@@ -49648,7 +49648,7 @@
       "tag": "spec-runner-tagger:String#sub! with pattern and block raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#sub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#sub! with pattern and block raises a RuntimeError if the string is modified while substituting",
@@ -49690,7 +49690,7 @@
       "tag": "spec-runner-tagger:String#sub! with pattern, replacement raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#sub!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#sub! with pattern, replacement returns nil if no modifications were made",
@@ -49762,7 +49762,7 @@
       "tag": "spec-runner-tagger:String#succ! raises a FrozenError if self is frozen",
       "group": "String",
       "spec": "String#succ!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#sum returns a basic n-bit checksum of the characters in self",
@@ -49942,7 +49942,7 @@
       "tag": "spec-runner-tagger:String#swapcase! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! returns nil if no modifications were made",
@@ -69064,13 +69064,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
@@ -69196,13 +69196,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
