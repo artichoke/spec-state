@@ -1048,7 +1048,7 @@
       "tag": "spec-runner-tagger:ArgumentError gives its own class name as message if it has no message",
       "group": "ArgumentError",
       "spec": "ArgumentError",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ArgumentError is a subclass of StandardError",
@@ -4246,7 +4246,7 @@
       "tag": "spec-runner-tagger:Class#to_s singleton class for objects includes class name and object ID",
       "group": "Class",
       "spec": "Class#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Class.inherited is called by super even when marked as a private class method",
@@ -14272,7 +14272,7 @@
       "tag": "spec-runner-tagger:Exception#message when #backtrace is redefined returns the Exception message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception#set_backtrace accepts a String",
@@ -14356,7 +14356,7 @@
       "tag": "spec-runner-tagger:Exception.exception returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.exception",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception returns the exception when it has a custom constructor",
@@ -28330,7 +28330,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
@@ -28342,7 +28342,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
@@ -28882,7 +28882,7 @@
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#to_s returns a String containing the method name",
@@ -33298,7 +33298,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -33370,7 +33370,7 @@
       "tag": "spec-runner-tagger:Random.bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.bytes returns a binary String",
@@ -33502,7 +33502,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -69064,13 +69064,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
@@ -69202,7 +69202,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
