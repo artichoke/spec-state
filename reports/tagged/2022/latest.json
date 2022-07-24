@@ -1048,7 +1048,7 @@
       "tag": "spec-runner-tagger:ArgumentError gives its own class name as message if it has no message",
       "group": "ArgumentError",
       "spec": "ArgumentError",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:ArgumentError is a subclass of StandardError",
@@ -14272,7 +14272,7 @@
       "tag": "spec-runner-tagger:Exception#message when #backtrace is redefined returns the Exception message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception#set_backtrace accepts a String",
@@ -14344,7 +14344,7 @@
       "tag": "spec-runner-tagger:Exception#to_s returns the self's name if no message is set",
       "group": "Exception",
       "spec": "Exception#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception creates a new instance of Exception",
@@ -14356,7 +14356,7 @@
       "tag": "spec-runner-tagger:Exception.exception returns 'Exception' for message when no message given",
       "group": "Exception",
       "spec": "Exception.exception",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception returns the exception when it has a custom constructor",
@@ -21292,7 +21292,7 @@
       "tag": "spec-runner-tagger:Hash#inspect does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#inspect does not call #to_str on the object returned from #to_s when it is not a String",
@@ -22192,7 +22192,7 @@
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #inspect when it is not a String",
       "group": "Hash",
       "spec": "Hash#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#to_s does not call #to_str on the object returned from #to_s when it is not a String",
@@ -28324,13 +28324,13 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
@@ -28342,13 +28342,13 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -69202,7 +69202,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
