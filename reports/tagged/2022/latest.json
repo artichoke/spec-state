@@ -14272,7 +14272,7 @@
       "tag": "spec-runner-tagger:Exception#message when #backtrace is redefined returns the Exception message",
       "group": "Exception",
       "spec": "Exception#message",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#set_backtrace accepts a String",
@@ -14344,7 +14344,7 @@
       "tag": "spec-runner-tagger:Exception#to_s returns the self's name if no message is set",
       "group": "Exception",
       "spec": "Exception#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception.exception creates a new instance of Exception",
@@ -28324,13 +28324,13 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing 'Method'",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
@@ -28348,7 +28348,7 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -33298,7 +33298,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -40960,7 +40960,7 @@
       "tag": "spec-runner-tagger:String#[] with Range handles repeated application",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Range returns an empty string if range.begin is inside self and > real end",
@@ -40972,7 +40972,7 @@
       "tag": "spec-runner-tagger:String#[] with Range returns nil if the beginning of the range falls outside of self",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Range returns subclass instances",
@@ -41974,7 +41974,7 @@
       "tag": "spec-runner-tagger:String#byteslice on on non ASCII strings returns byteslice of unicode strings",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice raises a RangeError if the index is too big",
@@ -42022,37 +42022,37 @@
       "tag": "spec-runner-tagger:String#byteslice with Range handles repeated application",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with Range returns an empty string if range.begin is inside self and > real end",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with Range returns nil if the beginning of the range falls outside of self",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with Range returns subclass instances",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with Range returns the substring given by the offsets of the range",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with Range works with Range subclasses",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length always taints resulting strings when self is tainted",
@@ -42112,7 +42112,7 @@
       "tag": "spec-runner-tagger:String#byteslice with index, length returns subclass instances",
       "group": "String",
       "spec": "String#byteslice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#byteslice with index, length returns the substring starting at the given index with the given length",
@@ -48208,7 +48208,7 @@
       "tag": "spec-runner-tagger:String#slice with Range handles repeated application",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Range returns an empty string if range.begin is inside self and > real end",
@@ -48220,7 +48220,7 @@
       "tag": "spec-runner-tagger:String#slice with Range returns nil if the beginning of the range falls outside of self",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Range returns subclass instances",
@@ -62278,7 +62278,7 @@
       "tag": "spec-runner-tagger:StringScanner#getbyte returns an instance of String when passed a String subclass",
       "group": "StringScanner",
       "spec": "StringScanner#getbyte",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:StringScanner#getbyte returns nil at the end of the string",
@@ -62452,7 +62452,7 @@
       "tag": "spec-runner-tagger:StringScanner#peek returns an instance of String when passed a String subclass",
       "group": "StringScanner",
       "spec": "StringScanner#peek",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:StringScanner#peek returns at most the specified number of bytes from the current position",
@@ -62488,7 +62488,7 @@
       "tag": "spec-runner-tagger:StringScanner#peep returns an instance of String when passed a String subclass",
       "group": "StringScanner",
       "spec": "StringScanner#peep",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:StringScanner#peep returns at most the specified number of bytes from the current position",
@@ -69064,13 +69064,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
@@ -69196,13 +69196,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
