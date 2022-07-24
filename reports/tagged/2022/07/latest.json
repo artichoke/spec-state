@@ -28336,19 +28336,19 @@
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is defined in",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the Module the method is referenced from",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String containing the method name",
       "group": "Method",
       "spec": "Method#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#inspect returns a String for methods defined with attr_accessor",
@@ -33298,7 +33298,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -62278,7 +62278,7 @@
       "tag": "spec-runner-tagger:StringScanner#getbyte returns an instance of String when passed a String subclass",
       "group": "StringScanner",
       "spec": "StringScanner#getbyte",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:StringScanner#getbyte returns nil at the end of the string",
@@ -62452,7 +62452,7 @@
       "tag": "spec-runner-tagger:StringScanner#peek returns an instance of String when passed a String subclass",
       "group": "StringScanner",
       "spec": "StringScanner#peek",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:StringScanner#peek returns at most the specified number of bytes from the current position",
@@ -62488,7 +62488,7 @@
       "tag": "spec-runner-tagger:StringScanner#peep returns an instance of String when passed a String subclass",
       "group": "StringScanner",
       "spec": "StringScanner#peep",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:StringScanner#peep returns at most the specified number of bytes from the current position",
@@ -69064,13 +69064,13 @@
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String reflects that this is an UnboundMethod object",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#inspect the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#name returns the name even when aliased",
@@ -69202,7 +69202,7 @@
       "tag": "spec-runner-tagger:UnboundMethod#to_s the String shows the method name, Module defined in and Module extracted from",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UncaughtThrowError is a subclass of ArgumentError",
