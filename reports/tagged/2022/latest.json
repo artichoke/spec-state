@@ -33298,7 +33298,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -33370,7 +33370,7 @@
       "tag": "spec-runner-tagger:Random.bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random.bytes returns a binary String",
@@ -33502,7 +33502,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -41038,7 +41038,7 @@
       "tag": "spec-runner-tagger:String#[] with Regexp, group raises a TypeError when the given name is not a String",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp, group raises an IndexError if there is no capture for the given name",
@@ -41104,13 +41104,13 @@
       "tag": "spec-runner-tagger:String#[] with Regexp, index raises a TypeError when the given index can't be converted to Integer",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp, index raises a TypeError when the given index is nil",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp, index returns an untrusted string if the regexp is untrusted",
@@ -48286,7 +48286,7 @@
       "tag": "spec-runner-tagger:String#slice with Regexp, group raises a TypeError when the given name is not a String",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp, group raises an IndexError if there is no capture for the given name",
@@ -48352,13 +48352,13 @@
       "tag": "spec-runner-tagger:String#slice with Regexp, index raises a TypeError when the given index can't be converted to Integer",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp, index raises a TypeError when the given index is nil",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp, index returns an untrusted string if the regexp is untrusted",
@@ -63154,19 +63154,19 @@
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index and an index that cannot be converted to an Integer raises a TypeError when given an Array",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index and an index that cannot be converted to an Integer raises a TypeError when given an Hash",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index and an index that cannot be converted to an Integer raises a TypeError when given an Object",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index converts the index to an Integer",
@@ -63184,7 +63184,7 @@
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index raises a TypeError if the index is nil",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index returns a string for the matched capture at the given index",
@@ -63802,19 +63802,19 @@
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index and an index that cannot be converted to an Integer raises a TypeError when given an Array",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index and an index that cannot be converted to an Integer raises a TypeError when given an Hash",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index and an index that cannot be converted to an Integer raises a TypeError when given an Object",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index converts the index to an Integer",
@@ -63832,7 +63832,7 @@
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index raises a TypeError if the index is nil",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index returns a string for the matched capture at the given index",
