@@ -40510,7 +40510,7 @@
       "tag": "spec-runner-tagger:String#<< raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< raises a TypeError if the given argument can't be converted to a String",
@@ -40624,7 +40624,7 @@
       "tag": "spec-runner-tagger:String#<< with Integer concatenates the argument interpreted as a codepoint",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< with Integer doesn't call to_int on its argument",
@@ -40642,13 +40642,13 @@
       "tag": "spec-runner-tagger:String#<< with Integer raises RangeError if the argument is negative",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< with Integer raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#<<",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#<< with Integer returns a BINARY string if self is US-ASCII and the argument is between 128-255 (inclusive)",
