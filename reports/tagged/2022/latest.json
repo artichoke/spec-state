@@ -33370,7 +33370,7 @@
       "tag": "spec-runner-tagger:Random.bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.bytes",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random.bytes returns a binary String",
@@ -33502,7 +33502,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -47656,7 +47656,7 @@
       "tag": "spec-runner-tagger:String#rindex with object tries to convert obj to a string via to_str",
       "group": "String",
       "spec": "String#rindex",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#rjust with length, padding pads with whitespace if no padstr is given",
