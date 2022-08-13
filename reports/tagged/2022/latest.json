@@ -33244,7 +33244,7 @@
       "tag": "spec-runner-tagger:Random#bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random#bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random#bytes returns a binary String",
@@ -33316,7 +33316,7 @@
       "tag": "spec-runner-tagger:Random.bytes returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.bytes",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.bytes returns a binary String",
@@ -33448,7 +33448,7 @@
       "tag": "spec-runner-tagger:Random.urandom returns a String of the length given as argument",
       "group": "Random",
       "spec": "Random.urandom",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Random.urandom returns a binary String",
@@ -42247,6 +42247,126 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:String#casecmp independent of case for non-ASCII characters does not case fold",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case for non-ASCII characters returns -1 when numerically less than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case for non-ASCII characters returns 0 when equal to other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case for non-ASCII characters returns 1 when numerically greater than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case in UTF-8 mode for ASCII characters returns -1 when less than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case in UTF-8 mode for ASCII characters returns 0 when equal to other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case in UTF-8 mode for ASCII characters returns 1 when greater than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case in UTF-8 mode for non-ASCII characters returns -1 when numerically less than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case in UTF-8 mode for non-ASCII characters returns 0 when numerically equal to other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case in UTF-8 mode for non-ASCII characters returns 1 when numerically greater than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case returns -1 when less than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case returns 0 when equal to other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case returns 1 when greater than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case returns nil if incompatible encodings",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case returns nil if other can't be converted to a string",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case tries to convert other to string using to_str",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case when comparing a subclass instance returns -1 when less than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case when comparing a subclass instance returns 0 when equal to other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp independent of case when comparing a subclass instance returns 1 when greater than other",
+      "group": "String",
+      "spec": "String#casecmp",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp? independent of case case folds",
+      "group": "String",
+      "spec": "String#casecmp?",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:String#casecmp? independent of case for UNICODE characters returns true when downcase(:fold) on unicode",
       "group": "String",
       "spec": "String#casecmp?",
@@ -42269,6 +42389,36 @@
       "group": "String",
       "spec": "String#casecmp?",
       "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp? independent of case returns false when not equal to other",
+      "group": "String",
+      "spec": "String#casecmp?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp? independent of case returns nil if incompatible encodings",
+      "group": "String",
+      "spec": "String#casecmp?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp? independent of case returns nil if other can't be converted to a string",
+      "group": "String",
+      "spec": "String#casecmp?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp? independent of case returns true when equal to other",
+      "group": "String",
+      "spec": "String#casecmp?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:String#casecmp? independent of case tries to convert other to string using to_str",
+      "group": "String",
+      "spec": "String#casecmp?",
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#casecmp? independent of case when comparing a subclass instance returns false when not equal to other",
