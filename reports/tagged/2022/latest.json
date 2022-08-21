@@ -34114,7 +34114,7 @@
       "tag": "spec-runner-tagger:Range#include? with Time endpoints uses cover? logic",
       "group": "Range",
       "spec": "Range#include?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Range#include? with weird succ when excluded end value returns false if other is equal as last element but not matched by element.succ",
@@ -34468,7 +34468,7 @@
       "tag": "spec-runner-tagger:Range#member? with Time endpoints uses cover? logic",
       "group": "Range",
       "spec": "Range#member?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Range#member? with weird succ when excluded end value returns false if other is equal as last element but not matched by element.succ",
@@ -34594,13 +34594,13 @@
       "tag": "spec-runner-tagger:Range#min returns start point when the range is Time...Time(excluded end point)",
       "group": "Range",
       "spec": "Range#min",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Range#min returns start point when the range is Time..Time(included end point)",
       "group": "Range",
       "spec": "Range#min",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Range#min returns the minimum value in the Float range when called with no arguments",
@@ -64294,7 +64294,7 @@
       "tag": "spec-runner-tagger:Time#+ does not return a subclass instance",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ increments the time by the specified amount",
@@ -64348,25 +64348,25 @@
       "tag": "spec-runner-tagger:Time#+ raises TypeError on Time argument",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ raises TypeError on argument that can't be coerced into Rational",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ raises TypeError on nil argument",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ raises a TypeError if given argument is a coercible String",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ returns a UTC time if self is UTC",
@@ -64420,7 +64420,7 @@
       "tag": "spec-runner-tagger:Time#- does not return a subclass instance",
       "group": "Time",
       "spec": "Time#-",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#- maintains microseconds precision",
@@ -65374,7 +65374,7 @@
       "tag": "spec-runner-tagger:Time#nsec returns the nanoseconds part of a Time constructed with an Float number of microseconds",
       "group": "Time",
       "spec": "Time#nsec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#nsec returns the nanoseconds part of a Time constructed with an Integer number of microseconds",
@@ -65434,7 +65434,7 @@
       "tag": "spec-runner-tagger:Time#sec returns the second of the minute(0..60) for time",
       "group": "Time",
       "spec": "Time#sec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#subsec returns 0 as a Fixnum for a Time with a whole number of seconds",
@@ -65536,13 +65536,13 @@
       "tag": "spec-runner-tagger:Time#to_i doesn't return an actual number of seconds in time",
       "group": "Time",
       "spec": "Time#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#to_i returns the value of time as an integer number of seconds since epoch",
       "group": "Time",
       "spec": "Time#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#to_r returns a Rational even for a whole number of seconds",
@@ -65602,13 +65602,13 @@
       "tag": "spec-runner-tagger:Time#tv_sec doesn't return an actual number of seconds in time",
       "group": "Time",
       "spec": "Time#tv_sec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#tv_sec returns the value of time as an integer number of seconds since epoch",
       "group": "Time",
       "spec": "Time#tv_sec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#tv_usec needs to be reviewed for spec completeness",
@@ -65620,13 +65620,13 @@
       "tag": "spec-runner-tagger:Time#usec returns 0 for a Time constructed with a whole number of seconds",
       "group": "Time",
       "spec": "Time#usec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#usec returns 0 for a Time constructed with an Float number of microseconds < 1",
       "group": "Time",
       "spec": "Time#usec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#usec returns 0 for a Time constructed with an Rational number of microseconds < 1",
@@ -65758,7 +65758,7 @@
       "tag": "spec-runner-tagger:Time#wday returns an integer representing the day of the week, 0..6, with Sunday being 0",
       "group": "Time",
       "spec": "Time#wday",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#wednesday? returns false if time doesn't represent Wednesday",
@@ -65968,7 +65968,7 @@
       "tag": "spec-runner-tagger:Time.at passed [Integer, Numeric] returns a Time object representing the given number of seconds and Float microseconds since 1970-01-01 00:00:00 UTC",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Integer, Numeric] returns a Time object representing the given number of seconds and Integer microseconds since 1970-01-01 00:00:00 UTC",
@@ -66016,25 +66016,25 @@
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] :nsec format traits second argument as nanoseconds",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] :usec format traits second argument as microseconds",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] not supported format does not try to convert format to Symbol with #to_sym",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] not supported format raises ArgumentError",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] supports Float second argument",
