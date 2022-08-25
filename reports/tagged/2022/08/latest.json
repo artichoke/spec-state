@@ -41068,7 +41068,7 @@
       "tag": "spec-runner-tagger:String#[] with Regexp, index returns nil if there is no capture for the given index",
       "group": "String",
       "spec": "String#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#[] with Regexp, index returns nil if there is no match",
@@ -48316,7 +48316,7 @@
       "tag": "spec-runner-tagger:String#slice with Regexp, index returns nil if there is no capture for the given index",
       "group": "String",
       "spec": "String#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#slice with Regexp, index returns nil if there is no match",
@@ -63160,7 +63160,7 @@
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index returns nil if there is no capture for the index",
       "group": "Symbol",
       "spec": "Symbol#[]",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Symbol#[] with a Regex slice with a capture index sets $~ to the MatchData if there is a match",
@@ -63808,7 +63808,7 @@
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index returns nil if there is no capture for the index",
       "group": "Symbol",
       "spec": "Symbol#slice",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Symbol#slice with a Regex slice with a capture index sets $~ to the MatchData if there is a match",
