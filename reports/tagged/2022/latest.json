@@ -64252,7 +64252,7 @@
       "tag": "spec-runner-tagger:Time#asctime returns a canonical string representation of time",
       "group": "Time",
       "spec": "Time#asctime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#ceil ceils to 0 decimal places with an explicit argument",
@@ -64300,7 +64300,7 @@
       "tag": "spec-runner-tagger:Time#ctime returns a canonical string representation of time",
       "group": "Time",
       "spec": "Time#ctime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#day returns the day of the month (1..n) for a local Time",
@@ -65506,7 +65506,7 @@
       "tag": "spec-runner-tagger:Time.at passed Numeric returns a Time object representing the given number of Integer seconds since 1970-01-01 00:00:00 UTC",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed Numeric returns a non-UTC Time",
