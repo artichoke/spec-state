@@ -65620,13 +65620,13 @@
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] not supported format does not try to convert format to Symbol with #to_sym",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] not supported format raises ArgumentError",
       "group": "Time",
       "spec": "Time.at",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.at passed [Time, Numeric, format] supports Float second argument",
