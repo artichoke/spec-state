@@ -17887,6 +17887,12 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Float#* does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#*",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Float#* raises a TypeError when given a non-Numeric",
       "group": "Float",
       "spec": "Float#*",
@@ -17911,6 +17917,12 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Float#+ does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#+",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Float#+ returns self plus other",
       "group": "Float",
       "spec": "Float#+",
@@ -17921,6 +17933,12 @@
       "group": "Float",
       "spec": "Float#+@",
       "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Float#- does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#-",
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Float#- returns self minus other",
@@ -17959,6 +17977,12 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Float#/ does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#/",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Float#/ properly coerces objects",
       "group": "Float",
       "spec": "Float#/",
@@ -17995,6 +18019,12 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Float#< does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#<",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Float#< raises an ArgumentError when given a non-Numeric",
       "group": "Float",
       "spec": "Float#<",
@@ -18005,6 +18035,12 @@
       "group": "Float",
       "spec": "Float#<",
       "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Float#<= does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#<=",
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Float#<= raises an ArgumentError when given a non-Numeric",
@@ -18085,6 +18121,12 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Float#> does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#>",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Float#> raises an ArgumentError when given a non-Numeric",
       "group": "Float",
       "spec": "Float#>",
@@ -18094,6 +18136,12 @@
       "tag": "spec-runner-tagger:Float#> returns true if self is greater than other",
       "group": "Float",
       "spec": "Float#>",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Float#>= does not rescue exception raised in other#coerce",
+      "group": "Float",
+      "spec": "Float#>=",
       "outcome": "fail"
     },
     {
