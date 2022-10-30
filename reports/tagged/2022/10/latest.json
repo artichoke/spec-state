@@ -49738,13 +49738,13 @@
       "tag": "spec-runner-tagger:String#to_i accepts '+' at the beginning of a String",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 10 via 0d when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 10 with no base specifier when base = 0",
@@ -49756,25 +49756,25 @@
       "tag": "spec-runner-tagger:String#to_i auto-detects base 16 via 0x when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 2 via 0b when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 8 via 0o when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i auto-detects base 8 via leading 0 when base = 0",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i doesn't handle foreign base specifiers when base is > 0",
@@ -49786,7 +49786,7 @@
       "tag": "spec-runner-tagger:String#to_i ignores leading whitespaces",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i ignores subsequent invalid characters",
@@ -49798,7 +49798,7 @@
       "tag": "spec-runner-tagger:String#to_i ignores underscores in between the digits",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i interprets leading characters as a number in the given base",
@@ -49816,7 +49816,7 @@
       "tag": "spec-runner-tagger:String#to_i requires that the sign if any appears before the base specifier",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i returns 0 for strings with leading underscores",
@@ -49834,7 +49834,7 @@
       "tag": "spec-runner-tagger:String#to_i returns a Fixnum for long strings with leading spaces",
       "group": "String",
       "spec": "String#to_i",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_i returns a Fixnum for long strings with trailing spaces",
