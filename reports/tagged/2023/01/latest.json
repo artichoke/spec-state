@@ -8629,6 +8629,120 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Enumerable#any? always returns false on empty enumeration",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? does not hide exceptions out of #each",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? raises an ArgumentError when more than 1 argument is provided",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument always returns false on empty enumeration",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument calls `===` on the pattern the return value ",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument calls the pattern with gathered array when yielded with multiple arguments",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument does not hide exceptions out of #each",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument does not hide exceptions out of pattern#===",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument returns false if the block never returns other than false or nil",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? when given a pattern argument returns true if the pattern ever returns a truthy value",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with block does not hide exceptions out of the block",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with block gathers initial args as elements when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with block returns false if the block never returns other than false or nil",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with block returns true if the block ever returns other than false or nil",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with block stops iterating once the return value is determined",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with block yields multiple arguments when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with no block gathers whole arrays as elements when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with no block returns false if all elements are false or nil",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#any? with no block returns true if any element is not false or nil",
+      "group": "Enumerable",
+      "spec": "Enumerable#any?",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:Enumerable#chain returns a chain of self and provided enumerables",
       "group": "Enumerable",
       "spec": "Enumerable#chain",
@@ -10529,6 +10643,252 @@
       "group": "Enumerable",
       "spec": "Enumerable#minmax_by",
       "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? always returns true on empty enumeration",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? does not hide exceptions out of #each",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? raises an ArgumentError when more than 1 argument is provided",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument always returns true on empty enumeration",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument calls `===` on the pattern the return value ",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument calls the pattern with gathered array when yielded with multiple arguments",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument does not hide exceptions out of #each",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument does not hide exceptions out of pattern#===",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument returns false if the pattern ever returns other than false or nil",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? when given a pattern argument returns true if the pattern never returns a truthy value",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block does not hide exceptions out of the block",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block gathers initial args as elements when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block passes each element to the block in turn until it returns true",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block returns false if the block ever returns true",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block returns true if the block never returns true",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block stops passing elements to the block when it returns true",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with a block yields multiple arguments when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with no block gathers whole arrays as elements when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with no block returns false if at least one of the elements in self are true",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#none? with no block returns true if none of the elements in self are true",
+      "group": "Enumerable",
+      "spec": "Enumerable#none?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? always returns false on empty enumeration",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? does not hide exceptions out of #each",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? raises an ArgumentError when more than 1 argument is provided",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument always returns false on empty enumeration",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument calls `===` on the pattern the return value ",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument calls the pattern with gathered array when yielded with multiple arguments",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument does not hide exceptions out of #each",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument does not hide exceptions out of pattern#===",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument returns false if the pattern never returns a truthy value",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument returns false if the pattern returns a truthy value more than once",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? when given a pattern argument returns true if the pattern returns a truthy value only once",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with a block does not hide exceptions out of the block",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with a block gathers initial args as elements when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with a block returns false if the block only returns false",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with a block returns false if the block returns true more than once",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with a block returns true if block returns true once",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with a block yields multiple arguments when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with no block gathers whole arrays as elements when each yields multiple",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with no block returns false if all elements evaluate to false",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with no block returns false if two elements evaluate to true",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Enumerable#one? with no block returns true if only one element evaluates to true",
+      "group": "Enumerable",
+      "spec": "Enumerable#one?",
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Enumerable#partition Enumerable with no size when no block is given returned Enumerator size returns nil",
@@ -14906,18 +15266,6 @@
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x displays negative number as a two's complement prefixed with '..f'",
-      "group": "File",
-      "spec": "File#printf",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:File#printf other formats % alone raises an ArgumentError",
-      "group": "File",
-      "spec": "File#printf",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:File#printf other formats % is escaped by %",
       "group": "File",
       "spec": "File#printf",
       "outcome": "fail"
@@ -27409,18 +27757,6 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Method#<< does not try to coerce argument with #to_proc",
-      "group": "Method",
-      "spec": "Method#<<",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Method#<< raises TypeError if passed not callable object",
-      "group": "Method",
-      "spec": "Method#<<",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Method#<< returns a Proc that is the composition of self and the passed Proc",
       "group": "Method",
       "spec": "Method#<<",
@@ -27563,18 +27899,6 @@
       "group": "Method",
       "spec": "Method#>>",
       "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Method#>> does not try to coerce argument with #to_proc",
-      "group": "Method",
-      "spec": "Method#>>",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Method#>> raises TypeError if passed not callable object",
-      "group": "Method",
-      "spec": "Method#>>",
-      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#>> returns a Proc that is the composition of self and the passed Proc",
@@ -31027,18 +31351,6 @@
       "outcome": "pass"
     },
     {
-      "tag": "spec-runner-tagger:Proc#<< does not try to coerce argument with #to_proc",
-      "group": "Proc",
-      "spec": "Proc#<<",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc#<< raises TypeError if passed not callable object",
-      "group": "Proc",
-      "spec": "Proc#<<",
-      "outcome": "fail"
-    },
-    {
       "tag": "spec-runner-tagger:Proc#<< returns a Proc that is the composition of self and the passed Proc",
       "group": "Proc",
       "spec": "Proc#<<",
@@ -31175,18 +31487,6 @@
       "group": "Proc",
       "spec": "Proc#>>",
       "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc#>> does not try to coerce argument with #to_proc",
-      "group": "Proc",
-      "spec": "Proc#>>",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:Proc#>> raises TypeError if passed not callable object",
-      "group": "Proc",
-      "spec": "Proc#>>",
-      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#>> returns a Proc that is the composition of self and the passed Proc",
@@ -39296,18 +39596,6 @@
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats x displays negative number as a two's complement prefixed with '..f'",
-      "group": "String",
-      "spec": "String#%",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:String#% other formats % alone raises an ArgumentError",
-      "group": "String",
-      "spec": "String#%",
-      "outcome": "fail"
-    },
-    {
-      "tag": "spec-runner-tagger:String#% other formats % is escaped by %",
       "group": "String",
       "spec": "String#%",
       "outcome": "fail"
