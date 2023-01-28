@@ -3076,7 +3076,7 @@
       "tag": "spec-runner-tagger:Base64#decode64 returns the Base64-decoded version of the given string",
       "group": "Base64",
       "spec": "Base64#decode64",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Base64#encode64 returns the Base64-encoded version of the given string",
@@ -3094,19 +3094,19 @@
       "tag": "spec-runner-tagger:Base64#urlsafe_decode64 does not require padding",
       "group": "Base64",
       "spec": "Base64#urlsafe_decode64",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Base64#urlsafe_decode64 uses '-' instead of '+'",
       "group": "Base64",
       "spec": "Base64#urlsafe_decode64",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Base64#urlsafe_decode64 uses '_' instead of '/'",
       "group": "Base64",
       "spec": "Base64#urlsafe_decode64",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Base64#urlsafe_encode64 makes padding optional",
@@ -4207,6 +4207,30 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Class#new invokes #initialize on the new instance with the given args",
+      "group": "Class",
+      "spec": "Class#new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class#new passes the block to #initialize",
+      "group": "Class",
+      "spec": "Class#new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class#new returns a new instance of self",
+      "group": "Class",
+      "spec": "Class#new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class#new uses the internal allocator and does not call #allocate",
+      "group": "Class",
+      "spec": "Class#new",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Class#superclass for a singleton class of a class returns the singleton class of its superclass",
       "group": "Class",
       "spec": "Class#superclass",
@@ -4297,6 +4321,72 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Class.new creates a class that can be given a name by assigning it to a constant",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new creates a class without a name",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new creates a new anonymous class",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new raises a TypeError if passed a metaclass",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new raises a TypeError when given a non-Class",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new sets the new class' superclass to Object when no class given",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new sets the new class' superclass to the given class",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new with a block given creates a subclass of the given superclass",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new with a block given runs the inherited hook after yielding the block",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new with a block given uses the given block as the class' body",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Class.new with a block given yields the new class as self in the block",
+      "group": "Class",
+      "spec": "Class.new",
+      "outcome": "pass"
+    },
+    {
       "tag": "spec-runner-tagger:Comparable#< calls #<=> on self with other and returns true if #<=> returns any Integer less than 0",
       "group": "Comparable",
       "spec": "Comparable#<",
@@ -4366,7 +4456,7 @@
       "tag": "spec-runner-tagger:Comparable#== when #<=> calls super calls the defined #<=> only once for different objects",
       "group": "Comparable",
       "spec": "Comparable#==",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Comparable#== when #<=> calls super returns true for identical objects",
@@ -4378,7 +4468,7 @@
       "tag": "spec-runner-tagger:Comparable#== when #<=> is not defined returns false and does not recurse infinitely",
       "group": "Comparable",
       "spec": "Comparable#==",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Comparable#== when #<=> is not defined returns true for identical objects",
@@ -6298,13 +6388,13 @@
       "tag": "spec-runner-tagger:ENV.merge! adds the parameter hash to ENV",
       "group": "ENV",
       "spec": "ENV.merge!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ENV.merge! yields key, the old value and the new value when replacing entries",
       "group": "ENV",
       "spec": "ENV.merge!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ENV.rassoc returns an array of the key and value of the environment variable with the given value",
@@ -6586,7 +6676,7 @@
       "tag": "spec-runner-tagger:ENV.to_h with block converts [key, value] pairs returned by the block to a hash",
       "group": "ENV",
       "spec": "ENV.to_h",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ENV.to_h with block does not coerce returned pair to Array with #to_a",
@@ -6640,13 +6730,13 @@
       "tag": "spec-runner-tagger:ENV.update adds the parameter hash to ENV",
       "group": "ENV",
       "spec": "ENV.update",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ENV.update yields key, the old value and the new value when replacing entries",
       "group": "ENV",
       "spec": "ENV.update",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ENV.value? returns false if ENV doesn't have the value",
@@ -6664,7 +6754,7 @@
       "tag": "spec-runner-tagger:ENV.values returns an array of the values",
       "group": "ENV",
       "spec": "ENV.values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:ENV.values uses the locale encoding",
@@ -11878,19 +11968,19 @@
       "tag": "spec-runner-tagger:Enumerator#feed can be called for each iteration",
       "group": "Enumerator",
       "spec": "Enumerator#feed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#feed causes yield to return the value if called during iteration",
       "group": "Enumerator",
       "spec": "Enumerator#feed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#feed raises a TypeError if called more than once without advancing the enumerator",
       "group": "Enumerator",
       "spec": "Enumerator#feed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#feed returns nil",
@@ -11902,13 +11992,13 @@
       "tag": "spec-runner-tagger:Enumerator#feed sets the future return value of yield if called before advancing the iterator",
       "group": "Enumerator",
       "spec": "Enumerator#feed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#feed sets the return value of Yielder#yield",
       "group": "Enumerator",
       "spec": "Enumerator#feed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#first returns arrays correctly when calling #first (2376)",
@@ -12004,7 +12094,7 @@
       "tag": "spec-runner-tagger:Enumerator#next raises a StopIteration exception at the end of the stream",
       "group": "Enumerator",
       "spec": "Enumerator#next",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#next returns the next element of the enumeration",
@@ -12022,37 +12112,37 @@
       "tag": "spec-runner-tagger:Enumerator#next_values advances the position of the enumerator each time when called multiple times",
       "group": "Enumerator",
       "spec": "Enumerator#next_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#next_values raises StopIteration if called on a finished enumerator",
       "group": "Enumerator",
       "spec": "Enumerator#next_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#next_values returns an array with only nil if yield is called with nil",
       "group": "Enumerator",
       "spec": "Enumerator#next_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#next_values returns an empty array if yield is called without arguments",
       "group": "Enumerator",
       "spec": "Enumerator#next_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#next_values returns the next element in self",
       "group": "Enumerator",
       "spec": "Enumerator#next_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#next_values works in concert with #rewind",
       "group": "Enumerator",
       "spec": "Enumerator#next_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#peek can be called repeatedly without advancing the position of the current element",
@@ -12070,7 +12160,7 @@
       "tag": "spec-runner-tagger:Enumerator#peek raises StopIteration if called on a finished enumerator",
       "group": "Enumerator",
       "spec": "Enumerator#peek",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#peek returns the next element in self",
@@ -12100,31 +12190,31 @@
       "tag": "spec-runner-tagger:Enumerator#peek_values raises StopIteration if called on a finished enumerator",
       "group": "Enumerator",
       "spec": "Enumerator#peek_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#peek_values returns an array with only nil if yield is called with nil",
       "group": "Enumerator",
       "spec": "Enumerator#peek_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#peek_values returns an empty array if yield is called without arguments",
       "group": "Enumerator",
       "spec": "Enumerator#peek_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#peek_values returns the next element in self",
       "group": "Enumerator",
       "spec": "Enumerator#peek_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#peek_values works in concert with #rewind",
       "group": "Enumerator",
       "spec": "Enumerator#peek_values",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#rewind calls the enclosed object's rewind method if one exists",
@@ -12136,7 +12226,7 @@
       "tag": "spec-runner-tagger:Enumerator#rewind clears a pending #feed value",
       "group": "Enumerator",
       "spec": "Enumerator#rewind",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator#rewind does nothing if the object doesn't have a #rewind method",
@@ -13450,19 +13540,19 @@
       "tag": "spec-runner-tagger:Enumerator::Lazy#select doesn't over-evaluate when peeked",
       "group": "Enumerator::Lazy",
       "spec": "Enumerator::Lazy#select",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator::Lazy#select doesn't pre-evaluate the next element",
       "group": "Enumerator::Lazy",
       "spec": "Enumerator::Lazy#select",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator::Lazy#select doesn't re-evaluate after peek",
       "group": "Enumerator::Lazy",
       "spec": "Enumerator::Lazy#select",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Enumerator::Lazy#select on a nested Lazy sets #size to nil",
@@ -14044,7 +14134,7 @@
       "tag": "spec-runner-tagger:Exception#backtrace returns the same array after duping",
       "group": "Exception",
       "spec": "Exception#backtrace",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#backtrace sets each element to a String",
@@ -14122,7 +14212,7 @@
       "tag": "spec-runner-tagger:Exception#dup does copy the backtrace",
       "group": "Exception",
       "spec": "Exception#dup",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Exception#dup does copy the cause",
@@ -14332,7 +14422,7 @@
       "tag": "spec-runner-tagger:Exception#to_s calls #to_s on the message",
       "group": "Exception",
       "spec": "Exception#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Exception#to_s returns self's message if set",
@@ -14398,7 +14488,7 @@
       "tag": "spec-runner-tagger:FalseClass .allocate raises a TypeError",
       "group": "FalseClass",
       "spec": "FalseClass",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:FalseClass .new is undefined",
@@ -14446,13 +14536,13 @@
       "tag": "spec-runner-tagger:Fiber#resume accepts any number of arguments",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume can be invoked from the root Fiber",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume executes the ensure clause",
@@ -14464,7 +14554,7 @@
       "tag": "spec-runner-tagger:Fiber#resume passes control to the beginning of the block on first invocation",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume raises a FiberError if invoked from a different Thread",
@@ -14476,85 +14566,85 @@
       "tag": "spec-runner-tagger:Fiber#resume raises a FiberError if the Fiber is dead",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume raises a FiberError if the Fiber tries to resume itself",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume raises a LocalJumpError if the block includes a break statement",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume raises a LocalJumpError if the block includes a return statement",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume resumes from the last call to Fiber.yield on subsequent invocations",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume returns control to the calling Fiber if called from one",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume returns the last value encountered on first invocation",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume runs until Fiber.yield",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume runs until the end of the block",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber#resume sets the block parameters to its arguments on the first invocation",
       "group": "Fiber",
       "spec": "Fiber#resume",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.new closes over lexical environments",
       "group": "Fiber",
       "spec": "Fiber.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.new creates a fiber from a subclass",
       "group": "Fiber",
       "spec": "Fiber.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.new creates a fiber from the given block",
       "group": "Fiber",
       "spec": "Fiber.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.new does not invoke the block",
       "group": "Fiber",
       "spec": "Fiber.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.new raises an ArgumentError if called without a block",
@@ -14566,13 +14656,13 @@
       "tag": "spec-runner-tagger:Fiber.yield does not propagate or reraise a rescued exception",
       "group": "Fiber",
       "spec": "Fiber.yield",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.yield passes control to the Fiber's caller",
       "group": "Fiber",
       "spec": "Fiber.yield",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.yield raises a FiberError if called from the root Fiber",
@@ -14584,19 +14674,19 @@
       "tag": "spec-runner-tagger:Fiber.yield returns its arguments to the caller",
       "group": "Fiber",
       "spec": "Fiber.yield",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.yield returns nil to the caller if given no arguments",
       "group": "Fiber",
       "spec": "Fiber.yield",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Fiber.yield returns to the Fiber the value of the #resume call that invoked it",
       "group": "Fiber",
       "spec": "Fiber.yield",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:File includes Enumerable",
@@ -15266,6 +15356,18 @@
     },
     {
       "tag": "spec-runner-tagger:File#printf integer formats x displays negative number as a two's complement prefixed with '..f'",
+      "group": "File",
+      "spec": "File#printf",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:File#printf other formats % alone raises an ArgumentError",
+      "group": "File",
+      "spec": "File#printf",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:File#printf other formats % is escaped by %",
       "group": "File",
       "spec": "File#printf",
       "outcome": "fail"
@@ -21505,6 +21607,132 @@
       "outcome": "pass"
     },
     {
+      "tag": "spec-runner-tagger:Hash#merge accepts multiple hashes",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge accepts zero arguments and returns a copy of self",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge does not call to_hash on hash subclasses",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge preserves the order of merged elements",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge preserves the order of merged elements for large hashes",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge processes entries with same order as each()",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge returns a new hash by combining self with the contents of other",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge returns subclass instance for subclasses",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge sets any duplicate key to the value of block if passed a block",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge tries to convert the passed argument to a hash using #to_hash",
+      "group": "Hash",
+      "spec": "Hash#merge",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! accepts multiple hashes",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! accepts zero arguments",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! adds the entries from other, overwriting duplicate keys. Returns self",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! checks frozen status before coercing an object with #to_hash",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! does not call to_hash on hash subclasses",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! does not raise an exception if changing the value of an existing key during iteration",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! processes entries with same order as merge()",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! raises a FrozenError on a frozen instance that is modified",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! raises a FrozenError on a frozen instance that would not be modified",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! sets any duplicate key to the value of block if passed a block",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#merge! tries to convert the passed argument to a hash using #to_hash",
+      "group": "Hash",
+      "spec": "Hash#merge!",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Hash#rassoc only returns the first matching key-value pair",
       "group": "Hash",
       "spec": "Hash#rassoc",
@@ -21718,7 +21946,7 @@
       "tag": "spec-runner-tagger:Hash#replace replaces the contents of self with other",
       "group": "Hash",
       "spec": "Hash#replace",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#replace tries to convert the passed argument to a hash using #to_hash",
@@ -22333,6 +22561,72 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Hash#update accepts multiple hashes",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update accepts zero arguments",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update adds the entries from other, overwriting duplicate keys. Returns self",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update checks frozen status before coercing an object with #to_hash",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update does not call to_hash on hash subclasses",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update does not raise an exception if changing the value of an existing key during iteration",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update processes entries with same order as merge()",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update raises a FrozenError on a frozen instance that is modified",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update raises a FrozenError on a frozen instance that would not be modified",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update sets any duplicate key to the value of block if passed a block",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Hash#update tries to convert the passed argument to a hash using #to_hash",
+      "group": "Hash",
+      "spec": "Hash#update",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Hash#value? returns true if the value exists in the hash",
       "group": "Hash",
       "spec": "Hash#value?",
@@ -22648,13 +22942,13 @@
       "tag": "spec-runner-tagger:Integer#% fixnum raises a ZeroDivisionError when the given argument is 0",
       "group": "Integer",
       "spec": "Integer#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#% fixnum raises a ZeroDivisionError when the given argument is 0 and a Float",
       "group": "Integer",
       "spec": "Integer#%",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Integer#% fixnum returns the modulus obtained from dividing self by the given argument",
@@ -24340,7 +24634,7 @@
       "tag": "spec-runner-tagger:Integer#div fixnum means (x / y).floor",
       "group": "Integer",
       "spec": "Integer#div",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Integer#div fixnum raises a TypeError when given a non-numeric argument",
@@ -24370,7 +24664,7 @@
       "tag": "spec-runner-tagger:Integer#div fixnum rounds towards -inf",
       "group": "Integer",
       "spec": "Integer#div",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Integer#divmod bignum raises a FloatDomainError if other is NaN",
@@ -28330,7 +28624,7 @@
       "tag": "spec-runner-tagger:Method#parameters adds nameless rest arg for \"star\" argument",
       "group": "Method",
       "spec": "Method#parameters",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#parameters return [[:req]] for a Method generated by attr_writer",
@@ -28702,7 +28996,7 @@
       "tag": "spec-runner-tagger:Method#super_method returns the method that would be called by super in the method",
       "group": "Method",
       "spec": "Method#super_method",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Method#to_proc can be called directly and not unwrap arguments like a block",
@@ -29518,7 +29812,7 @@
       "tag": "spec-runner-tagger:NilClass .allocate raises a TypeError",
       "group": "NilClass",
       "spec": "NilClass",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:NilClass .new is undefined",
@@ -29752,7 +30046,7 @@
       "tag": "spec-runner-tagger:Numeric#<=> returns 0 if self equals other",
       "group": "Numeric",
       "spec": "Numeric#<=>",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Numeric#<=> returns nil if self does not equal other",
@@ -29962,7 +30256,7 @@
       "tag": "spec-runner-tagger:Numeric#eql? returns the result of calling self#== with other when self's and other's types match",
       "group": "Numeric",
       "spec": "Numeric#eql?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Numeric#fdiv coerces other with #to_f",
@@ -32278,7 +32572,7 @@
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with Proc.new returns a description optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with Symbol#to_proc has a binary encoding",
@@ -32302,7 +32596,7 @@
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with UnboundMethod#to_proc returns a description including '(lambda)' and optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with lambda has a binary encoding",
@@ -32314,7 +32608,7 @@
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with lambda returns a description including '(lambda)' and optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with proc has a binary encoding",
@@ -32326,7 +32620,7 @@
       "tag": "spec-runner-tagger:Proc#inspect for a proc created with proc returns a description optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#inspect",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#lambda? is preserved when a Proc is curried",
@@ -32398,7 +32692,7 @@
       "tag": "spec-runner-tagger:Proc#parameters adds nameless rest arg for \"star\" argument",
       "group": "Proc",
       "spec": "Proc#parameters",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#parameters does not add locals as block options with a block and splat",
@@ -32554,7 +32848,7 @@
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with Proc.new returns a description optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with Symbol#to_proc has a binary encoding",
@@ -32578,7 +32872,7 @@
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with UnboundMethod#to_proc returns a description including '(lambda)' and optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with lambda has a binary encoding",
@@ -32590,7 +32884,7 @@
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with lambda returns a description including '(lambda)' and optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with proc has a binary encoding",
@@ -32602,7 +32896,7 @@
       "tag": "spec-runner-tagger:Proc#to_s for a proc created with proc returns a description optionally including file and line number",
       "group": "Proc",
       "spec": "Proc#to_s",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Proc#yield can call its block argument declared with a block argument",
@@ -33130,12 +33424,6 @@
       "tag": "spec-runner-tagger:RUBY_RELEASE_DATE is a String",
       "group": "RUBY_RELEASE_DATE",
       "spec": "RUBY_RELEASE_DATE",
-      "outcome": "pass"
-    },
-    {
-      "tag": "spec-runner-tagger:RUBY_REVISION is a String",
-      "group": "RUBY_REVISION",
-      "spec": "RUBY_REVISION",
       "outcome": "pass"
     },
     {
@@ -34156,7 +34444,7 @@
       "tag": "spec-runner-tagger:Range#initialize raises an ArgumentError if arguments don't respond to <=>",
       "group": "Range",
       "spec": "Range#initialize",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Range#initialize raises an ArgumentError if passed with four or more arguments",
@@ -35002,7 +35290,7 @@
       "tag": "spec-runner-tagger:Range.new raises an ArgumentError when the given start and end can't be compared by using #<=>",
       "group": "Range",
       "spec": "Range.new",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:RangeError is a superclass of FloatDomainError",
@@ -38740,7 +39028,7 @@
       "tag": "spec-runner-tagger:StopIteration#result returns the method-returned-object from an Enumerator",
       "group": "StopIteration",
       "spec": "StopIteration#result",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String includes Comparable",
@@ -39596,6 +39884,18 @@
     },
     {
       "tag": "spec-runner-tagger:String#% integer formats x displays negative number as a two's complement prefixed with '..f'",
+      "group": "String",
+      "spec": "String#%",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:String#% other formats % alone raises an ArgumentError",
+      "group": "String",
+      "spec": "String#%",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:String#% other formats % is escaped by %",
       "group": "String",
       "spec": "String#%",
       "outcome": "fail"
@@ -51142,7 +51442,7 @@
       "tag": "spec-runner-tagger:String#unpack with format '@' positions the read index one beyond the last readable byte in the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format '@' raises a TypeError when passed an Integer",
@@ -51574,7 +51874,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'C' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'C' calls #to_str to coerce the directives string",
@@ -52264,7 +52564,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' calls #to_str to coerce the directives string",
@@ -52348,7 +52648,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '!' decodes an int with most significant bit set as a positive number",
@@ -52408,19 +52708,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' and '!' decodes an int with most significant bit set as a positive number",
@@ -52534,13 +52834,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '<' and '_' decodes an int with most significant bit set as a positive number",
@@ -52708,19 +53008,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' and '!' decodes an int with most significant bit set as a positive number",
@@ -52834,13 +53134,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '>' and '_' decodes an int with most significant bit set as a positive number",
@@ -53008,7 +53308,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'I' with modifier '_' decodes an int with most significant bit set as a positive number",
@@ -53716,7 +54016,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'L' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'L' calls #to_str to coerce the directives string",
@@ -53854,7 +54154,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'L' with modifier '<' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'L' with modifier '<' and '!' decodes a long with most significant bit set as a positive number",
@@ -54130,7 +54430,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'L' with modifier '>' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'L' with modifier '>' and '!' decodes a long with most significant bit set as a positive number",
@@ -54676,7 +54976,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'N' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'N' calls #to_str to coerce the directives string",
@@ -54922,7 +55222,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'Q' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'Q' calls #to_str to coerce the directives string",
@@ -55114,7 +55414,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' calls #to_str to coerce the directives string",
@@ -55198,7 +55498,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '!' decodes a short with most significant bit set as a positive number",
@@ -55258,19 +55558,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' and '!' decodes a short with most significant bit set as a positive number",
@@ -55384,13 +55684,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '<' and '_' decodes a short with most significant bit set as a positive number",
@@ -55558,19 +55858,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' and '!' decodes a short with most significant bit set as a positive number",
@@ -55684,13 +55984,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '>' and '_' decodes a short with most significant bit set as a positive number",
@@ -55858,7 +56158,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'S' with modifier '_' decodes a short with most significant bit set as a positive number",
@@ -55954,7 +56254,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not decode any items for directives exceeding the input string size",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not taint returned arrays if given a tainted format string",
@@ -55990,13 +56290,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not taint returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not taint returned strings if given an untainted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not untrust returned arrays if given a untrusted format string",
@@ -56032,13 +56332,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not untrust returned strings if given an trusted packed string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'U' does not untrust returned strings if given an untainted format string",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'U' ignores NULL bytes between directives",
@@ -56116,7 +56416,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'V' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'V' calls #to_str to coerce the directives string",
@@ -56866,7 +57166,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'c' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'c' calls #to_str to coerce the directives string",
@@ -57556,7 +57856,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' calls #to_str to coerce the directives string",
@@ -57640,7 +57940,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '!' decodes an int with most significant bit set as a negative number",
@@ -57700,19 +58000,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' and '!' decodes an int with most significant bit set as a negative number",
@@ -57826,13 +58126,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '<' and '_' decodes an int with most significant bit set as a negative number",
@@ -58000,19 +58300,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' and '!' decodes an int with most significant bit set as a negative number",
@@ -58126,13 +58426,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '>' and '_' decodes an int with most significant bit set as a negative number",
@@ -58300,7 +58600,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'i' with modifier '_' decodes an int with most significant bit set as a negative number",
@@ -59008,7 +59308,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'l' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'l' calls #to_str to coerce the directives string",
@@ -59146,7 +59446,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'l' with modifier '<' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'l' with modifier '<' and '!' decodes a long with most significant bit set as a negative number",
@@ -59422,7 +59722,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'l' with modifier '>' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'l' with modifier '>' and '!' decodes a long with most significant bit set as a negative number",
@@ -59920,7 +60220,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'n' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'n' calls #to_str to coerce the directives string",
@@ -60154,7 +60454,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'q' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'q' calls #to_str to coerce the directives string",
@@ -60346,7 +60646,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' calls #to_str to coerce the directives string",
@@ -60430,7 +60730,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '!' decodes a short with most significant bit set as a negative number",
@@ -60490,19 +60790,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' and '!' decodes a short with most significant bit set as a negative number",
@@ -60616,13 +60916,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '<' and '_' decodes a short with most significant bit set as a negative number",
@@ -60790,19 +61090,19 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' and '!' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' and '!' decodes a short with most significant bit set as a negative number",
@@ -60916,13 +61216,13 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' and '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '>' and '_' decodes a short with most significant bit set as a negative number",
@@ -61090,7 +61390,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '_' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 's' with modifier '_' decodes a short with most significant bit set as a negative number",
@@ -61318,7 +61618,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'v' adds nil for each element requested beyond the end of the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'v' calls #to_str to coerce the directives string",
@@ -61450,7 +61750,7 @@
       "tag": "spec-runner-tagger:String#unpack with format 'x' positions the read index one beyond the last readable byte in the String",
       "group": "String",
       "spec": "String#unpack",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#unpack with format 'x' raises a TypeError when passed an Integer",
@@ -68692,19 +68992,19 @@
       "tag": "spec-runner-tagger:UnboundMethod#== returns false if methods are the same but added from an included Module",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#==",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#== returns false if same method but extracted from two different subclasses",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#==",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#== returns false if same method but one extracted from a subclass",
       "group": "UnboundMethod",
       "spec": "UnboundMethod#==",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:UnboundMethod#== returns true if both are aliases for a third method",
