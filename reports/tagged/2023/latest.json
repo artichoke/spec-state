@@ -64600,13 +64600,13 @@
       "tag": "spec-runner-tagger:Time#+ returns a UTC time if self is UTC",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ returns a non-UTC time if self is non-UTC",
       "group": "Time",
       "spec": "Time#+",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#+ returns a time with the same fixed offset as self",
@@ -64702,13 +64702,13 @@
       "tag": "spec-runner-tagger:Time#- returns a UTC time if self is UTC",
       "group": "Time",
       "spec": "Time#-",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#- returns a non-UTC time if self is non-UTC",
       "group": "Time",
       "spec": "Time#-",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#- returns a time with nanoseconds precision between two time objects",
@@ -64942,7 +64942,7 @@
       "tag": "spec-runner-tagger:Time#day returns the day of the month (1..n) for a local Time",
       "group": "Time",
       "spec": "Time#day",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#day returns the day of the month for a Time with a fixed offset",
@@ -64954,7 +64954,7 @@
       "tag": "spec-runner-tagger:Time#day returns the day of the month for a UTC Time",
       "group": "Time",
       "spec": "Time#day",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#dst? dst? returns whether time is during daylight saving time",
@@ -65068,13 +65068,13 @@
       "tag": "spec-runner-tagger:Time#friday? returns false if time doesn't represent Friday",
       "group": "Time",
       "spec": "Time#friday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#friday? returns true if time represents Friday",
       "group": "Time",
       "spec": "Time#friday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#getgm returns a new time which is the utc representation of time",
@@ -65266,7 +65266,7 @@
       "tag": "spec-runner-tagger:Time#gmtime on a frozen time does not raise an error if already in UTC",
       "group": "Time",
       "spec": "Time#gmtime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#gmtime on a frozen time raises a RuntimeError if the time is not UTC",
@@ -65278,7 +65278,7 @@
       "tag": "spec-runner-tagger:Time#gmtime returns self",
       "group": "Time",
       "spec": "Time#gmtime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#gmtoff given negative offset returns a negative offset",
@@ -65344,7 +65344,7 @@
       "tag": "spec-runner-tagger:Time#hour returns the hour of the day (0..23) for a local Time",
       "group": "Time",
       "spec": "Time#hour",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#hour returns the hour of the day for a Time with a fixed offset",
@@ -65356,13 +65356,13 @@
       "tag": "spec-runner-tagger:Time#hour returns the hour of the day for a UTC Time",
       "group": "Time",
       "spec": "Time#hour",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#inspect formats the UTC time following the pattern 'yyyy-MM-dd HH:mm:ss UTC'",
       "group": "Time",
       "spec": "Time#inspect",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#inspect formats the fixed offset time following the pattern 'yyyy-MM-dd HH:mm:ss +/-HHMM'",
@@ -65494,7 +65494,7 @@
       "tag": "spec-runner-tagger:Time#mday returns the day of the month (1..n) for a local Time",
       "group": "Time",
       "spec": "Time#mday",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#mday returns the day of the month for a Time with a fixed offset",
@@ -65506,13 +65506,13 @@
       "tag": "spec-runner-tagger:Time#mday returns the day of the month for a UTC Time",
       "group": "Time",
       "spec": "Time#mday",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#min returns the minute of the hour (0..59) for a local Time",
       "group": "Time",
       "spec": "Time#min",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#min returns the minute of the hour for a Time with a fixed offset",
@@ -65524,7 +65524,7 @@
       "tag": "spec-runner-tagger:Time#min returns the minute of the hour for a UTC Time",
       "group": "Time",
       "spec": "Time#min",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#mon returns the four digit year for a Time with a fixed offset",
@@ -65536,25 +65536,25 @@
       "tag": "spec-runner-tagger:Time#mon returns the month of the year for a UTC Time",
       "group": "Time",
       "spec": "Time#mon",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#mon returns the month of the year for a local Time",
       "group": "Time",
       "spec": "Time#mon",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#monday? returns false if time doesn't represent Monday",
       "group": "Time",
       "spec": "Time#monday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#monday? returns true if time represents Monday",
       "group": "Time",
       "spec": "Time#monday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#month returns the four digit year for a Time with a fixed offset",
@@ -65566,13 +65566,13 @@
       "tag": "spec-runner-tagger:Time#month returns the month of the year for a UTC Time",
       "group": "Time",
       "spec": "Time#month",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#month returns the month of the year for a local Time",
       "group": "Time",
       "spec": "Time#month",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#nsec returns 0 for a Time constructed with a whole number of seconds",
@@ -65584,7 +65584,7 @@
       "tag": "spec-runner-tagger:Time#nsec returns a positive value for dates before the epoch",
       "group": "Time",
       "spec": "Time#nsec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#nsec returns the nanoseconds part of a Time constructed with a Float number of seconds",
@@ -65650,19 +65650,475 @@
       "tag": "spec-runner-tagger:Time#saturday? returns false if time doesn't represent Saturday",
       "group": "Time",
       "spec": "Time#saturday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#saturday? returns true if time represents Saturday",
       "group": "Time",
       "spec": "Time#saturday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#sec returns the second of the minute(0..60) for time",
       "group": "Time",
       "spec": "Time#sec",
       "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime formats time according to the directives in the given format string",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime passes the format string's encoding to the result string",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime requires an argument",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime returns the 12-based hour with %I",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime returns the 24-based hour with %H",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime returns the minute with %M",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime returns the second with %S",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime returns the timezone with %Z",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime rounds an offset to the nearest second when formatting with %z",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to add a newline",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to add a tab",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to escape the % character",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the century",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the commercial year with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the commercial year with only two digits",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the date as YYYY-MM-DD",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the date in full",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the date with slashes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the full day name",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the full month name",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the hour in 12 hour notation with leading spaces",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the hour in 12 hour notation with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the hour in 24 hour notation with leading spaces",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the hour with leading zeroes (hour is always 00)",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the julian day with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the minutes with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the month day with leading spaces",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the month day with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the month with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the short day name",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the short month name",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to print the time in full",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show AM/PM",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show HH:MM",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show HH:MM for a date",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show HH:MM:SS",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show HH:MM:SS",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show HH:MM:SS AM/PM",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show HH:MM:SS AM/PM for a date",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show MM/DD/YY",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show am/pm",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the commercial week",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the commercial week day",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the commercial week with %V",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the number of seconds since the unix epoch",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the number of seconds since the unix epoch for a date",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the number of seconds with leading zeroes",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the timezone if available",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the timezone of the date with a : separator",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the week day",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the week number with the week starting on Sunday (%U) and Monday (%W)",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the year in YY format",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime should be able to show the year in YYYY format",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports 12-hr formatting with %l",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports 24-hr formatting with %l",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports AM/PM formatting with %p",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports GNU modificators",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports HH:MM:SS formatting with %T",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports HH:MM:SS formatting with %X",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports am/pm formatting with %P",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports the '-' modifier for padded format directives",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports the '-' modifier to drop leading zeros",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime supports the '-' modifier to drop leading zeros",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "pass"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %L formats the milliseconds of the second",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %N formats the microseconds of the second with %6N",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %N formats the milliseconds of the second with %3N",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %N formats the nanoseconds of the second with %9N",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %N formats the nanoseconds of the second with %N",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %N formats the picoseconds of the second with %12N",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a UTC time offset as '+0000'",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a local time with negative UTC offset as '-HHMM'",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a local time with positive UTC offset as '+HHMM'",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a time with fixed negative offset as '-HHMM'",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a time with fixed offset as '+/-HH:MM' with ':' specifier",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a time with fixed offset as '+/-HH:MM:SS' with '::' specifier",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time#strftime with %z formats a time with fixed positive offset as '+HHMM'",
+      "group": "Time",
+      "spec": "Time#strftime",
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Time#subsec returns 0 as a Fixnum for a Time with a whole number of seconds",
@@ -65728,25 +66184,25 @@
       "tag": "spec-runner-tagger:Time#sunday? returns false if time doesn't represent Sunday",
       "group": "Time",
       "spec": "Time#sunday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#sunday? returns true if time represents Sunday",
       "group": "Time",
       "spec": "Time#sunday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#thursday? returns false if time doesn't represent Thursday",
       "group": "Time",
       "spec": "Time#thursday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#thursday? returns true if time represents Thursday",
       "group": "Time",
       "spec": "Time#thursday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#to_a returns a 10 element array representing the deconstructed time",
@@ -65788,7 +66244,7 @@
       "tag": "spec-runner-tagger:Time#to_s formats the UTC time following the pattern 'yyyy-MM-dd HH:mm:ss UTC'",
       "group": "Time",
       "spec": "Time#to_s",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#to_s formats the fixed offset time following the pattern 'yyyy-MM-dd HH:mm:ss +/-HHMM'",
@@ -65812,13 +66268,13 @@
       "tag": "spec-runner-tagger:Time#tuesday? returns false if time doesn't represent Tuesday",
       "group": "Time",
       "spec": "Time#tuesday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#tuesday? returns true if time represents Tuesday",
       "group": "Time",
       "spec": "Time#tuesday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#tv_nsec needs to be reviewed for spec completeness",
@@ -65866,7 +66322,7 @@
       "tag": "spec-runner-tagger:Time#usec returns a positive value for dates before the epoch",
       "group": "Time",
       "spec": "Time#usec",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#usec returns the microseconds for time created by Time#local",
@@ -65914,7 +66370,7 @@
       "tag": "spec-runner-tagger:Time#utc on a frozen time does not raise an error if already in UTC",
       "group": "Time",
       "spec": "Time#utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#utc on a frozen time raises a RuntimeError if the time is not UTC",
@@ -65926,7 +66382,7 @@
       "tag": "spec-runner-tagger:Time#utc returns self",
       "group": "Time",
       "spec": "Time#utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#utc? returns true if time represents a time in UTC (GMT)",
@@ -65992,13 +66448,13 @@
       "tag": "spec-runner-tagger:Time#wednesday? returns false if time doesn't represent Wednesday",
       "group": "Time",
       "spec": "Time#wednesday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#wednesday? returns true if time represents Wednesday",
       "group": "Time",
       "spec": "Time#wednesday?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#yday returns an integer representing the day of the year, 1..366",
@@ -66022,13 +66478,13 @@
       "tag": "spec-runner-tagger:Time#year returns the four digit year for a UTC Time as an Integer",
       "group": "Time",
       "spec": "Time#year",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#year returns the four digit year for a local Time as an Integer",
       "group": "Time",
       "spec": "Time#year",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time#zone Encoding.default_internal is set doesn't raise errors for a Time with a fixed offset",
@@ -66352,7 +66808,7 @@
       "tag": "spec-runner-tagger:Time.gm accepts various year ranges",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm coerces the day with #to_int",
@@ -66400,7 +66856,7 @@
       "tag": "spec-runner-tagger:Time.gm creates a time based on given C-style gmtime arguments, interpreted as UTC (GMT)",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm creates a time based on given values, interpreted as UTC (GMT)",
@@ -66451,6 +66907,18 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Time.gm handles a value of 60 for seconds by carrying values forward in zone 'UTC'",
+      "group": "Time",
+      "spec": "Time.gm",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time.gm handles bad leap seconds by carrying values forward",
+      "group": "Time",
+      "spec": "Time.gm",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Time.gm handles float arguments",
       "group": "Time",
       "spec": "Time.gm",
@@ -66490,7 +66958,7 @@
       "tag": "spec-runner-tagger:Time.gm handles microseconds",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm handles string arguments",
@@ -66502,7 +66970,7 @@
       "tag": "spec-runner-tagger:Time.gm handles years from 0 as such",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm ignores fractional seconds if a passed fractional number of microseconds",
@@ -66514,13 +66982,13 @@
       "tag": "spec-runner-tagger:Time.gm ignores fractional seconds if a passed whole number of microseconds",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm interprets Julian-Gregorian gap dates using Gregorian proleptic calendar",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm interprets all numerals as base 10",
@@ -66532,73 +67000,73 @@
       "tag": "spec-runner-tagger:Time.gm interprets post-Gregorian reform dates using Gregorian calendar",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm interprets pre-Gregorian reform dates using Gregorian proleptic calendar",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises ArgumentError when given 11 arguments",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises ArgumentError when given 9 arguments",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises a TypeError if the year is nil",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range day",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range hour",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range microsecond",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range minute",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range month",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range second",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm raises an ArgumentError for out of range values",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm returns subclass instances",
@@ -66652,7 +67120,7 @@
       "tag": "spec-runner-tagger:Time.local accepts various year ranges",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local coerces the day with #to_int",
@@ -66796,7 +67264,7 @@
       "tag": "spec-runner-tagger:Time.local handles microseconds",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local handles string arguments",
@@ -66808,7 +67276,7 @@
       "tag": "spec-runner-tagger:Time.local handles years from 0 as such",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local ignores fractional seconds if a passed fractional number of microseconds",
@@ -66820,7 +67288,7 @@
       "tag": "spec-runner-tagger:Time.local ignores fractional seconds if a passed whole number of microseconds",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local interprets all numerals as base 10",
@@ -66832,61 +67300,61 @@
       "tag": "spec-runner-tagger:Time.local raises ArgumentError when given 11 arguments",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises ArgumentError when given 9 arguments",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises a TypeError if the year is nil",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range day",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range hour",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range microsecond",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range minute",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range month",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range second",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local raises an ArgumentError for out of range values",
       "group": "Time",
       "spec": "Time.local",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.local returns subclass instances",
@@ -66946,7 +67414,7 @@
       "tag": "spec-runner-tagger:Time.mktime accepts various year ranges",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime coerces the day with #to_int",
@@ -67090,7 +67558,7 @@
       "tag": "spec-runner-tagger:Time.mktime handles microseconds",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime handles string arguments",
@@ -67102,7 +67570,7 @@
       "tag": "spec-runner-tagger:Time.mktime handles years from 0 as such",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime ignores fractional seconds if a passed fractional number of microseconds",
@@ -67114,7 +67582,7 @@
       "tag": "spec-runner-tagger:Time.mktime ignores fractional seconds if a passed whole number of microseconds",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime interprets all numerals as base 10",
@@ -67126,61 +67594,61 @@
       "tag": "spec-runner-tagger:Time.mktime raises ArgumentError when given 11 arguments",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises ArgumentError when given 9 arguments",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises a TypeError if the year is nil",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range day",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range hour",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range microsecond",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range minute",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range month",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range second",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime raises an ArgumentError for out of range values",
       "group": "Time",
       "spec": "Time.mktime",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.mktime returns subclass instances",
@@ -67726,7 +68194,7 @@
       "tag": "spec-runner-tagger:Time.utc accepts various year ranges",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc coerces the day with #to_int",
@@ -67774,7 +68242,7 @@
       "tag": "spec-runner-tagger:Time.utc creates a time based on given C-style gmtime arguments, interpreted as UTC (GMT)",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc creates a time based on given values, interpreted as UTC (GMT)",
@@ -67825,6 +68293,18 @@
       "outcome": "fail"
     },
     {
+      "tag": "spec-runner-tagger:Time.utc handles a value of 60 for seconds by carrying values forward in zone 'UTC'",
+      "group": "Time",
+      "spec": "Time.utc",
+      "outcome": "fail"
+    },
+    {
+      "tag": "spec-runner-tagger:Time.utc handles bad leap seconds by carrying values forward",
+      "group": "Time",
+      "spec": "Time.utc",
+      "outcome": "fail"
+    },
+    {
       "tag": "spec-runner-tagger:Time.utc handles float arguments",
       "group": "Time",
       "spec": "Time.utc",
@@ -67864,7 +68344,7 @@
       "tag": "spec-runner-tagger:Time.utc handles microseconds",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc handles string arguments",
@@ -67876,7 +68356,7 @@
       "tag": "spec-runner-tagger:Time.utc handles years from 0 as such",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc ignores fractional seconds if a passed fractional number of microseconds",
@@ -67888,13 +68368,13 @@
       "tag": "spec-runner-tagger:Time.utc ignores fractional seconds if a passed whole number of microseconds",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc interprets Julian-Gregorian gap dates using Gregorian proleptic calendar",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc interprets all numerals as base 10",
@@ -67906,73 +68386,73 @@
       "tag": "spec-runner-tagger:Time.utc interprets post-Gregorian reform dates using Gregorian calendar",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc interprets pre-Gregorian reform dates using Gregorian proleptic calendar",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises ArgumentError when given 11 arguments",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises ArgumentError when given 9 arguments",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises a TypeError if the year is nil",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range day",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range hour",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range microsecond",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range minute",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range month",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range second",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc raises an ArgumentError for out of range values",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc returns subclass instances",
