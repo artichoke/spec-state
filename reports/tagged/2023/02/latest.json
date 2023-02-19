@@ -66862,7 +66862,7 @@
       "tag": "spec-runner-tagger:Time.gm creates a time based on given values, interpreted as UTC (GMT)",
       "group": "Time",
       "spec": "Time.gm",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.gm handles a String day",
@@ -68248,7 +68248,7 @@
       "tag": "spec-runner-tagger:Time.utc creates a time based on given values, interpreted as UTC (GMT)",
       "group": "Time",
       "spec": "Time.utc",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Time.utc handles a String day",
