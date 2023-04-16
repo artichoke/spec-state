@@ -42040,7 +42040,7 @@
       "tag": "spec-runner-tagger:String#b returns a binary encoded string",
       "group": "String",
       "spec": "String#b",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#b returns new string without modifying self",
