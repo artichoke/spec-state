@@ -46558,19 +46558,19 @@
       "tag": "spec-runner-tagger:String#index with String returns the character index after offset",
       "group": "String",
       "spec": "String#index",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#index with String returns the character index of a multibyte character",
       "group": "String",
       "spec": "String#index",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#index with String returns the index of the first occurrence of the given substring",
       "group": "String",
       "spec": "String#index",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#index with String starts the search at offset + self.length if offset is negative",
@@ -46582,7 +46582,7 @@
       "tag": "spec-runner-tagger:String#index with String starts the search at the given offset",
       "group": "String",
       "spec": "String#index",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#initialize is a private method",
@@ -47794,7 +47794,7 @@
       "tag": "spec-runner-tagger:String#rindex with String returns the index of the last occurrence of the given substring",
       "group": "String",
       "spec": "String#rindex",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#rindex with String starts the search at offset + self.length if offset is negative",
@@ -49210,7 +49210,7 @@
       "tag": "spec-runner-tagger:String#split with String splits on multibyte characters",
       "group": "String",
       "spec": "String#split",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#split with String suppresses trailing empty fields when limit isn't given or 0",
