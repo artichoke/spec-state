@@ -46546,7 +46546,7 @@
       "tag": "spec-runner-tagger:String#index with String returns nil if the substring isn't found",
       "group": "String",
       "spec": "String#index",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:String#index with String returns the character index after a partial first match",
