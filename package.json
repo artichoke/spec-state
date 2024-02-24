@@ -2,7 +2,7 @@
   "name": "@artichokeruby/spec-state",
   "version": "0.1.0",
   "private": true,
-  "description": "Artichoke project website",
+  "description": "Artichoke ruby/spec tracler",
   "keywords": [
     "programming language",
     "scripting",
@@ -10,7 +10,7 @@
     "rust",
     "wasm"
   ],
-  "homepage": "https://artichoke.github.io/spec-state/",
+  "homepage": "https://www.artichokeruby.org",
   "bugs": "https://github.com/artichoke/spec-state/issues",
   "license": "MIT",
   "author": "Ryan Lopopolo <rjl@hyperbo.la> (https://hyperbo.la/)",
@@ -18,8 +18,9 @@
     "Ryan Lopopolo <rjl@hyperbo.la> (https://hyperbo.la/)"
   ],
   "repository": "github:artichoke/spec-state",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -33,9 +34,6 @@
     }
   },
   "scripts": {
-    "fmt": "npx prettier --write \"**/*\"",
-    "lint": "npx eslint . --ext .js,.jsx,.mjs,.ts,.tsx --no-error-on-unmatched-pattern",
-    "lint:fix": "npx eslint . --ext .js,.jsx,.mjs,.ts,.tsx --fix --no-error-on-unmatched-pattern",
-    "release:markdown_link_check": "find . -name '*.md' -and -not -path '*/node_modules/*' | sort | xargs -n1 npx markdown-link-check --config .github/markdown-link-check.json"
+    "fmt": "prettier --write \"**/*\""
   }
 }
