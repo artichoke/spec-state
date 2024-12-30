@@ -33520,7 +33520,7 @@
       "tag": "spec-runner-tagger:Random#seed returns the given seed coerced with #to_int",
       "group": "Random",
       "spec": "Random#seed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random#seed returns the same generated seed when repeatedly called on the same object",
@@ -33532,7 +33532,7 @@
       "tag": "spec-runner-tagger:Random#seed returns the seed given in the constructor",
       "group": "Random",
       "spec": "Random#seed",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.bytes returns a String",
@@ -33574,13 +33574,13 @@
       "tag": "spec-runner-tagger:Random.new accepts (and truncates) a Float seed value as an argument",
       "group": "Random",
       "spec": "Random.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.new accepts an Integer seed value as an argument",
       "group": "Random",
       "spec": "Random.new",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.new raises a RangeError if passed a Complex (with imaginary part) seed value as an argument",
@@ -33640,13 +33640,13 @@
       "tag": "spec-runner-tagger:Random.srand returns the previous argument to .srand if one was given and 0 is supplied",
       "group": "Random",
       "spec": "Random.srand",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.srand returns the previous argument to .srand if one was given and no argument is supplied",
       "group": "Random",
       "spec": "Random.srand",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Random.srand seeds Kernel.rand such that its return value is deterministic",
@@ -62098,7 +62098,7 @@
       "tag": "spec-runner-tagger:String.allocate returns a fully-formed String",
       "group": "String",
       "spec": "String.allocate",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String.allocate returns an instance of String",
