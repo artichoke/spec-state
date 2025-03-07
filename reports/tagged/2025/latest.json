@@ -21658,13 +21658,13 @@
       "tag": "spec-runner-tagger:Hash#merge sets any duplicate key to the value of block if passed a block",
       "group": "Hash",
       "spec": "Hash#merge",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#merge tries to convert the passed argument to a hash using #to_hash",
       "group": "Hash",
       "spec": "Hash#merge",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#merge! accepts multiple hashes",
@@ -21688,7 +21688,7 @@
       "tag": "spec-runner-tagger:Hash#merge! checks frozen status before coercing an object with #to_hash",
       "group": "Hash",
       "spec": "Hash#merge!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#merge! does not call to_hash on hash subclasses",
@@ -21718,7 +21718,7 @@
       "tag": "spec-runner-tagger:Hash#merge! raises a FrozenError on a frozen instance that would not be modified",
       "group": "Hash",
       "spec": "Hash#merge!",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#merge! sets any duplicate key to the value of block if passed a block",
@@ -21730,7 +21730,7 @@
       "tag": "spec-runner-tagger:Hash#merge! tries to convert the passed argument to a hash using #to_hash",
       "group": "Hash",
       "spec": "Hash#merge!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#rassoc only returns the first matching key-value pair",
@@ -21940,7 +21940,7 @@
       "tag": "spec-runner-tagger:Hash#replace raises a FrozenError if called on a frozen instance that would not be modified",
       "group": "Hash",
       "spec": "Hash#replace",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#replace replaces the contents of self with other",
@@ -21952,7 +21952,7 @@
       "tag": "spec-runner-tagger:Hash#replace tries to convert the passed argument to a hash using #to_hash",
       "group": "Hash",
       "spec": "Hash#replace",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#select processes entries with the same order as reject",
@@ -22582,7 +22582,7 @@
       "tag": "spec-runner-tagger:Hash#update checks frozen status before coercing an object with #to_hash",
       "group": "Hash",
       "spec": "Hash#update",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#update does not call to_hash on hash subclasses",
@@ -22612,7 +22612,7 @@
       "tag": "spec-runner-tagger:Hash#update raises a FrozenError on a frozen instance that would not be modified",
       "group": "Hash",
       "spec": "Hash#update",
-      "outcome": "pass"
+      "outcome": "fail"
     },
     {
       "tag": "spec-runner-tagger:Hash#update sets any duplicate key to the value of block if passed a block",
@@ -22624,7 +22624,7 @@
       "tag": "spec-runner-tagger:Hash#update tries to convert the passed argument to a hash using #to_hash",
       "group": "Hash",
       "spec": "Hash#update",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Hash#value? returns true if the value exists in the hash",
