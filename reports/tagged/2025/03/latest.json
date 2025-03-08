@@ -41974,7 +41974,7 @@
       "tag": "spec-runner-tagger:String#ascii_only? returns false when concatenating an ASCII and non-ASCII String",
       "group": "String",
       "spec": "String#ascii_only?",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#ascii_only? returns false when interpolating non ascii strings",
@@ -42472,7 +42472,7 @@
       "tag": "spec-runner-tagger:String#capitalize! returns nil when no changes are made",
       "group": "String",
       "spec": "String#capitalize!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#casecmp independent of case for non-ASCII characters does not case fold",
@@ -43600,7 +43600,7 @@
       "tag": "spec-runner-tagger:String#concat concatenates the given argument to self and returns self",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat concatenates the initial value when given arguments contain 2 self",
@@ -43612,37 +43612,37 @@
       "tag": "spec-runner-tagger:String#concat converts the given argument to a String using to_str",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat raises a TypeError if the given argument can't be converted to a String",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat returns a String when given a subclass instance",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat returns an instance of same class when called on a subclass",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat returns self when given no arguments",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat taints self if other is tainted",
@@ -43654,7 +43654,7 @@
       "tag": "spec-runner-tagger:String#concat takes multiple arguments",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat untrusts self if other is untrusted",
@@ -43672,13 +43672,13 @@
       "tag": "spec-runner-tagger:String#concat when self and the argument are in different ASCII-compatible encodings uses self's encoding if both are ASCII-only",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat when self and the argument are in different ASCII-compatible encodings uses self's encoding if the argument is ASCII-only",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat when self and the argument are in different ASCII-compatible encodings uses the argument's encoding if self is ASCII-only",
@@ -43714,7 +43714,7 @@
       "tag": "spec-runner-tagger:String#concat when self is in an ASCII-incompatible encoding incompatible with the argument's encoding uses the argument's encoding if self is empty",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding raises Encoding::CompatibilityError if neither are empty",
@@ -43726,13 +43726,13 @@
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding uses self's encoding if both are empty",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding uses self's encoding if the argument is empty",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat when the argument is in an ASCII-incompatible encoding incompatible with self's encoding uses the argument's encoding if self is empty",
@@ -43744,13 +43744,13 @@
       "tag": "spec-runner-tagger:String#concat with Integer concatenates the argument interpreted as a codepoint",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat with Integer doesn't call to_int on its argument",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat with Integer raises RangeError if the argument is an invalid codepoint for self's encoding",
@@ -43762,13 +43762,13 @@
       "tag": "spec-runner-tagger:String#concat with Integer raises RangeError if the argument is negative",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat with Integer raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#concat",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#concat with Integer returns a BINARY string if self is US-ASCII and the argument is between 128-255 (inclusive)",
@@ -44242,13 +44242,13 @@
       "tag": "spec-runner-tagger:String#downcase! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#downcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#downcase! returns nil if no modifications were made",
       "group": "String",
       "spec": "String#downcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#downcase! sets the result String encoding to the source String encoding",
@@ -47590,13 +47590,13 @@
       "tag": "spec-runner-tagger:String#replace raises a FrozenError on a frozen instance that is modified",
       "group": "String",
       "spec": "String#replace",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#replace raises a FrozenError on a frozen instance when self-replacing",
       "group": "String",
       "spec": "String#replace",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#replace raises a TypeError if other can't be converted to string",
@@ -49966,13 +49966,13 @@
       "tag": "spec-runner-tagger:String#swapcase does not allow invalid options",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase does not allow the :fold option for upcasing",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping adapted for Lithuanian allows Turkic as an extra option (and applies Turkic semantics)",
@@ -49990,7 +49990,7 @@
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping adapted for Lithuanian does not allow any other additional option",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping adapted for Turkic languages allows Lithuanian as an extra option",
@@ -50002,7 +50002,7 @@
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping adapted for Turkic languages does not allow any other additional option",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping adapted for Turkic languages swaps case of ASCII characters according to Turkic semantics",
@@ -50014,19 +50014,19 @@
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping updates string metadata",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase full Unicode case mapping works for all of Unicode with no option",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase returns a new string with all uppercase chars from self converted to lowercase and vice versa",
       "group": "String",
       "spec": "String#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase returns subclass instances when called on a subclass",
@@ -50044,13 +50044,13 @@
       "tag": "spec-runner-tagger:String#swapcase! does not allow invalid options",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! does not allow the :fold option for upcasing",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! full Unicode case mapping adapted for Lithuanian allows Turkic as an extra option (and applies Turkic semantics)",
@@ -50068,25 +50068,25 @@
       "tag": "spec-runner-tagger:String#swapcase! full Unicode case mapping adapted for Lithuanian does not allow any other additional option",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! full Unicode case mapping modifies self in place for all of Unicode with no option",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! full Unicode case mapping updates string metadata",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! modifies self in place",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! modifies self in place for ASCII-only case mapping does not swapcase non-ASCII characters",
@@ -50104,7 +50104,7 @@
       "tag": "spec-runner-tagger:String#swapcase! modifies self in place for full Unicode case mapping adapted for Turkic languages does not allow any other additional option",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#swapcase! modifies self in place for full Unicode case mapping adapted for Turkic languages swaps case of ASCII characters according to Turkic semantics",
@@ -50122,7 +50122,7 @@
       "tag": "spec-runner-tagger:String#swapcase! returns nil if no modifications were made",
       "group": "String",
       "spec": "String#swapcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#to_c returns a Complex object",
@@ -61948,13 +61948,13 @@
       "tag": "spec-runner-tagger:String#upcase! raises a FrozenError when self is frozen",
       "group": "String",
       "spec": "String#upcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#upcase! returns nil if no modifications were made",
       "group": "String",
       "spec": "String#upcase!",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:String#upto calls the block once even when start equals stop",
@@ -64252,37 +64252,37 @@
       "tag": "spec-runner-tagger:Symbol#swapcase converts lowercase ASCII characters to their uppercase equivalents",
       "group": "Symbol",
       "spec": "Symbol#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#swapcase converts uppercase ASCII characters to their lowercase equivalents",
       "group": "Symbol",
       "spec": "Symbol#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#swapcase leaves non-alphabetic ASCII characters as they were",
       "group": "Symbol",
       "spec": "Symbol#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#swapcase returns a Symbol",
       "group": "Symbol",
       "spec": "Symbol#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#swapcase swaps the case for Unicode characters",
       "group": "Symbol",
       "spec": "Symbol#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#swapcase works with both upper- and lowercase ASCII characters in the same Symbol",
       "group": "Symbol",
       "spec": "Symbol#swapcase",
-      "outcome": "fail"
+      "outcome": "pass"
     },
     {
       "tag": "spec-runner-tagger:Symbol#to_proc passes along the block passed to Proc#call",
